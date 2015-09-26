@@ -18,7 +18,7 @@
  * Wrappers.............Wrapping and constraining elements.
  *
  * COMPONENTS
- * Page-head............The main page header.
+ * Site-nav............The site-wide header.
  * Page-foot............The main page footer.
  * Buttons..............Button elements.
  *
@@ -34,6 +34,9 @@
  /**
  * Apollo Mixins
  */
+
+
+
 
 
  /*------------------------------------*\
@@ -94,4 +97,20 @@ h4 {
 small, .font_small {
   font-size: 0.707em;
   font-size: 0.707rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #COMPONENTS
+\*------------------------------------*/
+
+/**
+* Site-Header
+*/
+
+.navbar-brand > img {
+  max-width: 235px;
 }
