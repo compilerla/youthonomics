@@ -41,7 +41,17 @@
    padding-top: 71px;
  }
 
+ /**
+ * Colors
+ */
 
+ $white: #fff;
+ $black: #000;
+ $l_grey: #9B9B9B;
+ $m_grey: #4A4A4A;
+
+ $main_red: #FF1C2D;
+ // $xl_red: #FF1C2D;
 
 
  /*------------------------------------*\
@@ -53,7 +63,21 @@
  */
 
 
+ /**
+ * Color + Hover Helpers
+ */
 
+ .red-fill {
+   color: $white;
+   background: $main_red;
+   border: 1px solid $main_red;
+ }
+
+ .red-border {
+   color: $main_red;
+   background: none;
+   border: 1px solid $main_red;
+ }
 
 
  /*------------------------------------*\
@@ -116,6 +140,14 @@ small, .font_small {
   font-size: 0.707rem;
 }
 
+.small {
+  font-weight: bold;
+  font-size: 0.707em;
+  font-size: 0.707rem;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
 
 
 
@@ -172,4 +204,21 @@ small, .font_small {
 
 .navbar-collapse li.active > a{
   color: #FFF;
+}
+
+/**
+* Buttons
+*/
+
+.btn {
+  font-weight: bold;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  padding: .707rem 1.414rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 1.414rem;
+  display: block;
+  font-size: .707rem;
+  border-radius: 30px;
 }
