@@ -65,6 +65,11 @@
  $y_now: #02AFEB;
  $y_out: #FF6137;
 
+ $s_twit: #B1E5F8;
+ // $s_inst: #;
+ // $s_face: #;
+ // $s_yout: #;
+
 
  /*------------------------------------*\
      #TOOLS
@@ -76,20 +81,64 @@
 
 
  /**
- * Color + Hover Helpers
+ * Basic Colors
  */
 
- .red-fill {
+ .white {
+   color: $white;
+ }
+
+ .brand-red {
+   color: $main_red;
+ }
+
+ /**
+ * Basic Color Fills + Borders
+ */
+
+ .fill-red {
    color: $white;
    background: $main_red;
    border: 1px solid $main_red;
  }
 
- .red-border {
+ .outline-red {
    color: $main_red;
    background: none;
    border: 1px solid $main_red;
  }
+
+ .fill-dark-red {
+   color: $white;
+   background: $dark_red;
+   border: 1px solid $dark_red;
+ }
+
+ .fill-med1-red {
+   color: $white;
+   background: $med1_red;
+   border: 1px solid $med1_red;
+ }
+
+ .fill-med2-red {
+   color: $white;
+   background: $med2_red;
+   border: 1px solid $med2_red;
+ }
+
+ .fill-lig1-red {
+   color: $white;
+   background: $lig1_red;
+   border: 1px solid $lig1_red;
+ }
+
+ .fill-lig2-red {
+   color: $white;
+   background: $lig2_red;
+   border: 1px solid $lig2_red;
+ }
+
+
 
 
  /*------------------------------------*\
@@ -145,6 +194,14 @@ h3 {
 h4 {
   font-size: 1.414em;
   font-size: 1.414rem;
+}
+
+.emphasis-copy {
+  font-weight: normal;
+  font-size: 1em;
+  font-size: 1rem;
+  line-height: 1.414em;
+  line-height: 1.414rem;
 }
 
 small, .font_small {
@@ -231,4 +288,88 @@ small, .font_small {
   display: block;
   font-size: .707rem;
   border-radius: 30px;
+}
+
+
+/**
+* Supporter Section
+*/
+
+#supporters {
+  header h4 {
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    font-weight: bold;
+    color: $l_grey;
+  }
+}
+
+/**
+* Content-panels
+*/
+
+.panel {
+  padding: 1.414rem .707rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  h5 {
+    font-size: 1.414em;
+    font-size: 1.414rem;
+    font-weight: bold;
+    letter-spacing: .7px;
+  }
+  .subheading, .check-it-cta a {
+    font-size: .707em;
+    font-size: .707rem;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+  }
+}
+
+.action-panel {
+  .overlay b {
+    font-size: 1.6rem;
+    position: absolute;
+    right: 15px;
+    top: 1.75rem;
+  }
+  .content h5 {
+    display: none;
+  }
+}
+
+.blog-panel, .social-media-panel {
+  height: 320px;
+  overflow: hidden;
+  .check-it-cta {
+    position: absolute;
+    bottom: 1.414rem;
+    a { font-weight: normal; }
+    img { height: 45px; }
+  }
+}
+
+.social-media-panel {
+  background-color: $s_twit;
+}
+
+
+
+/*------------------------------------*\
+    #CONTENT
+\*------------------------------------*/
+
+/**
+* Section Headers
+*/
+
+section.row header {
+  padding: 2.827rem .707rem 1.414rem .707rem;
+  text-align: center;
+  h1 {
+    letter-spacing: .7px;
+    font-size: 1.999rem;
+    font-weight: bold;
+  }
 }

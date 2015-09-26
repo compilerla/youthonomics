@@ -1,1 +1,11 @@
-body{color: red}
+  /*------------------------------------*\
+      #CUSTOM PAGE STYLES
+  \*------------------------------------*/
+
+  /**
+  * Homepage Sections
+  */
+
+  section.row header h1 {
+    background-image: #4D4D4D;
+  }
