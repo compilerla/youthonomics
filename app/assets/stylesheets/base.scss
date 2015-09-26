@@ -50,8 +50,20 @@
  $l_grey: #9B9B9B;
  $m_grey: #4A4A4A;
 
+ $dark_red: #BF1522;
  $main_red: #FF1C2D;
- // $xl_red: #FF1C2D;
+ $med1_red: #FF4857;
+ $med2_red: #FF7781;
+ $lig1_red: #FFA4AB;
+ $lig2_red: #FFD2D5;
+
+ $score_good: #FF1C2D;
+ $score_med: #FF7781;
+ $score_bad: #524445;
+
+ $y_opt: #46A455;
+ $y_now: #02AFEB;
+ $y_out: #FF6137;
 
 
  /*------------------------------------*\
@@ -171,13 +183,12 @@ small, .font_small {
   margin: 0 auto;
   display: block;
   width: 100%;
-}
+  img {
+    max-height: 45px;
+    margin: 0 auto;
+  }
 
-.navbar-brand > img {
-  max-height: 45px;
-  margin: 0 auto;
 }
-
 .navbar-toggle {
   position: absolute;
   top: 10px;
@@ -192,19 +203,18 @@ small, .font_small {
 
 .navbar-collapse {
   background-color: #4D4D4D;
-}
-
-.navbar-collapse li {
-  text-align: center
-}
-
-.navbar-collapse li > a {
-  color: #9B9B9B;
+  li {
+    text-align: center;
+    a {
+      color: #9B9B9B;
+    }
+  }
 }
 
 .navbar-collapse li.active > a{
   color: #FFF;
 }
+
 
 /**
 * Buttons
