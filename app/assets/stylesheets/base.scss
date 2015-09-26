@@ -1,0 +1,97 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Apollo...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Typography.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+ /*------------------------------------*\
+     #TOOLS
+ \*------------------------------------*/
+
+ /**
+ * Apollo Mixins
+ */
+
+
+ /*------------------------------------*\
+     #BASE
+ \*------------------------------------*/
+
+ /**
+ * Typography
+ * Perfect Fourth Scale
+ */
+
+html {
+  font-size: 16px;
+  font-size: 1em;
+}
+
+body {
+  background-color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1.3em;
+  margin-bottom: 1.3rem;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  margin: 1.414rem 0 0.5rem;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+  font-size: 3.998rem;
+}
+
+h2 {
+  font-size: 2.827em;
+  font-size: 2.827rem;
+}
+
+h3 {
+  font-size: 1.999em;
+  font-size: 1.999rem;
+}
+
+h4 {
+  font-size: 1.414em;
+  font-size: 1.414rem;
+}
+
+small, .font_small {
+  font-size: 0.707em;
+  font-size: 0.707rem;
+}
