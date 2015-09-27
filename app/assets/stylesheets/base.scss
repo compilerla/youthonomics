@@ -42,6 +42,12 @@
    padding-top: 71px;
  }
 
+ @media (screen and min-width: 758px) {
+   body {
+     padding-top: 79px;
+   }
+ }
+
 
  /**
  * Colors
@@ -508,9 +514,32 @@ small, .font_small {
       width: 125px;
     }
   }
+
+  #youthonomics-news header {
+    padding-bottom: 3.988rem;
+  }
+
+  #supporters,
+  #main-footer {
+    .row {
+      margin: 0 auto;
+      max-width: 960px;
+    }
+  }
 }
 
-
+@media (screen and min-width: 992px) {
+  #main-footer {
+    #keep-in-touch .btn {margin-left: 0}
+    .social {
+      .twitter img,
+      .yt img,
+      .insta img { width: 25px;}
+      .fb img { height: 25px; }
+      li { width: 23%;}
+    }
+  }
+}
 
 
 
@@ -553,5 +582,14 @@ section.row header {
       margin-left: auto;
     }
   }
+}
 
+@media (screen and min-width: 768px) {
+  section.row header {
+    padding-top: 2.827rem;
+  }
+
+  .content-wrap .container-fluid {
+    margin-bottom: 1.998rem;
+  }
 }
