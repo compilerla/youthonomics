@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #CUSTOM PAGE STYLES
+    #HOMEPAGE
 \*------------------------------------*/
 
 /**
@@ -102,5 +102,21 @@
 }
 
 @media (screen and min-width: 992px) {
-  
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #ABOUT
+\*------------------------------------*/
+
+/**
+* About Page Sections
+*/
+
+.container-fluid#about-hero {
+  background: #4D4D4D;
 }

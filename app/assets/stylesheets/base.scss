@@ -421,6 +421,7 @@ small, .font_small {
   padding: 1.414rem .707rem;
   margin-bottom: 0;
   border-radius: 0;
+  box-shadow: none;
   h5 {
     font-size: 1.414em;
     font-size: 1.414rem;
@@ -463,6 +464,41 @@ small, .font_small {
   background-color: $s_twit;
 }
 
+.team-panel {
+  background: $white;
+  height: auto;
+  margin-bottom: 5rem;
+  border: 0;
+  padding: 0;
+  .team-photo {
+    position: relative;
+    z-index: 0;
+    img { width: 100%; }
+  }
+  .content {
+    position: absolute;
+    z-index: 10;
+    bottom: -5rem;
+    left: .707rem;
+    width: 85%;
+    padding: 0;
+    h5, h6 {
+      color: $d_grey;
+      text-align: left;
+      font-size: 1rem;
+    }
+    h5 {letter-spacing: 1px;}
+    .subheading {
+      font-size: .707rem;
+      font-weight: normal;
+      letter-spacing: normal;
+      text-transform: none;
+      padding-bottom: .707rem;
+    }
+    p { display: none; color: $white;}
+  }
+}
+
 
 /**
 * Component Breakpoints
@@ -487,6 +523,10 @@ small, .font_small {
 
   .action-panel .content p{
     max-width: 480px;
+  }
+
+  .team-panel {
+    padding: 0;
   }
 
 }
@@ -526,7 +566,37 @@ small, .font_small {
       max-width: 960px;
     }
   }
-}
+
+  .team-panel {
+    height: 320px;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    .team-photo {
+      float: right;
+      width: 66%;
+    }
+    .content {
+      position: absolute;
+      z-index: 10;
+      top: 1.414rem;
+      left: 1.414rem;
+      bottom: 0;
+      width: 85%;
+      padding: 0;
+      h5, h6 { color: $d_grey; max-width: 220px; }
+      p {display: block; color: $d_grey; max-width: 220px; }
+    }
+  }
+  .team-panel:nth-child(even) {
+    .team-photo {float: left;}
+    .content {
+      left: initial;
+      right: 1.414rem;
+      width: 29%;
+    }
+  }
+
+} // end 768
 
 @media (screen and min-width: 992px) {
   #main-footer {
@@ -538,6 +608,29 @@ small, .font_small {
       .fb img { height: 25px; }
       li { width: 23%;}
     }
+  }
+
+  .team-panel {
+    height: 320px;
+    margin-bottom: 0;
+    .team-photo {
+      float: none;
+      width: 100%;
+    }
+    .content {
+      position: absolute;
+      z-index: 10;
+      top: 1.414rem;
+      left: 1.414rem;
+      right: initial;
+      width: 85%;
+      padding: 0;
+      h5, h6 { color: $white; max-width: 220px; }
+      p {display: inherit; color: $white;}
+    }
+  }
+  .team-panel:nth-child(even) {
+    .content {right: initial; width: 85%; left: 1.414rem;}
   }
 }
 
