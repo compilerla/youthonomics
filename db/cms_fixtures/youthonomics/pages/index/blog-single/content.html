@@ -1,0 +1,37 @@
+{{ cms:snippet:header }}
+<div class="content-wrap">
+  <div class="container-fluid" id="blog-single-hero">
+    <section class="row">
+      <header>
+        <h1 class="white">Our Mission</h1>
+        <h4 class="emphasis-copy white">Youthonomics is an innovative new think tank featuring an annual ranking index that analyzes the situation of yong people worldwide from a social, economical and political perspective in order to make informed decisions about the future and enact change through policy, both globally and locally.</h4>
+      </header>
+    </section>
+  </div><!-- /.container-fluid#about-hero -->
+  <div class="main-content">
+    blog post content goes here
+    {{ cms:page:some_label:text }}
+  </div><!-- /.main-content -->
+  <div class="container" id="blog-navigation">
+    <section class="row">
+      <div class="col-xs-4">
+        <div class="last-post">
+          {{ cms:file:icon_arrow_r_light.png:image }}
+          <a href="#">last post</a>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="category">
+          <a href="#">back to blog</a>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="next-post">
+          <a href="#">next post</a>
+          {{ cms:file:icon_arrow_r_light.png:image }}
+        </div>
+      </div>
+    </section>
+  </div>
+</div><!-- /.content-wrap -->
+{{ cms:snippet:footer }}
