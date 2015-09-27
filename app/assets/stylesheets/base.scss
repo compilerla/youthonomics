@@ -610,8 +610,10 @@ small, .font_small {
     }
   }
 
+  .blog-panel, .social-media-panel {height: 400px;}
+
   .team-panel {
-    height: 320px;
+    height: 400px;
     margin-bottom: 0;
     .team-photo {
       float: none;
@@ -632,7 +634,7 @@ small, .font_small {
   .team-panel:nth-child(even) {
     .content {right: initial; width: 85%; left: 1.414rem;}
   }
-}
+} //end 992
 
 
 
