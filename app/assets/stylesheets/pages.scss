@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    #CUSTOM PAGE STYLES
+\*------------------------------------*/
+
+/**
+* Homepage Sections
+*/
+
+.container-fluid#home-hero {
+  background-color: #4D4D4D;
+}
+
+.container-fluid#report-section {
+  #country-scroll ul {
+    width: 90%;
+    height: 75px;
+    margin: 0 0 1.999rem 0;
+    padding: 0;
+    overflow: auto;
+    li {
+      width: 100%;
+      color: #9B9B9B;
+      list-style: none;
+      padding: 0 .75rem;
+    }
+  }
+}
+
+.container-fluid#contribute {
+  background-color: #4D4D4D;
+}
+
+.row#legend {
+
+  h5 { text-align: center; color: #9B9B9B;}
+
+  .circle {
+    &:before {
+      display: block;
+      content: '';
+      display: block;
+      width: 25px;
+      height: 25px;
+      border: 1px solid;
+      float: left;
+      margin-top: -3px;
+      margin-right: 5px;
+      border-radius: 30px;
+    }
+    h6 {
+      letter-spacing: .2px;
+      font-size: 10px;
+      color: #9B9B9B;
+    }
+  }
+
+  .circle#high-ranking:before {
+    border: 1px solid #FF1C2D;
+    background-color: #FF1C2D;
+  }
+
+  .circle#avg-ranking:before {
+    border: 1px solid #FF7781;
+    background-color: #FF7781;
+  }
+
+  .circle#low-ranking:before {
+    border: 1px solid #524445;
+    background-color: #524445;
+  }
+
+}

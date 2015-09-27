@@ -51,6 +51,7 @@
  $black: #000;
  $l_grey: #9B9B9B;
  $m_grey: #4A4A4A;
+ $d_grey: #3D3D3D;
 
  $dark_red: #BF1522;
  $main_red: #FF1C2D;
@@ -102,6 +103,18 @@
  /**
  * Basic Color Fills + Borders
  */
+
+ .fill-white {
+   color: $d_grey;
+   background: $white;
+   border: 1px solid $white;
+ }
+
+ .outline-white {
+   color: $white;
+   background: none;
+   border: 1px solid $white;
+ }
 
  .fill-red {
    color: $white;
@@ -383,6 +396,16 @@ small, .font_small {
   a { color: $white; }
 }
 
+
+/**
+* Footer Section
+*/
+
+#copyright {
+  text-align: left;
+  padding: .707rem 1.999rem;
+  font-color: $m_grey;
+}
 
 /**
 * Content-panels
