@@ -315,7 +315,7 @@ small, .font_small {
 
 
 /**
-* Buttons
+* inputs
 */
 
 .input-text-container {
@@ -458,6 +458,36 @@ small, .font_small {
 }
 
 
+/**
+* Component Breakpoints
+*/
+
+@media (screen and min-width: 480px) {
+  .input-text-container,
+  .input-submit-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 320px;
+  }
+
+  .newsletter-form .input-text-container,
+  .newsletter-form .input-submit-container {
+    max-width: none;
+  }
+
+  .panel {
+    padding: 1.414rem;
+  }
+
+  .action-panel .content p{
+    max-width: 480px;
+  }
+
+}
+
+
+
+
 
 /*------------------------------------*\
     #CONTENT
@@ -480,4 +510,23 @@ section.row header {
     font-size: 1.999rem;
     font-weight: bold;
   }
+}
+
+/**
+* Content Breakpoints
+*/
+
+@media (screen and min-width: 480px) {
+  section.row header,
+  section.row main {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    .emphasis-copy {
+      max-width: 520px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
 }

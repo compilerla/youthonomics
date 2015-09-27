@@ -53,6 +53,7 @@
       letter-spacing: .2px;
       font-size: 10px;
       color: #9B9B9B;
+      max-width: 90px;
     }
   }
 
@@ -70,5 +71,14 @@
     border: 1px solid #524445;
     background-color: #524445;
   }
+
+}
+
+
+/**
+* Homepage Section Breakpoints
+*/
+
+@media (screen and min-width: 480px) {
 
 }
