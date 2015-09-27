@@ -33,6 +33,7 @@
      #GENERIC
  \*------------------------------------*/
 
+
  /**
  * Custom
  */
@@ -40,6 +41,7 @@
  body {
    padding-top: 71px;
  }
+
 
  /**
  * Colors
@@ -71,9 +73,13 @@
  // $s_yout: #;
 
 
+
+
+
  /*------------------------------------*\
      #TOOLS
  \*------------------------------------*/
+
 
  /**
  * Apollo Mixins
@@ -91,6 +97,7 @@
  .brand-red {
    color: $main_red;
  }
+
 
  /**
  * Basic Color Fills + Borders
@@ -221,9 +228,11 @@ small, .font_small {
 
 
 
+
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
+
 
 /**
 * Site-Header+Nav
@@ -246,11 +255,12 @@ small, .font_small {
   }
 
 }
+
 .navbar-toggle {
   position: absolute;
   top: 10px;
   right: 0;
-  width: 35px;
+  width: 25px;
   padding: 0;
 }
 
@@ -292,10 +302,36 @@ small, .font_small {
 
 
 /**
+* Buttons
+*/
+
+.input-text-container {
+  margin: 0 .707rem .707rem .707rem;
+  border-bottom: 1px solid white;
+  input[type="text"] {
+    color: $white;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: .707rem;
+    &:focus {
+      outline: none;
+      background-color: rgba(0,0,0,.2);
+    }
+  }
+}
+
+.input-submit-container {
+  margin: 1.414rem 0 1.999rem 0;
+}
+
+
+/**
 * Supporter Section
 */
 
 #supporters {
+  margin: 1.414rem 0 1.999rem;
   header h4 {
     text-transform: uppercase;
     letter-spacing: 1.7px;
@@ -303,6 +339,50 @@ small, .font_small {
     color: $l_grey;
   }
 }
+
+
+/**
+* Footer Section
+*/
+
+#main-footer {
+  background: $m_grey;
+  color: $white;
+  section.row header {
+    padding: 1.414rem 0 0 0;
+    h5 {
+      font-weight: bold;
+      letter-spacing: .7px;
+      text-align: left;
+      padding: 1.414rem 0 .707rem 0;
+      border-bottom: 1px solid $white;
+    }
+  }
+}
+
+.newsletter-form {
+  .input-text-container {
+    margin: 0 0 .707rem 0;
+  }
+}
+
+#hash-and-social {
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: block;
+    width: 100%;
+  }
+  li {
+    display: inline-block;
+    width: 24%;
+  }
+}
+
+#old-contact {
+  a { color: $white; }
+}
+
 
 /**
 * Content-panels
@@ -359,6 +439,7 @@ small, .font_small {
 /*------------------------------------*\
     #CONTENT
 \*------------------------------------*/
+
 
 /**
 * Section Headers
