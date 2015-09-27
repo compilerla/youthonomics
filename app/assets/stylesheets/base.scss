@@ -485,6 +485,31 @@ small, .font_small {
 
 }
 
+@media (screen and min-width: 768px) {
+  .navbar-brand { padding-top: 15px; }
+
+  .navbar-collapse {
+    background: $white;
+    float: right;
+    width: 390px;
+    .navbar-nav {
+      float: left;
+      margin: 0;
+      margin-top: .707rem;
+      margin-right: .707rem;
+    }
+    li.active a {
+      color: $d_grey;
+    }
+    .btn.fill-red {
+      margin-top: 1rem;
+      display: block;
+      float: left;
+      width: 125px;
+    }
+  }
+}
+
 
 
 

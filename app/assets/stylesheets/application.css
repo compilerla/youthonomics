@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require bootstrap
+ *= require jasny-bootstrap
  *= require_tree .
  *= require_self
  */
