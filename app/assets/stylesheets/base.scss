@@ -465,8 +465,12 @@ small, .font_small {
 
 
 /**
-* Section Headers
+* Sections
 */
+
+.content-wrap .container-fluid {
+  margin-bottom: 1.999rem;
+}
 
 section.row header {
   padding: 2.827rem .707rem 1.414rem .707rem;
