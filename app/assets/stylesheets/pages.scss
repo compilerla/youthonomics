@@ -120,3 +120,85 @@
 .container-fluid#about-hero {
   background: #4D4D4D;
 }
+
+
+
+
+
+/*------------------------------------*\
+    #BLOG-SINGLE
+\*------------------------------------*/
+
+/**
+* Single-Blog Sections
+*/
+
+#post-hero {
+  background: #3d3d3d;
+  header {
+    h6 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+    }
+    .byline {
+      margin-top: 1.999rem;
+      margin-bottom: 2.827rem;
+      color: #fff;
+    }
+  }
+}
+
+#blog-navigation {
+  margin-top: 2.827rem;
+  .last-post,
+  .next-post,
+  .category {
+    img {
+      width: 35px;
+      margin: 0 auto;
+      display: block;
+      color: #4A4A4A;
+      display: block;
+    }
+    a {
+      float: none;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      font-weight: bold;
+      display: block;
+      font-size: 11px;
+      color: #4A4A4A;
+      margin: .707rem auto;
+    }
+    span {
+      display: block;
+      margin-top: .707rem;
+    }
+  }
+  .category a {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 1.414rem;
+    color: #4A4A4A;
+  }
+}
+
+
+/**
+* Single-Blog Breakpoints
+*/
+
+@media (screen and min-width: 768px) {
+  #blog-navigation {
+    .last-post,
+    .next-post {
+      img, span { float: left; }
+    }
+    .last-post span { margin-left: .707rem; }
+    .next-post img { float: right; }
+    .next-post span { float: right; margin-right: .707rem;}
+    .category a { margin-top: 25px; padding-top: 0; }
+  }
+}
