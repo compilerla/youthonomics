@@ -1,0 +1,4 @@
+label: Blog
+layout: default
+slug: blog
+parent: home

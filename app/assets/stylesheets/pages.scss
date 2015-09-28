@@ -202,3 +202,31 @@
     .category a { margin-top: 25px; padding-top: 0; }
   }
 }
+
+
+
+
+
+/*------------------------------------*\
+    #BLOG
+\*------------------------------------*/
+
+/**
+* Blog Sections
+*/
+
+#blog-hero {
+  background: #3d3d3d;
+  header {
+    h6 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+    }
+    .byline {
+      margin-top: 1.999rem;
+      margin-bottom: 2.827rem;
+      color: #fff;
+    }
+  }
+}
