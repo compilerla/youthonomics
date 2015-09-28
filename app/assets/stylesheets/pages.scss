@@ -233,7 +233,79 @@
   }
 }
 
+#blog-page-navigation {
+  margin-top: 2.827rem;
+  .last-post,
+  .next-post,
+  .category {
+    img {
+      width: 35px;
+      margin: 0 auto;
+      display: block;
+      color: #4A4A4A;
+      display: block;
+    }
+    a {
+      float: none;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      font-weight: bold;
+      display: block;
+      font-size: 11px;
+      color: #4A4A4A;
+      margin: .707rem auto;
+    }
+    span {
+      display: block;
+      margin-top: 1rem;
+    }
+  }
 
+  .last-post.disabled,
+  .next-post.disabled {
+    display: none;
+  }
+
+  .pagination {
+    margin-top: 3.5rem;
+  }
+  .pagination a {
+    font-size: 11px;
+    text-align: center;
+    padding-top: .707em;
+    color: #4A4A4A;
+    border: none;
+  }
+  .pagination>.active>a {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+  }
+  .pagination>li>a:focus {
+    background: #fff;
+  }
+}
+
+
+/**
+* Blog Breakpoints
+*/
+
+@media (screen and min-width: 480px) {
+  #blog-page-navigation {
+    .last-post,
+    .next-post {
+      img, span { float: left; }
+      span {margin-top: .707rem;}
+    }
+    .last-post span { margin-left: .707rem; }
+    .next-post img { float: right; }
+    .next-post span { float: right; margin-right: .707rem;}
+    .pagination { margin-top: 15px; padding-top: 0; }
+  }
+}
 
 
 
