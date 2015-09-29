@@ -316,3 +316,169 @@
 /**
 * Single Country Page
 */
+
+.container-fluid#country-data {
+  padding: 0;
+  margin-bottom: 0;
+  section.row {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.414rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #outlook-now-data {
+    padding: 0 15px 1.414rem 15px;
+    background: #797979;
+  }
+
+  .metric-score {
+    h3 {margin-top: 0;}
+  }
+
+  #main-data {
+    .col-sm-4:first-child {
+      overflow: auto;
+    }
+  }
+
+  h4.data-cat-header {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .7px;
+    color: #9B9B9B;
+    text-align: center;
+  }
+
+  .icon {
+    margin-top: .707rem;
+    margin-right: .707rem;
+    margin-bottom: .707rem;
+    width: 45px;
+    height: 45px;
+    display: block;
+    float: left;
+    background: grey;
+    border-radius: 30px;
+  }
+
+  #global-index-rating,
+  #youth-outlook {
+    width: 45%;
+    float: left;
+  }
+
+  #outlook-now-data h4.data-cat-header { color: #fff; }
+
+  #composite-score,
+  #youth-now  {
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #global-index-rating,
+  #composite-score,
+  #youth-outlook,
+  #youth-now {
+    .icon {margin-top: 0;}
+    .subheading {clear: left;}
+  }
+
+  #youth-outlook,
+  #youth-now {
+    color: #fff;
+    background: #797979;
+    .learn-more {
+      display: none;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      font-weight: bold;
+    }
+  }
+
+}
+
+.container-fluid#subindex-pillar-data {
+  padding: 0;
+  margin-bottom: 0;
+  section.row {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .icon {
+    margin-top: .707rem;
+    margin-right: .707rem;
+    margin-bottom: .707rem;
+    width: 45px;
+    height: 45px;
+    display: block;
+    float: left;
+    background: #fff;
+    border-radius: 30px;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.414rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h4.data-cat-header {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .7px;
+    text-align: center;
+  }
+
+  .row#youth-now-subindex-data {
+    padding-bottom: 2.827rem;
+    background: #02AFEB;
+    color: #fff;
+  }
+
+  .row#youth-outlook-subindex-data {
+    padding-bottom: 2.827rem;
+    background: #FF6137;
+    color: #fff;
+  }
+
+  #youth-outlook-subindex-data,
+  #youth-now-subindex-data {
+    .icon {margin-top: 0;}
+    .subheading {clear: left;}
+    .learn-more {
+      display: none;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      font-weight: bold;
+    }
+  }
+
+  .subindex-description h4,
+  .pillar-data h4 {
+    font-color: #797979;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    font-size: 1rem;
+  }
+
+  .pillar-data section.row {
+    padding-left: 0;
+    .pillar-ranking {padding-left: 0;}
+  }
+
+}
