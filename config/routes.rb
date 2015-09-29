@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/dataadmin', as: 'rails_admin'
+
+  resources :countries, only: [:index, :show]
+
   comfy_route :cms_admin, :path => '/admin'
 
   # Make sure this routeset is defined last
   comfy_route :cms, :path => '/', :sitemap => false
-
-  resources :countries, only: [:index, :show]
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
