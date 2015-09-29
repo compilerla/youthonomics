@@ -1,0 +1,4 @@
+label: country
+identifier: country
+app_layout: application
+parent: default

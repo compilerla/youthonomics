@@ -1,0 +1,519 @@
+{{ cms:snippet:header }}
+<div class="content-wrap map-content">
+  <div class="container-fluid" id="country-map">
+    <section class="row">
+      country map data goes here
+    </section>
+    <section class="row" id="legend">
+      <h5 class="small">Ranking Legend</h5>
+      <div class="col-xs-4 col-sm-offset-3 col-sm-2">
+        <div class="circle" id="high-ranking">
+          <h6>High Rankings</h6>
+        </div>
+      </div><!-- /#high-ranking -->
+      <div class="col-xs-4 col-sm-2">
+        <div class="circle" id="avg-ranking">
+          <h6>Average Rankings</h6>
+        </div>
+      </div><!-- /#avg-ranking -->
+      <div class="col-xs-4 col-sm-2">
+        <div class="circle" id="low-ranking">
+          <h6>Low Rankings</h6>
+        </div>
+      </div><!-- /#low-ranking -->
+    </section>
+  </div><!-- /.container-fluid#country-map -->
+
+  <div class="container-fluid" id="country-data">
+    <section class="row" id="main-data">
+      <h2>{{ cms:page:country }}</h2>
+      <div class="col-sm-4 col-sm-offset-2">
+        <h4 class="data-cat-header">Global Index Ranking &amp; Composite Score</h4>
+        <div class="main-metric-panel panel" id="global-index-rating">
+          <div class="metric-score">
+            <div class="icon icon-gir-ranking low-ranking">
+            </div>
+            <h3>{{ cms:page:score }}</h3>
+            <h5 class="subheading">Global Index Rating</h5>
+          </div>
+          <div class="metric-description">
+            <p>
+              Global Index Rating Score description here
+            </p>
+          </div>
+        </div><!-- /.main-metric-panel#global-index-rating -->
+        <div class="main-metric-panel panel" id="composite-score">
+          <div class="metric-score">
+            <div class="icon icon-composite-score bad">
+            </div>
+            <h3>00</h3>
+            <h5 class="subheading">Composite Score</h5>
+          </div>
+          <div class="metric-description">
+            <p>
+              Composite Score description here
+            </p>
+          </div>
+        </div><!-- /.main-metric-panel#composite-score -->
+      </div>
+      <div class="col-sm-4">
+        <h4 class="data-cat-header">Youth Optimism Ratio</h4>
+        <div class="main-metric-panel panel" id="youth-optimism-ratio">
+          <div class="metric-score">
+            <div class="icon icon-youth-optimism-ratio bad">
+            </div>
+            <h3>{{ cms:page:youtho_index }}</h3>
+            <h5 class="subheading">Youth Optimism Ratio</h5>
+          </div>
+          <div class="metric-description">
+            <p>
+              Youth Optimism Ratio description here
+            </p>
+          </div>
+        </div><!-- /.main-metric-panel#youth-optimism-ratio -->
+      </div>
+    </section><!-- /#country-data -->
+    <section class="row" id="outlook-now-data">
+      <h4 class="data-cat-header">Youth Outlook &amp; Youth Now</h4>
+      <div class="col-sm-4 col-sm-offset-2">
+        <div class="main-metric-panel panel" id="youth-outlook">
+          <div class="metric-score">
+            <div class="icon icon-youth-outlook bad">
+            </div>
+            <h3>{{ cms:page:youthoutlook }}</h3>
+            <h5 class="subheading">Youth Outlook</h5>
+          </div>
+          <div class="metric-description">
+            <p>
+              View Youth Outlook Subindices
+            </p>
+          </div>
+          <div class="learn-more">
+            View Metric Subindices
+          </div>
+        </div><!-- /.main-metric-panel#youth-outlook -->
+      </div>
+      <div class="col-sm-4">
+        <div class="main-metric-panel panel" id="youth-now">
+          <div class="metric-score">
+            <div class="icon icon-youth-outlook bad">
+            </div>
+            <h3>{{ cms:page:youthnow }}</h3>
+            <h5 class="subheading">Youth Now</h5>
+          </div>
+          <div class="metric-description">
+            <p>
+              View Youth Now Subindices
+            </p>
+          </div>
+          <div class="learn-more">
+            View Metric Subindices
+          </div>
+        </div><!-- /.main-metric-panel#youth-now -->
+      </div>
+    </section><!-- /#outlook-now-data -->
+  </div><!-- /#country-data -->
+
+  <div class="container-fluid" id="subindex-pillar-data">
+    <section class="row" id="youth-outlook-subindex-data">
+      <h4 class="data-cat-header white">Youth Outlook Subindices</h4>
+      <div class="col-xs-6 col-sm-2 subindex col-sm-offset-3 youth-outlook-subindex" id="public-finance">
+        <div class="score">
+          <div class="icon">
+          </div>
+          <h3>00</h3>
+          <h5 class="subheading">Public Finance</h5>
+        </div>
+        <div class="learn-more">
+          View Subindex pillars
+        </div>
+      </div><!-- /.youth-outlook-subindex -->
+      <div class="col-xs-6 col-sm-2 subindex youth-outlook-subindex" id="economic-opportunities">
+        <div class="score">
+          <div class="icon">
+          </div>
+          <h3>00</h3>
+          <h5 class="subheading">Economic Opportunities</h5>
+        </div>
+        <div class="learn-more">
+          View Subindex pillars
+        </div>
+      </div><!-- /.youth-outlook-subindex -->
+      <div class="col-xs-6 col-sm-2 subindex youth-outlook-subindex" id="political-weight">
+        <div class="score">
+          <div class="icon">
+          </div>
+          <h3>00</h3>
+          <h5 class="subheading">Political Weight</h5>
+        </div>
+        <div class="learn-more">
+          View Subindex pillars
+        </div>
+      </div><!-- /.youth-outlook-subindex -->
+    </section><!-- /#youth-outlook-subindex-data -->
+
+    <section class="row subindex-pillar" data-subindex="public-finance">
+      <div class="col-sm-6 col-sm-offset-1 subindex-description">
+        <h4>Public Finance</h4>
+        <p>
+          Public finance is one of two ways of transferring a
+          country’s financial wealth between generations. Private transfers, such as paying for a child's education, or inheritance, can also take place, but mostly between family members. Public finance is, however, an underpublicized means of transferring resources between generations. That is due in part to the technical nature of public finance and the lack of understanding of the implications of its large liabilities. On the other hand the lack of visibility of public finance issues stems from the fact that a large share of these liabilities are implicit: they have not yet been realized, although they have been pledged. In several countries the value of unfunded liabilities in pension payments or health care, for instance, is double the size of the public debt.
+          The first part of the Public Finance pillar examines explicit public finance liabilities - the debt left to pay back or rollover, the deficits left to curb, the remaining ability to borrow and the fiscal savings. The second part includes the fiscal gap, or implicit liabilities, and the long-term demographic trends that will jointly determine budgetary evolution.
+        </p>
+      </div>
+      <div class="col-sm-4 pillar-data">
+        <h4>Public Finance Pillar Data</h4>
+        <section class="row">
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Overall</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Explicit Liability</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Implicit Liabilities</h5>
+          </div><!-- /.pillar-ranking -->
+        </section>
+      </div>
+    </section><!-- /.subindex-pillar#public-finance -->
+
+    <section class="row subindex-pillar" data-subindex="economic-opportunities">
+      <div class="col-sm-6 col-sm-offset-1 subindex-description">
+        <h4>Economic Opportunities</h4>
+        <p>
+          The best remedy for underinvestment in education
+          and training, for unemployment and low wages, as
+          well as for health conditions arguably remains economic
+          growth and investment. They will help the state
+          finance new endeavors, allow businesses to hire -
+          and indeed the correlation between the Youth Now
+          Sub-Index and income per capita is over 0.8. Therefore, economic opportunity will be a key driver of youth conditions in the future. Moreover, growth will ease the constraint brought about by public finance developments.
+          The Economic Opportunities pillar looks at these issues in two ways: (1) Economic Cycle and (2) Sustainability.
+        </p>
+      </div>
+      <div class="col-sm-4 pillar-data">
+        <h4>Economic Opportunities Pillar Data</h4>
+        <section class="row">
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Overall</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Explicit Liability</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Implicit Liabilities</h5>
+          </div><!-- /.pillar-ranking -->
+        </section>
+      </div>
+    </section><!-- /.subindex-pillar#economic-opportunities -->
+
+    <section class="row subindex-pillar" data-subindex="political-weight">
+      <div class="col-sm-6 col-sm-offset-1 subindex-description">
+        <h4>Political Weight</h4>
+        <p>
+          The Political Weight pillar asks if youth have been
+          listened to, if they are listened to now, and if it is likely
+          that they will be able to voice their interests and
+          shape public policy in the coming years.
+        </p>
+      </div>
+      <div class="col-sm-4 pillar-data">
+        <h4>Political Weight Pillar Data</h4>
+        <section class="row">
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Overall</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Explicit Liability</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Implicit Liabilities</h5>
+          </div><!-- /.pillar-ranking -->
+        </section>
+      </div>
+    </section><!-- /.subindex-pillar#political-weight -->
+
+    <section class="row" id="youth-now-subindex-data">
+      <h4 class="data-cat-header white">Youth Now Subindices</h4>
+      <div class="col-xs-6 col-sm-2 subindex col-sm-offset-1 youth-now-subindex" id="early-education">
+        <div class="score">
+          <div class="icon">
+          </div>
+          <h3>00</h3>
+          <h5 class="subheading">Early Education</h5>
+        </div>
+        <div class="learn-more">
+          View Subindex pillars
+        </div>
+      </div><!-- /.youth-now-subindex -->
+      <div class="col-xs-6 col-sm-2 subindex youth-now-subindex" id="university-and-skills">
+        <div class="score">
+          <div class="icon">
+          </div>
+          <h3>00</h3>
+          <h5 class="subheading">University and Skills</h5>
+        </div>
+        <div class="learn-more">
+          View Subindex pillars
+        </div>
+      </div><!-- /.youth-now-subindex -->
+      <div class="col-xs-6 col-sm-2 subindex youth-now-subindex" id="access-to-employment">
+        <div class="score">
+          <div class="icon">
+          </div>
+          <h3>00</h3>
+          <h5 class="subheading">Access to Employment</h5>
+        </div>
+        <div class="learn-more">
+          View Subindex pillars
+        </div>
+      </div><!-- /.youth-now-subindex -->
+      <div class="col-xs-6 col-sm-2 subindex youth-now-subindex" id="working-and-living">
+        <div class="score">
+          <div class="icon">
+          </div>
+          <h3>00</h3>
+          <h5 class="subheading">Work and Living Conditions</h5>
+        </div>
+        <div class="learn-more">
+          View Subindex pillars
+        </div>
+      </div><!-- /.youth-now-subindex -->
+      <div class="col-xs-6 col-sm-2 subindex youth-now-subindex" id="health-and-wellbeing">
+        <div class="score">
+          <div class="icon">
+          </div>
+          <h3>00</h3>
+          <h5 class="subheading">Health and Wellbeing</h5>
+        </div>
+        <div class="learn-more">
+          View Subindex pillars
+        </div>
+      </div><!-- /.youth-now-subindex -->
+    </section><!-- /#youth-now-subindex-data -->
+
+    <section class="row subindex-pillar" data-subindex="early-education">
+      <div class="col-sm-6 col-sm-offset-1 subindex-description">
+        <h4>Early Education</h4>
+        <p>
+          It’s impossible to examine the condition of young people ages 15 to 29 without reference to their past - their early education and how well it has equipped them for adulthood, allowed them to successfully enter more advanced studies or employment, as well as the circumstances in which they have done so. The Early Education pillar focuses on primary school enrollment until the end of lower secondary education, which in all countries ends at around the age of 15. The pillar is intended to capture the quality of the upbringing with which youths will enter early adulthood.
+        </p>
+      </div>
+      <div class="col-sm-4 pillar-data">
+        <h4>Early Education Pillar Data</h4>
+        <section class="row">
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Overall</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Access</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Quality</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Transition</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Conditions</h5>
+          </div><!-- /.pillar-ranking -->
+        </section>
+      </div>
+    </section><!-- /.subindex-pillar#early-education -->
+
+    <section class="row subindex-pillar" data-subindex="university-and-skills">
+      <div class="col-sm-6 col-sm-offset-1 subindex-description">
+        <h4>University and Skills</h4>
+        <p>
+          Once reserved for the happy few, university education
+          is now a crucial step toward employment.
+          The University and Skills pillar aims to evaluate countries on the average level of skills they afford youth in their nation. University education provides a wide array of skills, from job opportunities and tools to become an informed citizen
+          to building a large social and professional network.
+          We often tend to focus on the quality of universities,
+          as relayed by large rankings (QS, Tokyo). From
+          a country’s youth perspective, these attributes are meaningless if access to these institutions is not widespread because of their cost, selectivity and if
+          students will likely drop out because they don’t find
+          what they want in these programs. If the opportunities after graduation don’t justify the time and financial commitment of studying a university degree is not viable, and that can change everything.        </p>
+      </div>
+      <div class="col-sm-4 pillar-data">
+        <h4>University and Skills Pillar Data</h4>
+        <section class="row">
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Overall</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Completion</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Quality</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Cost</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Vocational</h5>
+          </div><!-- /.pillar-ranking -->
+        </section>
+      </div>
+    </section><!-- /.subindex-pillar#university-and-skills -->
+
+    <section class="row subindex-pillar" data-subindex="access-to-employment">
+      <div class="col-sm-6 col-sm-offset-1 subindex-description">
+        <h4>Access to Employment</h4>
+        <p>
+          Converting an educational background into a professional opportunity is without a doubt one of the
+          greatest challenges facing young people. On the
+          one hand, the educational training needs to match
+          the needs of the labor market. On the other hand the
+          labor market needs enough openings to accommodate
+          incoming young professionals. Access to work
+          is a key issue faced by young people, and a serious
+          one. The research of several scholars, most notably
+          Louis Chauvel, have shown that entering a weak labor
+          market leads to a permanent loss of skills and
+          revenue.
+        </p>
+      </div>
+      <div class="col-sm-4 pillar-data">
+        <h4>Access to Employment Pillar Data</h4>
+        <section class="row">
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Overall</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Unenployment</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Entrepreneurship</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Underemployment</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Exclusion</h5>
+          </div><!-- /.pillar-ranking -->
+        </section>
+      </div>
+    </section><!-- /.subindex-pillar#access-to-employment -->
+
+    <section class="row subindex-pillar" data-subindex="working-and-living">
+      <div class="col-sm-6 col-sm-offset-1 subindex-description">
+        <h4>Working and Living Conditions</h4>
+        <p>
+          Converting an educational background into a professional opportunity is without a doubt one of the
+          greatest challenges facing young people. On the
+          one hand, the educational training needs to match
+          the needs of the labor market. On the other hand the
+          labor market needs enough openings to accommodate
+          incoming young professionals. Access to work
+          is a key issue faced by young people, and a serious
+          one. The research of several scholars, most notably
+          Louis Chauvel, have shown that entering a weak labor
+          market leads to a permanent loss of skills and
+          revenue.
+        </p>
+      </div>
+      <div class="col-sm-4 pillar-data">
+        <h4>Working and Living Conditions Pillar Data</h4>
+        <section class="row">
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Overall</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Entry Wages</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Skill Building</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Wages</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Financial Vulnerability</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Access to Housing</h5>
+          </div><!-- /.pillar-ranking -->
+        </section>
+      </div>
+    </section><!-- /.subindex-pillar#working-and-living -->
+
+    <section class="row subindex-pillar" data-subindex="health-and-wellbeing">
+      <div class="col-sm-6 col-sm-offset-1 subindex-description">
+        <h4>Health and Wellbeing Conditions</h4>
+        <p>
+          The ability to acquire skills and a stable job does not
+          tell the whole story. In some countries where students
+          perform the best, suicide rates are high. In others,
+          where people work the most, they also report poor
+          health. The Health and Wellbeing pillars go beyond
+          the education-employment nexus to take into account
+          an individual’s ability to live well.
+        </p>
+      </div>
+      <div class="col-sm-4 pillar-data">
+        <h4>Health and Wellbeing Conditions Pillar Data</h4>
+        <section class="row">
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Overall</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Social</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Personal</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Freedom</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Wellbeing</h5>
+          </div><!-- /.pillar-ranking -->
+          <div class="col-xs-3 col-sm-4 pillar-ranking">
+            <h3>00</h3>
+            <h5 class="subheading">Health</h5>
+          </div><!-- /.pillar-ranking -->
+        </section>
+      </div>
+    </section><!-- /.subindex-pillar#working-and-living -->
+
+  </div><!-- /.container-fluid#subindex-pillar-data -->
+{{ cms:asset:layout_slug:js:html_tag }}
+{{ cms:file:youtho_index_pillars.json }}
+</div><!-- /.content-wrap -->
+{{ cms:snippet:footer }}
