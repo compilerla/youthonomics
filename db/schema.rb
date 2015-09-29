@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150820001259) do
+ActiveRecord::Schema.define(version: 20150929171318) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -134,5 +134,18 @@ ActiveRecord::Schema.define(version: 20150820001259) do
 
   add_index "comfy_cms_snippets", ["site_id", "identifier"], name: "index_comfy_cms_snippets_on_site_id_and_identifier", unique: true, using: :btree
   add_index "comfy_cms_snippets", ["site_id", "position"], name: "index_comfy_cms_snippets_on_site_id_and_position", using: :btree
+
+  create_table "countries", force: :cascade do |t|
+    t.integer "score"
+    t.integer "rank"
+    t.string  "country"
+    t.integer "income"
+    t.integer "gni_pc"
+    t.integer "rank_now"
+    t.float   "youthnow"
+    t.integer "rank_yo"
+    t.float   "youthoutlook"
+    t.float   "youtho_index"
+  end
 
 end

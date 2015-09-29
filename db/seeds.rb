@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+file = Rails.root.join("db", "youtho_index_main_metrics.json")
+opened = File.read(file)
+data_hash = JSON.parse(opened)
+data_hash.each do |country_data|
+  Country.create(country_data)
+end
