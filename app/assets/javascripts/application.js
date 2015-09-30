@@ -12,7 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require underscore
 //= require bootstrap
 //= require jasny-bootstrap
+//= require handlebars.runtime
+//= require_tree ./templates
 //= require_tree .

@@ -488,3 +488,57 @@
   width:100%;
   height:61.8vh; 
 }
+
+.map-popup {
+  h1 {
+    font-size:1.414rem;
+  }
+
+  .circle {
+    border-radius: 30px;
+    border: 1px solid;
+    color:#fff;
+    content: '';
+    display: inline-block;
+    height: 25px;
+    line-height:25px;
+    margin-right: 5px;
+    text-align:center;
+    width: 25px;
+    vertical-align:middle;
+
+    &.high-ranking {
+      border: 1px solid #FF1C2D;
+      background-color: #FF1C2D;
+    }
+
+    &.avg-ranking {
+      border: 1px solid #FF7781;
+      background-color: #FF7781;
+    }
+
+    &.low-ranking {
+      border: 1px solid #524445;
+      background-color: #524445;
+    }
+  }
+
+  .circle-desc {
+    display: inline-block;
+    font-size: 1.414rem;
+    color: #9b9b9b;
+    vertical-align: middle;
+  }
+
+  dl {
+    margin-bottom:5px;
+
+    dt {
+
+    }
+
+    dd {
+      color: #9b9b9b;
+    }
+  }
+}

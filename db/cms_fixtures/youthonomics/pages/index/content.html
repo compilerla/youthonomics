@@ -53,7 +53,7 @@
 
   <div class="container-fluid" id="homepage-map">
     <section class="row">
-      <div id='map'></div>
+      <div id="map"></div>
     </section>
     <section class="row" id="legend">
       <h5 class="small">Ranking Legend</h5>
@@ -166,17 +166,18 @@
   $(document).ready(function(){
     L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
     var map = L.mapbox.map('map', 'nonphotoblue.245216c2')
-      .setView([60.16326, 8.89187], 3);
+      .setView([41, -20], 3);
+
+    map.scrollWheelZoom.disable();
 
     var countriesData = {{ cms:helper:country_data }};
     var average = averageScore(countriesData);
     var featureData = countriesData.map(function(countryData){
       return {
         type: 'Feature',
-        properties: {
-          'title': countryData.country,
+        properties: _.extend({
           'marker-color': chooseColor(countryData.score, average)
-        },
+        }, countryData),
         geometry: {
           type: 'Point',
           coordinates: [countryData.lng, countryData.lat]
@@ -190,6 +191,11 @@
 
     })
     .addTo(map);
+
+    featureLayer.eachLayer(function(layer) {
+      var content = HandlebarsTemplates['country-popup'](layer.feature.properties);
+      layer.bindPopup(content);
+  });
   });
 </script>
 
