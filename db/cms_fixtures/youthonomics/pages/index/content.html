@@ -147,11 +147,18 @@
 </div><!-- /.content-wrap -->
 
 <script>
-  $(document).ready(function(){
-    var map = L.mapbox.map('map', 'corwinstephen.nipd92ag', {
-      accessToken: 'pk.eyJ1IjoiY29yd2luc3RlcGhlbiIsImEiOiJjaWY1dDlpYzMwMm5xdTNtNWN1aGs1MGtpIn0.MOZJh0GwXwprtC2HO0-Klw'
-    });
-  });
+  // Provide your access token
+  L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
+  // Create a map in the div #map
+  L.mapbox.map('map', 'nonphotoblue.nj5g9lgi');
+  // Test Marker
+  L.marker([37.9, -77], {
+    icon: L.mapbox.marker.icon({
+        'marker-size': 'large',
+        'marker-symbol': 'bus',
+        'marker-color': '#fa0'
+    })
+  }).addTo(map);
 </script>
 
 {{ cms:snippet:footer }}
