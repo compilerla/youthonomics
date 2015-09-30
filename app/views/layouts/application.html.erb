@@ -3,10 +3,10 @@
 <head>
   <title>Youthonomics</title>
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
   <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="initial-scale=1">
 </head>
@@ -14,5 +14,20 @@
 
 <%= yield %>
 
+
+<script>
+  // Provide your access token
+  L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
+  // Create a map in the div #map
+  L.mapbox.map('map', 'nonphotoblue.nj5g9lgi');
+  // Test Marker
+  L.marker([37.9, -77], {
+    icon: L.mapbox.marker.icon({
+        'marker-size': 'large',
+        'marker-symbol': 'bus',
+        'marker-color': '#fa0'
+    })
+}).addTo(map);
+</script>
 </body>
 </html>
