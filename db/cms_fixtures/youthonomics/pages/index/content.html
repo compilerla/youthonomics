@@ -149,10 +149,49 @@
 </div><!-- /.content-wrap -->
 
 <script>
+  function chooseColor(score, average){
+    if(score >= average){
+      return '#FF1C2D';
+    } else if(score){
+      return '#524445';
+    }
+  }
+
+  function averageScore(countries){
+    var total = 0;
+    for(var i = 0; i < countries.length; i++){
+      total += countries[i].score;
+    }
+    return total / countries.length;
+  }
+
   $(document).ready(function(){
-    var map = L.mapbox.map('map', 'nonphotoblue.245216c2', {
-      accessToken: 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA'
+    L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
+    var map = L.mapbox.map('map', 'nonphotoblue.245216c2')
+      .setView([60.16326, 8.89187], 3);
+
+    var countriesData = {{ cms:helper:country_data }};
+    var average = averageScore(countriesData);
+    var featureData = countriesData.map(function(countryData){
+      return {
+        type: 'Feature',
+        properties: {
+          'title': countryData.country,
+          'marker-color': chooseColor(countryData.score, average)
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [countryData.lng, countryData.lat]
+        }
+      }
     });
+    
+    var featureLayer = L.mapbox.featureLayer({
+      type: 'FeatureCollection',
+      features: featureData,
+
+    })
+    .addTo(map);
   });
 </script>
 
