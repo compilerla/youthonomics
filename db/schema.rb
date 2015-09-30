@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150929171318) do
+ActiveRecord::Schema.define(version: 20150930220457) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -146,6 +146,8 @@ ActiveRecord::Schema.define(version: 20150929171318) do
     t.integer "rank_yo"
     t.float   "youthoutlook"
     t.float   "youtho_index"
+    t.float   "lat"
+    t.float   "lng"
   end
 
 end

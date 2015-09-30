@@ -148,9 +148,32 @@
 
 <script>
   $(document).ready(function(){
-    var map = L.mapbox.map('map', 'nonphotoblue.245216c2', {
-      accessToken: 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA'
+    L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
+    var map = L.mapbox.map('map', 'nonphotoblue.245216c2')
+      .setView([60.16326, 8.89187], 3);
+
+    var countriesData = {{ cms:helper:country_data }};
+    var featureData = countriesData.map(function(countryData){
+      return {
+        type: 'Feature',
+        properties: {
+          'title': countryData.country,
+          'marker-color': '#000000',
+          'marker-symbol': 'ferry'
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [countryData.lng, countryData.lat]
+        }
+      }
     });
+    
+    var featureLayer = L.mapbox.featureLayer({
+      type: 'FeatureCollection',
+      features: featureData,
+
+    })
+    .addTo(map);
   });
 </script>
 
