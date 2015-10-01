@@ -486,12 +486,25 @@
 
 #map {
   width:100%;
-  height:61.8vh; 
+  height:61.8vh;
+  font-family: 'Fira Sans'
 }
 
 .map-popup {
+  padding: .707rem 0 0 0;
   h1 {
     font-size:1.414rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .7px;
+  }
+
+  .ranking-row {
+    overflow: auto;
+    .subheading {
+      margin-top: .707rem;
+      font-weight: bold;
+    }
   }
 
   .circle {
@@ -500,12 +513,16 @@
     color:#fff;
     content: '';
     display: inline-block;
-    height: 25px;
-    line-height:25px;
-    margin-right: 5px;
+    line-height: 45px;
+    margin-right: .707rem;
     text-align:center;
-    width: 25px;
-    vertical-align:middle;
+    width: 45px;
+    height: 45px;
+    font-size: 1.414rem;
+    font-weight: bold;
+    vertical-align: middle;
+    letter-spacing: .7px;
+    float: left;
 
     &.high-ranking {
       border: 1px solid #FF1C2D;
@@ -523,6 +540,10 @@
     }
   }
 
+  a.btn {
+    color: #3D3D3D;
+  }
+
   .circle-desc {
     display: inline-block;
     font-size: 1.414rem;
@@ -531,14 +552,25 @@
   }
 
   dl {
-    margin-bottom:5px;
-
-    dt {
-
+    margin: 5px 0 0 0;
+    overflow: auto;
+    .icon {
+      width: 45px;
+      height: 45px;
+      display: block;
+      float: left;
+      margin-right: .707rem;
     }
-
-    dd {
-      color: #9b9b9b;
+    .metric {
+      font-size: 1.414rem;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      line-height: 20px;
+    }
+    .subheading {
+      font-size: .707rem;
+      letter-spacing: .7px;
+      color: #797979;
     }
   }
 }

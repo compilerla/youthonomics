@@ -122,6 +122,12 @@
    border: 1px solid $white;
  }
 
+ .outline-dark {
+   color: $d_grey;
+   background: none;
+   border: 1px solid $d_grey;
+ }
+
  .fill-red {
    color: $white;
    background: $main_red;
