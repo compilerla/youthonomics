@@ -599,6 +599,23 @@ small, .font_small {
     }
   }
 
+  #mc_embed_signup form {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #mc_embed_signup form .mc-field-group {
+    width: 45%;
+    float: left;
+    clear: none;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+
+
 } // end 768
 
 @media (screen and min-width: 992px) {
