@@ -8,6 +8,8 @@
 
 .container-fluid#home-hero {
   background-color: #4D4D4D;
+  background-image: url(asset-path('homepage_hero.jpg'));
+  background-size: cover;
 }
 
 .container-fluid#report-section {
@@ -30,6 +32,12 @@
 .container-fluid#contribute {
   #visa-heading {
     background-color: #4D4D4D;
+    background-image: url(asset-path('visa_hero.jpg'));
+    background-size: cover;
+    background-position: 21% 0;
+  }
+  header {
+    padding: 2.827rem .707rem;
   }
 }
 
@@ -484,9 +492,18 @@
 
 }
 
+/*------------------------------------*\
+    #MAP-HOMEPAGE
+\*------------------------------------*/
+
+/**
+* Map Styling
+*/
+
 #map {
   width:100%;
-  height:61.8vh;
+  // height:61.8vh;
+  height: 70vh;
   font-family: 'Fira Sans'
 }
 

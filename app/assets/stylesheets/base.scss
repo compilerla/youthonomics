@@ -39,10 +39,10 @@
  */
 
  body {
-   padding-top: 71px;
+   padding-top: 50px;
  }
 
- @media (screen and min-width: 758px) {
+ @media (screen and min-width: 768px) {
    body {
      padding-top: 79px;
    }
@@ -268,7 +268,8 @@ small, .font_small {
 }
 
 .navbar-brand {
-  padding-top: 10px;
+  padding-top: 2px;
+  padding: 0;
   display: block;
   height: auto;
   margin: 0 auto;
@@ -283,7 +284,7 @@ small, .font_small {
 
 .navbar-toggle {
   position: absolute;
-  top: 10px;
+  top: 3px;
   right: 0;
   width: 25px;
   padding: 0;
@@ -356,6 +357,7 @@ small, .font_small {
 */
 
 #supporters {
+  display: none;
   margin: 1.414rem 0 1.999rem;
   header h4 {
     text-transform: uppercase;
