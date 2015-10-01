@@ -120,56 +120,166 @@
    color: $white;
    background: none;
    border: 1px solid $white;
+   -webkit-transition: background .3s, color .3s;
+   -moz-transition: background .3s, color .3s;
+   -o-transition: background .3s, color .3s;
+   transition: background .3s, color .3s;
+   &:hover {
+     color: $d_grey;
+     background: rgba(255,255,255,.5);
+     -webkit-transition: background .3s, color .3s;
+     -moz-transition: background .3s, color .3s;
+     -o-transition: background .3s, color .3s;
+     transition: background .3s, color .3s;
+   }
  }
 
  .outline-dark {
    color: $d_grey;
    background: none;
    border: 1px solid $d_grey;
+   opacity: 1;
+   -webkit-transition: background .3s, color .3s;
+   -moz-transition: background .3s, color .3s;
+   -o-transition: background .3s, color .3s;
+   transition: background .3s, color .3s;
+   &:hover {
+     color: $white;
+     background: rgba(255,255,255,.5);
+     -webkit-transition: background .3s, color .3s;
+     -moz-transition: background .3s, color .3s;
+     -o-transition: background .3s, color .3s;
+     transition: background .3s, color .3s;
+   }
  }
 
  .fill-red {
    color: $white;
    background: $main_red;
    border: 1px solid $main_red;
+   opacity: 1;
+   -webkit-transition: background .3s, color .3s;
+   -moz-transition: background .3s, color .3s;
+   -o-transition: background .3s, color .3s;
+   transition: background .3s, color .3s;
+   &:hover {
+     color: $main_red;
+     background: $lig1_red;
+     -webkit-transition: background .3s, color .3s;
+     -moz-transition: background .3s, color .3s;
+     -o-transition: background .3s, color .3s;
+     transition: background .3s, color .3s;
+   }
  }
 
  .outline-red {
    color: $main_red;
    background: none;
    border: 1px solid $main_red;
+   opacity: 1;
+   -webkit-transition: background .3s, color .3s;
+   -moz-transition: background .3s, color .3s;
+   -o-transition: background .3s, color .3s;
+   transition: background .3s, color .3s;
+   &:hover {
+     color: $white;
+     background: $main-red;
+     -webkit-transition: background .3s, color .3s;
+     -moz-transition: background .3s, color .3s;
+     -o-transition: background .3s, color .3s;
+     transition: background .3s, color .3s;
+   }
  }
 
  .fill-dark-red {
    color: $white;
    background: $dark_red;
    border: 1px solid $dark_red;
+   opacity: 1;
+   -webkit-transition: opacity .3s;
+   -moz-transition: opacity .3s;
+   -o-transition: opacity .3s;
+   transition: opacity .3s;
+   &:hover {
+     opacity: .5;
+     -webkit-transition: opacity .3s;
+     -moz-transition: opacity .3s;
+     -o-transition: opacity .3s;
+     transition: opacity .3s;
+   }
  }
 
  .fill-med1-red {
    color: $white;
    background: $med1_red;
    border: 1px solid $med1_red;
+   opacity: 1;
+   -webkit-transition: opacity .3s;
+   -moz-transition: opacity .3s;
+   -o-transition: opacity .3s;
+   transition: opacity .3s;
+   &:hover {
+     opacity: .5;
+     -webkit-transition: opacity .3s;
+     -moz-transition: opacity .3s;
+     -o-transition: opacity .3s;
+     transition: opacity .3s;
+   }
  }
 
  .fill-med2-red {
    color: $white;
    background: $med2_red;
    border: 1px solid $med2_red;
+   opacity: 1;
+   -webkit-transition: opacity .3s;
+   -moz-transition: opacity .3s;
+   -o-transition: opacity .3s;
+   transition: opacity .3s;
+   &:hover {
+     opacity: .5;
+     -webkit-transition: opacity .3s;
+     -moz-transition: opacity .3s;
+     -o-transition: opacity .3s;
+     transition: opacity .3s;
+   }
  }
 
  .fill-lig1-red {
    color: $white;
    background: $lig1_red;
    border: 1px solid $lig1_red;
+   opacity: 1;
+   -webkit-transition: opacity .3s;
+   -moz-transition: opacity .3s;
+   -o-transition: opacity .3s;
+   transition: opacity .3s;
+   &:hover {
+     opacity: .5;
+     -webkit-transition: opacity .3s;
+     -moz-transition: opacity .3s;
+     -o-transition: opacity .3s;
+     transition: opacity .3s;
+   }
  }
 
  .fill-lig2-red {
    color: $white;
    background: $lig2_red;
    border: 1px solid $lig2_red;
+   opacity: 1;
+   -webkit-transition: opacity .3s;
+   -moz-transition: opacity .3s;
+   -o-transition: opacity .3s;
+   transition: opacity .3s;
+   &:hover {
+     opacity: .5;
+     -webkit-transition: opacity .3s;
+     -moz-transition: opacity .3s;
+     -o-transition: opacity .3s;
+     transition: opacity .3s;
+   }
  }
-
 
 
 
@@ -249,6 +359,20 @@ small, .font_small {
   text-transform: uppercase;
 }
 
+a {
+  opacity: 1;
+  -webkit-transition: opacity .3s, text-decoration .3s;
+  -moz-transition: opacity .3s, text-decoration .3s;
+  -o-transition: opacity .3s, text-decoration .3s;
+  transition: opacity .3s, text-decoration .3s;
+  &:hover {
+    opacity: .5;
+    -webkit-transition: opacity .3s, text-decoration .3s;
+    -moz-transition: opacity .3s, text-decoration .3s;
+    -o-transition: opacity .3s, text-decoration .3s;
+    transition: opacity .3s, text-decoration .3s;
+  }
+}
 
 
 
@@ -279,7 +403,6 @@ small, .font_small {
     max-height: 45px;
     margin: 0 auto;
   }
-
 }
 
 .navbar-toggle {
@@ -463,7 +586,23 @@ small, .font_small {
   .check-it-cta {
     position: absolute;
     bottom: 1.414rem;
-    a { font-weight: normal; }
+    a {
+      font-weight: normal;
+      opacity: 1;
+      -webkit-transition: opacity .3s;
+      -moz-transition: opacity .3s;
+      -o-transition: opacity .3s;
+      transition: opacity .3s;
+      &:hover {
+        color: $white;
+        opacity: .5;
+        text-decoration: none;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+      }
+    }
     img { height: 45px; }
   }
 }
@@ -511,6 +650,21 @@ small, .font_small {
   padding: 0;
 }
 
+
+/**
+* Content-panel JS
+*/
+
+.js {
+  .team-panel {}
+
+  .blog-panel {
+    .check-it-cta {
+      opacity: 0;
+    }
+  }
+}
+
 /**
 * Component Breakpoints
 */
@@ -543,7 +697,7 @@ small, .font_small {
 }
 
 @media (screen and min-width: 768px) {
-  .navbar-brand { padding-top: 15px; }
+  .navbar-brand { padding-top: 15px; margin-left: 0; padding-left: 15px;}
 
   .navbar-collapse {
     background: $white;
@@ -716,3 +870,116 @@ section.row header {
     margin-bottom: 1.998rem;
   }
 }
+
+
+
+
+
+/*------------------------------------*\
+    #ANIMATIONS
+\*------------------------------------*/
+
+
+/**
+* Sections
+*/
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
+    animation-duration: .3s;
+    -webkit-animation-duration: .3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+ }
+
+ @keyframes fadeInLeft {
+     0% {opacity: 0;transform: translateX(-450px);}
+     40% {opacity: 0;transform: translateX(-450px);}
+     100% {opacity: 1;transform: translateX(0);
+     }
+ }
+
+ @-webkit-keyframes fadeInLeft {
+     0% {opacity: 0;transform: translateX(-450px);}
+     40% {opacity: 0;transform: translateX(-450px);}
+     100% {opacity: 1;transform: translateX(0);}
+ }
+
+ .fadeOutLeft {
+     animation-name: fadeOutLeft;
+     -webkit-animation-name: fadeOutLeft;
+     animation-duration: .3s;
+     -webkit-animation-duration: .3s;
+     animation-fill-mode: forwards;
+     -webkit-animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeOutLeft {
+      0% {opacity: 1;transform: translateX(0);}
+      40% {opacity: 1;transform: translateX(0);}
+      100% {opacity: 0;transform: translateX(-450px);
+      }
+  }
+
+  @-webkit-keyframes fadeOutLeft {
+      0% {opacity: 1;transform: translateX(0);}
+      40% {opacity: 1;transform: translateX(0);}
+      100% {opacity: 0;transform: translateX(-450px);}
+  }
+
+.fadeInDown {
+   animation-name: fadeInDown;
+   -webkit-animation-name: fadeInDown;
+   animation-duration: 1.2s;
+   -webkit-animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+ }
+  @keyframes fadeInDown {
+     0% {opacity: 0;transform: translateY(-30px);}
+     50% {opacity: 0;transform: translateY(-30px);}
+     100% {opacity: 1;transform: translateY(0);}
+  }
+  @-webkit-keyframes fadeInDown {
+     0% {opacity: 0;-webkit-transform: translateY(-30px);}
+     50% {opacity: 0;-webkit-transform: translateY(-30px);}
+     100% {opacity: 1;-webkit-transform: translateY(0);}
+  }
+
+.fadeInUp {
+     animation-name: fadeInUp;
+     -webkit-animation-name: fadeInUp;
+     animation-duration: 2.5s;
+     -webkit-animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+ }
+ @keyframes fadeInUp {
+     0% {opacity: 0;transform: translateY(30px);}
+     60% {opacity: 0;transform: translateY(30px);}
+     100% {opacity: 1;transform: translateY(0);}
+ }
+ @-webkit-keyframes fadeInUp {
+     0% {opacity: 0;-webkit-transform: translateY(30px);}
+     60% {opacity: 0;-webkit-transform: translateY(30px);}
+     100% {opacity: 1;-webkit-transform: translateY(0);}
+ }
+.fadeInRight {
+     animation-name: fadeInRight;
+     -webkit-animation-name: fadeInRight;
+     animation-duration: 2.8s;
+     -webkit-animation-duration: 2.8s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+ }
+ @keyframes fadeInRight {
+     0% {opacity: 0;transform: translateY(30px);}
+     66% {opacity: 0;transform: translateY(30px);}
+     100% {opacity: 1;transform: translateY(0);}
+ }
+ @-webkit-keyframes fadeInRight {
+     0% {opacity: 0;-webkit-transform: translateX(30px);}
+     66% {opacity: 0;-webkit-transform: translateX(30px);}
+     100% {opacity: 1;-webkit-transform: translateX(0);}
+ }
