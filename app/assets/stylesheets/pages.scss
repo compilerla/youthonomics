@@ -411,6 +411,25 @@
     }
   }
 
+  .icon.icon-composite-score {
+    background: #fff;
+    border: 3px solid white;
+    img {
+      width: 100%;
+    }
+    &.high-ranking {
+      border: 3px solid #FF1C2D;
+    }
+
+    &.avg-ranking {
+      border: 3px solid #FF7781;
+    }
+
+    &.low-ranking {
+      border: 3px solid #524445;
+    }
+  }
+
   #global-index-rating,
   #youth-outlook {
     width: 45%;
