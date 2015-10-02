@@ -614,7 +614,6 @@ a {
 .team-panel {
   background: $white;
   height: auto;
-  margin-bottom: 5rem;
   border: 0;
   padding: 0;
   .team-photo {
@@ -625,18 +624,20 @@ a {
   .content {
     position: absolute;
     z-index: 10;
-    bottom: -5rem;
-    left: .707rem;
-    width: 85%;
+    bottom: 1rem;
+    left: 0;
     padding: 0;
+    padding-left: .707rem;
+    width: 100%;
+    background-color: rgba(0,0,0, .7);
+    color: #fff;
     h5, h6 {
-      color: $d_grey;
       text-align: left;
-      font-size: 1rem;
+      font-size: 1.414rem;
     }
     h5 {letter-spacing: 1px;}
     .subheading {
-      font-size: .707rem;
+      font-size: 1rem;
       font-weight: normal;
       letter-spacing: normal;
       text-transform: none;
@@ -733,7 +734,7 @@ a {
   }
 
   .team-panel {
-    height: 320px;
+    height: 420px;
     overflow: hidden;
     margin-bottom: 5rem;
     .team-photo {
@@ -748,8 +749,9 @@ a {
       bottom: 0;
       width: 85%;
       padding: 0;
+      background-color: transparent;
       h5, h6 { color: $d_grey; max-width: 220px; }
-      p {display: block; color: $d_grey; max-width: 220px; }
+      p {display: none; color: $d_grey; max-width: 220px; }
     }
   }
   .team-panel:nth-child(even) {
@@ -795,21 +797,19 @@ a {
   .blog-panel, .social-media-panel {height: 400px;}
 
   .team-panel {
-    height: 400px;
-    margin-bottom: 0;
+    height: auto;
+    margin-bottom: 1.414rem;
     .team-photo {
       float: none;
       width: 100%;
     }
     .content {
-      position: absolute;
+      position: relative;
       z-index: 10;
-      top: 1.414rem;
-      left: 1.414rem;
-      right: initial;
+      padding: 1.414rem;
       width: 85%;
       padding: 0;
-      h5, h6 { color: $white; max-width: 220px; }
+      h5, h6 { color: $d_grey; max-width: 220px; }
       p {display: inherit; color: $white;}
     }
   }
