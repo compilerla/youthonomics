@@ -107,6 +107,12 @@
   .action-panel {
     height: 300px;
   }
+
+  .container-fluid#contribute {
+    #visa-heading {
+      padding-bottom: 3.998rem;
+    }
+  }
 }
 
 @media (screen and min-width: 992px) {
@@ -129,6 +135,16 @@
   background: #4D4D4D;
 }
 
+
+/**
+* Homepage Section Breakpoints
+*/
+
+@media (screen and min-width: 768px) {
+  .container-fluid#about-hero {
+    padding-bottom: 3.998rem;
+  }
+}
 
 
 
@@ -452,6 +468,7 @@
   }
 
   .row#youth-now-subindex-data {
+    margin-top: 2.827rem;
     padding-bottom: 2.827rem;
     background: #02AFEB;
     color: #fff;
@@ -465,6 +482,7 @@
 
   #youth-outlook-subindex-data,
   #youth-now-subindex-data {
+    margin-bottom: 2.827rem;
     .icon {margin-top: 0;}
     .subheading {clear: left;}
     .learn-more {

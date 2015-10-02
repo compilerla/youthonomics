@@ -764,10 +764,11 @@ a {
   }
 
   #mc_embed_signup form {
-    max-width: 680px;
+    max-width: 850px;
     width: 100%;
     margin: 0 auto;
     display: block;
+    padding: 0;
   }
 
   #mc_embed_signup form .mc-field-group {
@@ -862,8 +863,15 @@ section.row header {
 }
 
 @media (screen and min-width: 768px) {
-  section.row header {
-    padding-top: 2.827rem;
+  section.row header,
+  section.row main {
+    max-width: 880px;
+    padding-top: 3.998rem;
+    padding-bottom: 2.827rem;
+    h1 {
+      font-size: 3.998em;
+      font-size: 3.998rem;
+    }
   }
 
   .content-wrap .container-fluid {
