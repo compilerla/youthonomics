@@ -793,6 +793,16 @@ a {
       .fb img { height: 25px; }
       li { width: 23%;}
     }
+    section.row header,
+    section.row main {
+      max-width: 880px;
+      padding-top: 0;
+      padding-bottom: 0;
+      h1 {
+        font-size: 3.998em;
+        font-size: 3.998rem;
+      }
+    }
   }
 
   .blog-panel, .social-media-panel {height: 400px;}

@@ -552,8 +552,39 @@
 }
 
 
+/**
+* Blog Breakpoints
+*/
 
+@media (screen and min-width: 768px) {
 
+  .container-fluid#country-data #global-index-rating,
+  .container-fluid#country-data #composite-score {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+
+  .container-fluid#country-data #youth-outlook,
+  .container-fluid#country-data #youth-now {
+    width: 100%;
+  }
+
+  .container-fluid#country-data #composite-score {
+    padding-top: 0;
+  }
+
+  .container-fluid#country-data #youth-optimism-ratio {
+    .subheading {
+      clear: left;
+    }
+    .icon {
+      border: 0;
+      margin-top: 0;
+    }
+  }
+
+}
 
 /*------------------------------------*\
     #MAP-HOMEPAGE

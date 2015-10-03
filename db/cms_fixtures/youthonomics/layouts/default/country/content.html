@@ -2,7 +2,7 @@
 <div class="content-wrap map-content">
   <div class="container-fluid" id="country-map">
     <section class="row">
-      country name: {{ cms:page:country }}
+      <div id="map"></div>
     </section>
     <section class="row" id="legend">
       <h5 class="small">Ranking Legend</h5>
@@ -76,7 +76,7 @@
     </section><!-- /#country-data -->
     <section class="row" id="outlook-now-data">
       <h4 class="data-cat-header">Youth Outlook &amp; Youth Now</h4>
-      <div class="col-sm-4 col-sm-offset-2">
+      <div class="col-sm-3 col-sm-offset-3">
         <div class="main-metric-panel panel" id="youth-outlook">
           <div class="metric-score">
             <div class="icon icon-youth-outlook">
@@ -527,4 +527,10 @@
 {{ cms:asset:layout_slug:js:html_tag }}
 {{ cms:file:youtho_index_pillars.json }}
 </div><!-- /.content-wrap -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    var countriesData = {{ cms:helper:country_data }};
+    console.log(countriesData);
+  });
+</script>
 {{ cms:snippet:footer }}
