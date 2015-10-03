@@ -4,29 +4,33 @@
         <header>
           <h1><span class="brand-red">#Youthonomics</span> News!</h1>
         </header>
-        <div class="col-sm-4 panel blog-panel fill-red">
-          <div class="content">
-            <h5>How Guilty Baby Boomers Helped Save X.</h5>
-            <h6 class="subheading">Featured Blog Post</h6>
-            <div class="check-it-cta">
-              <a href="#" class="white">Check it Out {{ cms:file:icon_arrow_r_light.png:image }}</a>
-            </div>
-          </div>
-        </div><!-- /.blog-panel -->
+          <a href="#">
+            <div class="col-sm-4 panel blog-panel fill-red">
+              <div class="content">
+                <h5>How Guilty Baby Boomers Helped Save X.</h5>
+                <h6 class="subheading">Featured Blog Post</h6>
+                <div class="check-it-cta">
+                  <div class="white">Check it Out {{ cms:file:icon_arrow_r_light.png:image }}</div>
+                </div>
+              </div>
+            </div><!-- /.blog-panel -->
+          </a>
         <div class="col-sm-4 panel social-media-panel">
           <div class="media-wrap">
             media post goes here
           </div>
         </div><!-- /.featured-media-panel -->
-        <div class="col-sm-4 panel blog-panel fill-red">
-          <div class="content">
-            <h5>Cities Can Change the Way You Think</h5>
-            <h6 class="subheading">Featured Blog Post</h6>
-            <div class="check-it-cta">
-              <a href="#" class="white">Check it Out {{ cms:file:icon_arrow_r_light.png:image }}</a>
+        <a href="#">
+          <div class="col-sm-4 panel blog-panel fill-red">
+            <div class="content">
+              <h5>Cities Can Change the Way You Think</h5>
+              <h6 class="subheading">Featured Blog Post</h6>
+              <div class="check-it-cta">
+                <div class="white">Check it Out {{ cms:file:icon_arrow_r_light.png:image }}</div>
+              </div>
             </div>
-          </div>
-        </div><!-- /.blog-panel -->
+          </div><!-- /.blog-panel -->
+        </a>
       </section>
   </div><!-- /.container-fluid#youthonomics-news -->
 
@@ -51,7 +55,8 @@
           <p>
             Interested in what's going on at Youthonomics?  Ready to start a global youth movement? Sign up to receive our updates. We promise that they'll be good! We'll never send spam or give away your information.
           </p>
-          <form class="newsletter-form" action="" method="post">
+          {{ cms:snippet:footer_mc_form }}
+          <!-- <form class="newsletter-form" action="" method="post">
             <div class="input-text-container">
               <input type="text" placeholder="First and Last Name" name="name" value="">
             </div>
@@ -61,7 +66,7 @@
             <div class="input-submit-container">
               <input class="btn outline-white" type="submit" name="support" value="get our newsletter">
             </div>
-          </form>
+          </form> -->
         </main>
       </div>
       <div class="col-md-3" id="hash-and-social">
