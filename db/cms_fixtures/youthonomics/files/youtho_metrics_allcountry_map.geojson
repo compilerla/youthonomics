@@ -24578,6 +24578,16 @@
       "id":"KAZ",
       "properties":{
         "name":"Kazakhstan"
+        "YouthOptimism":"15",
+        "rank":"28",
+        "country":"Kazakhstan",
+        "income":"2",
+        "gni_pc":"11670",
+        "Rank_now":"41",
+        "youthnow":"52.0",
+        "Rank_yo":"5",
+        "youthoutlook":"69.0",
+        "youtho_index":"57.7"
       },
       "geometry":{
         "type":"Polygon",
@@ -33794,16 +33804,16 @@
       "id":"POL",
       "properties":{
         "name":"Poland",
-        "YouthOptimism":"15",
-        "rank":"28",
-        "country":"Kazakhstan",
-        "income":"2",
-        "gni_pc":"11670",
-        "Rank_now":"41",
-        "youthnow":"52.0",
-        "Rank_yo":"5",
-        "youthoutlook":"69.0",
-        "youtho_index":"57.7"
+        "YouthOptimism":"46",
+        "rank":"27",
+        "country":"Poland",
+        "income":"1",
+        "gni_pc":"13730",
+        "Rank_now":"25",
+        "youthnow":"66.3",
+        "Rank_yo":"48",
+        "youthoutlook":"41.5",
+        "youtho_index":"58.1"
       },
       "geometry":{
         "type":"Polygon",
