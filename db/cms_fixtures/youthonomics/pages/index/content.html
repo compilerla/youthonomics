@@ -34,18 +34,7 @@
         <h4 class="emphasis-copy">The Youthonomics team has spent more than a year compiling data on 64 countries based on a wide range of indicators to assess how youth-friendly each country is. A nation's ranking is deterined according to current conditions and whether the country is investing in its youth's future. Our goal is to give people the information they need to make better decisions -  whether they should stay where they are or seek a more hopeful future elsewhere.</h4>
       </header>
       <div class="col-md-4 col-md-offset-4" id="country-scroll">
-        <ul>
-          <li>country 1</li>
-          <li>country 2</li>
-          <li>country 3</li>
-          <li>country 4</li>
-          <li>country 5</li>
-          <li>country 6</li>
-          <li>country 7</li>
-          <li>country 8</li>
-          <li>country 9</li>
-          <li>country 10</li>
-          <li>country 11</li>
+        <ul class="country-list">
         </ul>
         <a href="/" class="btn fill-red">view pdf online</a>
         <a href="/" class="btn outline-red">download report</a>
@@ -149,6 +138,15 @@
 </div><!-- /.content-wrap -->
 
 <script>
+
+  function listCountries(data) {
+    console.log('loop through countries and ogranize them from top rank to bottom rank');
+    for (obj in data) {
+      var country = data[obj];
+      $('.country-list').append("<li>" + country.country + "</li>");
+    }
+  }
+
   function chooseColor(score, average){
     if(score >= average){
       return '#FF1C2D';
@@ -166,13 +164,16 @@
   }
 
   $(document).ready(function(){
+    var countriesData = {{ cms:helper:country_data }};
+
+    listCountries(countriesData);
+
     L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
     var map = L.mapbox.map('map', 'nonphotoblue.245216c2')
       .setView([41, -20], 3);
 
     map.scrollWheelZoom.disable();
 
-    var countriesData = {{ cms:helper:country_data }};
     var average = averageScore(countriesData);
     var featureData = countriesData.map(function(countryData){
       return {
@@ -186,7 +187,7 @@
         }
       }
     });
-    
+
     var featureLayer = L.mapbox.featureLayer({
       type: 'FeatureCollection',
       features: featureData,
