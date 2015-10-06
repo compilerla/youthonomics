@@ -138,19 +138,28 @@
 </div><!-- /.content-wrap -->
 
 <script>
+  var countriesData = {{ cms:helper:country_data }};
 
   function listCountries(data) {
-    console.log('loop through countries and ogranize them from top rank to bottom rank');
     for (obj in data) {
       var country = data[obj];
       $('.country-list').append("<li>" + country.country + "</li>");
     }
   }
 
-  function chooseColor(score, average){
-    if(score >= average){
+  function chooseColor(score){
+    var sorted = _.sortBy(countriesData, function(){
+      return countriesData.score;
+    });
+
+    var breakPoint1 = sorted[Math.floor(sorted.length / 3)].score;
+    var breakPoint2 = sorted[Math.floor(sorted.length / 3 * 2)].score;
+
+    if(score >= breakPoint2){
       return '#FF1C2D';
-    } else if(score){
+    } else if(score >= breakPoint1){
+      return '#FF7781';
+    } else {
       return '#524445';
     }
   }
@@ -164,7 +173,6 @@
   }
 
   $(document).ready(function(){
-    var countriesData = {{ cms:helper:country_data }};
 
     listCountries(countriesData);
 
@@ -179,7 +187,7 @@
       return {
         type: 'Feature',
         properties: _.extend({
-          'marker-color': chooseColor(countryData.score, average)
+          'marker-color': chooseColor(countryData.score)
         }, countryData),
         geometry: {
           type: 'Point',

@@ -101,7 +101,7 @@
             <div class="icon icon-youth-outlook">
               {{ cms:file:icon_youth_now.png:image }}
             </div>
-            <h3>{{ cms:page:Rank_now }}</h3>
+            <h3>{{ cms:page:rank_now }}</h3>
             <h5 class="subheading">Youth Now</h5>
           </div>
           <div class="metric-description">
@@ -125,7 +125,7 @@
           <div class="icon">
             {{ cms:file:icon_public_finance.png:image }}
           </div>
-          <h3>00</h3>
+          <h3>{{ cms:page:public_finance }}</h3>
           <h5 class="subheading">Public Finance</h5>
         </div>
         <div class="learn-more">
@@ -137,7 +137,7 @@
           <div class="icon">
             {{ cms:file:icon_econ_outlook.png:image }}
           </div>
-          <h3>00</h3>
+          <h3>{{ cms:page:economic_opportunities }}</h3>
           <h5 class="subheading">Economic Opportunities</h5>
         </div>
         <div class="learn-more">
@@ -149,7 +149,7 @@
           <div class="icon">
             {{ cms:file:icon_political_power.png:image }}
           </div>
-          <h3>00</h3>
+          <h3>{{ cms:page:political_weight }}</h3>
           <h5 class="subheading">Political Weight</h5>
         </div>
         <div class="learn-more">
@@ -255,7 +255,7 @@
           <div class="icon">
             {{ cms:file:icon_early_education.png:image }}
           </div>
-          <h3>00</h3>
+          <h3>{{ cms:page:early_education }}</h3>
           <h5 class="subheading">Early Education</h5>
         </div>
         <div class="learn-more">
@@ -267,7 +267,7 @@
           <div class="icon">
             {{ cms:file:icon_university_education.png:image }}
           </div>
-          <h3>00</h3>
+          <h3>{{ cms:page:university_and_skills }}</h3>
           <h5 class="subheading">University and Skills</h5>
         </div>
         <div class="learn-more">
@@ -279,7 +279,7 @@
           <div class="icon">
             {{ cms:file:icon_access_to_work.png:image }}
           </div>
-          <h3>00</h3>
+          <h3>{{ cms:page:access_to_employment }}</h3>
           <h5 class="subheading">Access to Employment</h5>
         </div>
         <div class="learn-more">
@@ -291,7 +291,7 @@
           <div class="icon">
             {{ cms:file:icon_quality_of_life.png:image }}
           </div>
-          <h3>00</h3>
+          <h3>{{ cms:page:work_and_living_conditions }}</h3>
           <h5 class="subheading">Work and Living Conditions</h5>
         </div>
         <div class="learn-more">
@@ -303,7 +303,7 @@
           <div class="icon">
             {{ cms:file:icon_wellbeing.png:image }}
           </div>
-          <h3>00</h3>
+          <h3>{{ cms:page:health }}</h3>
           <h5 class="subheading">Health and Wellbeing</h5>
         </div>
         <div class="learn-more">
@@ -532,7 +532,6 @@
     var currentCountryData = {{ cms:helper:current_country_data }};
     
     L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
-    debugger;
     var map = L.mapbox.map('map', 'nonphotoblue.245216c2')
       .setView([currentCountryData.lat, currentCountryData.lng], 3);
 
@@ -546,6 +545,11 @@
         coordinates: [currentCountryData.lng, currentCountryData.lat]
       }
     }
+
+    var cssIcon = L.divIcon({
+      className: 'mapbox-countryicon',
+      iconSize: [60, 60]
+    });
 
     var featureLayer = L.mapbox.featureLayer({
       type: 'FeatureCollection',
