@@ -148,13 +148,13 @@
   }
 
   function chooseColor(score){
-    var sorted = _.sortBy(countriesData, function(){
-      return countriesData.score;
+    var sorted = _.sortBy(countriesData, function(country){
+      return country.score;
     });
 
     var breakPoint1 = sorted[Math.floor(sorted.length / 3)].score;
     var breakPoint2 = sorted[Math.floor(sorted.length / 3 * 2)].score;
-
+    
     if(score >= breakPoint2){
       return '#FF1C2D';
     } else if(score >= breakPoint1){
