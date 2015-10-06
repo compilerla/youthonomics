@@ -530,6 +530,23 @@
 <script type="text/javascript">
   $(document).ready(function(){
     var currentCountryData = {{ cms:helper:current_country_data }};
+    var countriesData = {{ cms:helper:country_data }};
+    function chooseColor(score){
+      var sorted = _.sortBy(countriesData, function(country){
+        return country.score;
+      });
+
+      var breakPoint1 = sorted[Math.floor(sorted.length / 3)].score;
+      var breakPoint2 = sorted[Math.floor(sorted.length / 3 * 2)].score;
+      
+      if(score >= breakPoint2){
+        return '#FF1C2D';
+      } else if(score >= breakPoint1){
+        return '#FF7781';
+      } else {
+        return '#524445';
+      }
+    }
     
     L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
     var map = L.mapbox.map('map', 'nonphotoblue.245216c2')
@@ -539,7 +556,9 @@
 
     var feature = {
       type: 'Feature',
-      properties: currentCountryData,
+      properties: _.extend({
+        'marker-color': chooseColor(currentCountryData.score)
+      }, currentCountryData),
       geometry: {
         type: 'Point',
         coordinates: [currentCountryData.lng, currentCountryData.lat]
