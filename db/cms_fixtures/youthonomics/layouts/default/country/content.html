@@ -529,8 +529,30 @@
 </div><!-- /.content-wrap -->
 <script type="text/javascript">
   $(document).ready(function(){
-    var countriesData = {{ cms:helper:country_data }};
-    console.log(countriesData);
+    var currentCountryData = {{ cms:helper:current_country_data }};
+    
+    L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
+    debugger;
+    var map = L.mapbox.map('map', 'nonphotoblue.245216c2')
+      .setView([currentCountryData.lat, currentCountryData.lng], 3);
+
+    map.scrollWheelZoom.disable();
+
+    var feature = {
+      type: 'Feature',
+      properties: currentCountryData,
+      geometry: {
+        type: 'Point',
+        coordinates: [currentCountryData.lng, currentCountryData.lat]
+      }
+    }
+
+    var featureLayer = L.mapbox.featureLayer({
+      type: 'FeatureCollection',
+      features: [feature],
+    })
+    .addTo(map);
   });
+
 </script>
 {{ cms:snippet:footer }}
