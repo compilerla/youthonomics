@@ -198,7 +198,7 @@
     featureLayer.eachLayer(function(layer) {
       var content = HandlebarsTemplates['country-popup'](layer.feature.properties);
       layer.bindPopup(content);
-  });
+    });
   });
 </script>
 
