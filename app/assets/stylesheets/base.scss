@@ -611,8 +611,12 @@ a {
     position: absolute;
     bottom: 1.414rem;
     a {
+      letter-spacing:normal;
+      text-transform:capitalize;
+      color:$white;
+      font-size:14px;
       font-weight: normal;
-      opacity: 1;
+      opacity: .9;
       -webkit-transition: opacity .2s;
       -moz-transition: opacity .2s;
       -o-transition: opacity .2s;
@@ -621,6 +625,10 @@ a {
         opacity:1;
         color: $white;
         text-decoration: none;
+      }
+
+      img {
+        margin-left:10px;
       }
     }
     img { height: 45px; }
