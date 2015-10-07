@@ -11,7 +11,7 @@
     margin: .707rem auto;
     width: 88%;
     border-bottom: 1px solid white;
-    padding-bottom: 0;
+    padding-bottom: 0!important;
     font-size: 1rem;
     font-family: 'Fira Sans';
     min-height: none;
@@ -23,8 +23,12 @@
     float: left;
   }
 
-  #mc_embed_signup input {
+  #mc_embed_signup input:not([type=submit]) {
     border: none!important;
+  }
+
+  #mc_embed_signup input[type=submit] {
+    border: 1px solid #fff;
   }
 
   #mc_embed_signup input[type="email"],
@@ -74,7 +78,7 @@
         <div class="response" id="mce-success-response" style="display:none"></div>
       </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;"><input type="text" name="b_f0401d408ea7e50e4d9179acc_d1f9659d07" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Support" name="subscribe" id="mc-embedded-subscribe" class="btn fill-red"></div>
+        <div class="clear"><input type="submit" value="Support" name="subscribe" id="mc-embedded-subscribe" class="btn transparent"></div>
       </div>
   </form>
 </div>

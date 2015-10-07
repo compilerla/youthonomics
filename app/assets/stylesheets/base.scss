@@ -120,17 +120,17 @@
    color: $white;
    background: none;
    border: 1px solid $white;
-   -webkit-transition: background .3s, color .3s;
-   -moz-transition: background .3s, color .3s;
-   -o-transition: background .3s, color .3s;
-   transition: background .3s, color .3s;
+   -webkit-transition: background .2s, color .2s;
+   -moz-transition: background .2s, color .2s;
+   -o-transition: background .2s, color .2s;
+   transition: background .2s, color .2s;
    &:hover {
      color: $d_grey;
      background: rgba(255,255,255,.5);
-     -webkit-transition: background .3s, color .3s;
-     -moz-transition: background .3s, color .3s;
-     -o-transition: background .3s, color .3s;
-     transition: background .3s, color .3s;
+     -webkit-transition: background .2s, color .2s;
+     -moz-transition: background .2s, color .2s;
+     -o-transition: background .2s, color .2s;
+     transition: background .2s, color .2s;
    }
  }
 
@@ -139,17 +139,17 @@
    background: none;
    border: 1px solid $d_grey;
    opacity: 1;
-   -webkit-transition: background .3s, color .3s;
-   -moz-transition: background .3s, color .3s;
-   -o-transition: background .3s, color .3s;
-   transition: background .3s, color .3s;
+   -webkit-transition: background .2s, color .2s;
+   -moz-transition: background .2s, color .2s;
+   -o-transition: background .2s, color .2s;
+   transition: background .2s, color .2s;
    &:hover {
      color: $white;
      background: rgba(255,255,255,.5);
-     -webkit-transition: background .3s, color .3s;
-     -moz-transition: background .3s, color .3s;
-     -o-transition: background .3s, color .3s;
-     transition: background .3s, color .3s;
+     -webkit-transition: background .2s, color .2s;
+     -moz-transition: background .2s, color .2s;
+     -o-transition: background .2s, color .2s;
+     transition: background .2s, color .2s;
    }
  }
 
@@ -158,17 +158,17 @@
    background: $main_red;
    border: 1px solid $main_red;
    opacity: 1;
-   -webkit-transition: background .3s, color .3s;
-   -moz-transition: background .3s, color .3s;
-   -o-transition: background .3s, color .3s;
-   transition: background .3s, color .3s;
+   -webkit-transition: background .2s, color .2s;
+   -moz-transition: background .2s, color .2s;
+   -o-transition: background .2s, color .2s;
+   transition: background .2s, color .2s;
    &:hover {
      color: $main_red;
      background: $lig1_red;
-     -webkit-transition: background .3s, color .3s;
-     -moz-transition: background .3s, color .3s;
-     -o-transition: background .3s, color .3s;
-     transition: background .3s, color .3s;
+     -webkit-transition: background .2s, color .2s;
+     -moz-transition: background .2s, color .2s;
+     -o-transition: background .2s, color .2s;
+     transition: background .2s, color .2s;
    }
  }
 
@@ -177,17 +177,17 @@
    background: none;
    border: 1px solid $main_red;
    opacity: 1;
-   -webkit-transition: background .3s, color .3s;
-   -moz-transition: background .3s, color .3s;
-   -o-transition: background .3s, color .3s;
-   transition: background .3s, color .3s;
+   -webkit-transition: background .2s, color .2s;
+   -moz-transition: background .2s, color .2s;
+   -o-transition: background .2s, color .2s;
+   transition: background .2s, color .2s;
    &:hover {
      color: $white;
      background: $main-red;
-     -webkit-transition: background .3s, color .3s;
-     -moz-transition: background .3s, color .3s;
-     -o-transition: background .3s, color .3s;
-     transition: background .3s, color .3s;
+     -webkit-transition: background .2s, color .2s;
+     -moz-transition: background .2s, color .2s;
+     -o-transition: background .2s, color .2s;
+     transition: background .2s, color .2s;
    }
  }
 
@@ -196,16 +196,16 @@
    background: $dark_red;
    border: 1px solid $dark_red;
    opacity: 1;
-   -webkit-transition: opacity .3s;
-   -moz-transition: opacity .3s;
-   -o-transition: opacity .3s;
-   transition: opacity .3s;
+   -webkit-transition: opacity .2s;
+   -moz-transition: opacity .2s;
+   -o-transition: opacity .2s;
+   transition: opacity .2s;
    &:hover {
-     opacity: .5;
-     -webkit-transition: opacity .3s;
-     -moz-transition: opacity .3s;
-     -o-transition: opacity .3s;
-     transition: opacity .3s;
+     // opacity: .5;
+     -webkit-transition: opacity .2s;
+     -moz-transition: opacity .2s;
+     -o-transition: opacity .2s;
+     transition: opacity .2s;
    }
  }
 
@@ -214,16 +214,16 @@
    background: $med1_red;
    border: 1px solid $med1_red;
    opacity: 1;
-   -webkit-transition: opacity .3s;
-   -moz-transition: opacity .3s;
-   -o-transition: opacity .3s;
-   transition: opacity .3s;
+   -webkit-transition: opacity .2s;
+   -moz-transition: opacity .2s;
+   -o-transition: opacity .2s;
+   transition: opacity .2s;
    &:hover {
      opacity: .5;
-     -webkit-transition: opacity .3s;
-     -moz-transition: opacity .3s;
-     -o-transition: opacity .3s;
-     transition: opacity .3s;
+     -webkit-transition: opacity .2s;
+     -moz-transition: opacity .2s;
+     -o-transition: opacity .2s;
+     transition: opacity .2s;
    }
  }
 
@@ -232,16 +232,16 @@
    background: $med2_red;
    border: 1px solid $med2_red;
    opacity: 1;
-   -webkit-transition: opacity .3s;
-   -moz-transition: opacity .3s;
-   -o-transition: opacity .3s;
-   transition: opacity .3s;
+   -webkit-transition: opacity .2s;
+   -moz-transition: opacity .2s;
+   -o-transition: opacity .2s;
+   transition: opacity .2s;
    &:hover {
      opacity: .5;
-     -webkit-transition: opacity .3s;
-     -moz-transition: opacity .3s;
-     -o-transition: opacity .3s;
-     transition: opacity .3s;
+     -webkit-transition: opacity .2s;
+     -moz-transition: opacity .2s;
+     -o-transition: opacity .2s;
+     transition: opacity .2s;
    }
  }
 
@@ -250,16 +250,16 @@
    background: $lig1_red;
    border: 1px solid $lig1_red;
    opacity: 1;
-   -webkit-transition: opacity .3s;
-   -moz-transition: opacity .3s;
-   -o-transition: opacity .3s;
-   transition: opacity .3s;
+   -webkit-transition: opacity .2s;
+   -moz-transition: opacity .2s;
+   -o-transition: opacity .2s;
+   transition: opacity .2s;
    &:hover {
      opacity: .5;
-     -webkit-transition: opacity .3s;
-     -moz-transition: opacity .3s;
-     -o-transition: opacity .3s;
-     transition: opacity .3s;
+     -webkit-transition: opacity .2s;
+     -moz-transition: opacity .2s;
+     -o-transition: opacity .2s;
+     transition: opacity .2s;
    }
  }
 
@@ -268,16 +268,16 @@
    background: $lig2_red;
    border: 1px solid $lig2_red;
    opacity: 1;
-   -webkit-transition: opacity .3s;
-   -moz-transition: opacity .3s;
-   -o-transition: opacity .3s;
-   transition: opacity .3s;
+   -webkit-transition: opacity .2s;
+   -moz-transition: opacity .2s;
+   -o-transition: opacity .2s;
+   transition: opacity .2s;
    &:hover {
      opacity: .5;
-     -webkit-transition: opacity .3s;
-     -moz-transition: opacity .3s;
-     -o-transition: opacity .3s;
-     transition: opacity .3s;
+     -webkit-transition: opacity .2s;
+     -moz-transition: opacity .2s;
+     -o-transition: opacity .2s;
+     transition: opacity .2s;
    }
  }
 
@@ -361,16 +361,24 @@ small, .font_small {
 
 a {
   opacity: 1;
-  -webkit-transition: opacity .3s, text-decoration .3s;
-  -moz-transition: opacity .3s, text-decoration .3s;
-  -o-transition: opacity .3s, text-decoration .3s;
-  transition: opacity .3s, text-decoration .3s;
+  -webkit-transition: opacity .2s, text-decoration .2s;
+  -moz-transition: opacity .2s, text-decoration .2s;
+  -o-transition: opacity .2s, text-decoration .2s;
+  transition: opacity .2s, text-decoration .2s;
   &:hover {
     opacity: .5;
-    -webkit-transition: opacity .3s, text-decoration .3s;
-    -moz-transition: opacity .3s, text-decoration .3s;
-    -o-transition: opacity .3s, text-decoration .3s;
-    transition: opacity .3s, text-decoration .3s;
+    -webkit-transition: opacity .2s, text-decoration .2s;
+    -moz-transition: opacity .2s, text-decoration .2s;
+    -o-transition: opacity .2s, text-decoration .2s;
+    transition: opacity .2s, text-decoration .2s;
+  }
+
+  &.spanlink {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
   }
 }
 
@@ -438,15 +446,28 @@ a {
 
 .btn {
   font-weight: bold;
-  letter-spacing: 1.7px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
-  padding: .707rem 1.414rem;
+  padding: 0 1.414rem;
+  height:36px;
+  line-height:36px;
   width: 100%;
   max-width: 300px;
   margin: 0 auto 1.414rem;
   display: block;
   font-size: .707rem;
   border-radius: 30px;
+  font-size:11px;
+
+  &.transparent {
+    background:none;
+    color:#fff;
+    border:1px solid #fff;
+
+    &:hover {
+      background-color:rgba(#fff, .1);
+    }
+  }
 }
 
 
@@ -581,30 +602,33 @@ a {
 }
 
 .blog-panel, .social-media-panel {
+  position:relative;
   height: 320px;
   overflow: hidden;
+  color:$white;
+
   .check-it-cta {
     position: absolute;
     bottom: 1.414rem;
     a {
       font-weight: normal;
       opacity: 1;
-      -webkit-transition: opacity .3s;
-      -moz-transition: opacity .3s;
-      -o-transition: opacity .3s;
-      transition: opacity .3s;
+      -webkit-transition: opacity .2s;
+      -moz-transition: opacity .2s;
+      -o-transition: opacity .2s;
+      transition: opacity .2s;
       &:hover {
+        opacity:1;
         color: $white;
-        opacity: .5;
         text-decoration: none;
-        -webkit-transition: opacity .3s;
-        -moz-transition: opacity .3s;
-        -o-transition: opacity .3s;
-        transition: opacity .3s;
       }
     }
     img { height: 45px; }
   }
+}
+
+.blog-panel {
+  background: $main_red;
 }
 
 .social-media-panel {
@@ -875,12 +899,12 @@ section.row header {
 @media (screen and min-width: 768px) {
   section.row header,
   section.row main {
-    max-width: 880px;
+    max-width: 1035px;
     padding-top: 3.998rem;
-    padding-bottom: 2.827rem;
+    padding-bottom: 10px;
     h1 {
-      font-size: 3.998em;
-      font-size: 3.998rem;
+      font-size: 2.827em;
+      font-size: 2.827rem;
     }
   }
 
@@ -905,8 +929,8 @@ section.row header {
 .fadeInLeft {
     animation-name: fadeInLeft;
     -webkit-animation-name: fadeInLeft;
-    animation-duration: .3s;
-    -webkit-animation-duration: .3s;
+    animation-duration: .2s;
+    -webkit-animation-duration: .2s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
  }
@@ -927,8 +951,8 @@ section.row header {
  .fadeOutLeft {
      animation-name: fadeOutLeft;
      -webkit-animation-name: fadeOutLeft;
-     animation-duration: .3s;
-     -webkit-animation-duration: .3s;
+     animation-duration: .2s;
+     -webkit-animation-duration: .2s;
      animation-fill-mode: forwards;
      -webkit-animation-fill-mode: forwards;
   }
@@ -1000,8 +1024,4 @@ section.row header {
    0% {opacity: 0;-webkit-transform: translateX(30px);}
    66% {opacity: 0;-webkit-transform: translateX(30px);}
    100% {opacity: 1;-webkit-transform: translateX(0);}
-}
-
-#mc_embed_signup .mc-field-group {
-  padding-bottom:0 !important;
 }
