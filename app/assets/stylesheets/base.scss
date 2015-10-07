@@ -1033,3 +1033,8 @@ section.row header {
    66% {opacity: 0;-webkit-transform: translateX(30px);}
    100% {opacity: 1;-webkit-transform: translateX(0);}
 }
+
+.padded {
+  padding-top:15px;
+  padding-bottom:15px;
+}
