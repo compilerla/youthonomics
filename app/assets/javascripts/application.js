@@ -15,6 +15,7 @@
 //= require underscore
 //= require bootstrap
 //= require jasny-bootstrap
+//= require parallax
 //= require handlebars.runtime
 //= require_tree ./templates
 //= require_tree .
