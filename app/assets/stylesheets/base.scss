@@ -486,7 +486,6 @@ a {
     padding: .707rem;
     &:focus {
       outline: none;
-      background-color: rgba(0,0,0,.2);
     }
   }
 }
@@ -519,6 +518,7 @@ a {
 #main-footer {
   background: $m_grey;
   color: $white;
+  font-size:14px !important;
   section.row header {
     padding: 1.414rem 0 0 0;
     h5 {
