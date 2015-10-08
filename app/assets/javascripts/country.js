@@ -21,4 +21,16 @@ $(document).ready(function(){
     cta.removeClass('fadeInLeft');
     cta.addClass('fadeOutLeft');
   });
+
+  $('.subindex').on("click", function() {
+    event.preventDefault();
+    $('.subindex-pillar').removeClass('active');
+    var subindex = $(this).attr('id');
+    var pillar = $('[data-subindex="' + subindex + '"]');
+    var pillarHeight = $(pillar.height());
+    console.log(pillar);
+    pillar.addClass('active');
+    $(pillar).parent('.pillar-container');
+  });
+
 });

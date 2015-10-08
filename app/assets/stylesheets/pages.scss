@@ -458,6 +458,36 @@
 
 }
 
+body.js {
+  .pillar-container {
+    position: relative;
+  }
+  .subindex-pillar {
+    position: absolute;
+    display: none;
+    top: 0;
+    overflow: hidden;
+    transition: max-height .6s ease-out, opacity .6s;
+    opacity: 0
+  }
+  .subindex-pillar.active {
+    margin-top: 2.827rem;
+    margin-bottom: 2.827rem;
+    display: block;
+    height: auto;
+    position: relative;
+    opacity: 1;
+    transition: opacity .6s, max-height .6s ease-in;
+  }
+
+}
+
+a[href="#youth-outlook-subindex-data"],
+a[href="#youth-now-subindex-data"] {
+  color: #fff;
+}
+
+
 .container-fluid#subindex-pillar-data {
   padding: 0;
   margin-bottom: 0;
@@ -499,7 +529,6 @@
   }
 
   .row#youth-now-subindex-data {
-    margin-top: 2.827rem;
     padding-bottom: 2.827rem;
     background: #02AFEB;
     color: #fff;
@@ -513,7 +542,6 @@
 
   #youth-outlook-subindex-data,
   #youth-now-subindex-data {
-    margin-bottom: 2.827rem;
     .icon {margin-top: 0;}
     .subheading {clear: left;}
     .learn-more {
@@ -523,6 +551,10 @@
       letter-spacing: 1.7px;
       font-weight: bold;
     }
+  }
+
+  .subindex:hover {
+    cursor: pointer;
   }
 
   .subindex-description h4,
