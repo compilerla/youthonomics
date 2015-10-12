@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151006153102) do
+ActiveRecord::Schema.define(version: 20151012140049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -136,7 +136,7 @@ ActiveRecord::Schema.define(version: 20151006153102) do
   add_index "comfy_cms_snippets", ["site_id", "position"], name: "index_comfy_cms_snippets_on_site_id_and_position", using: :btree
 
   create_table "countries", force: :cascade do |t|
-    t.integer "score"
+    t.integer "youth_optimism"
     t.integer "rank"
     t.string  "country"
     t.integer "income"
@@ -158,6 +158,26 @@ ActiveRecord::Schema.define(version: 20151006153102) do
     t.integer "health"
     t.integer "public_finance"
     t.integer "economic_opportunities"
+    t.integer "rank_ec"
+    t.integer "conjuncture"
+    t.integer "sustainability"
+    t.integer "rank_l"
+    t.integer "entrywages"
+    t.integer "skills"
+    t.integer "wages"
+    t.integer "financial_vulnerability"
+    t.integer "housing"
+    t.integer "rank_pol"
+    t.integer "marginal"
+    t.integer "implicitweight"
+    t.integer "policymaking"
+    t.integer "rank_pf"
+    t.integer "explicit"
+    t.integer "implicit"
+    t.integer "rank_hwb"
+    t.integer "social"
+    t.integer "individual"
+    t.integer "freedom"
   end
 
 end

@@ -1,7 +1,7 @@
 class CreateCountries < ActiveRecord::Migration
   def change
     create_table :countries do |t|
-      t.integer :score
+      t.integer :youth_optimism
       t.integer :rank
       t.string :country
       t.integer :income

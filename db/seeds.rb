@@ -20,17 +20,26 @@ ActiveRecord::Base.transaction do
     end
   end
 
-  file = Rails.root.join("db", "youtho_index_pillars.json")
-  opened = File.read(file)
-  pillars_hash = JSON.parse(opened)
-  pillars_hash.each do |country_pillars|
-    country = Country.find_by(country_iso: country_pillars["country"].upcase)
-    next unless country
-    country_pillars.each_pair do |key, val|
-      next if key == 'country'
-      country.send("#{key}=", val.to_i)
-    end
+  Dir.foreach(Rails.root.join("db", "submetrics")) do |item|
+    next if item == '.' or item == '..'
+    
+    file = Rails.root.join("db", "submetrics", item)
+    opened = File.read(file)
+    pillars_hash = JSON.parse(opened)
+    pillars_hash.each do |country_pillars|
+      country = Country.where("lower(country_iso) = ?", country_pillars["country"].downcase).first
+      country ||= Country.where("lower(country) = ?", country_pillars["country"].downcase).first
+      next unless country
+      country_pillars.each_pair do |key, val|
+        begin
+          next if key == 'country'
+          country.send("#{key}=", val.to_i)
+        rescue
+          raise "No method #{key}"
+        end
+      end
 
-    country.save
+      country.save
+    end
   end
 end

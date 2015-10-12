@@ -147,27 +147,27 @@
     }
   }
 
-  function chooseColor(score){
+  function chooseColor(youtho_index){
     var sorted = _.sortBy(countriesData, function(country){
-      return country.score;
+      return country.youtho_index;
     });
 
-    var breakPoint1 = sorted[Math.floor(sorted.length / 3)].score;
-    var breakPoint2 = sorted[Math.floor(sorted.length / 3 * 2)].score;
+    var breakPoint1 = sorted[Math.floor(sorted.length / 3)].youtho_index;
+    var breakPoint2 = sorted[Math.floor(sorted.length / 3 * 2)].youtho_index;
     
-    if(score >= breakPoint2){
+    if(youtho_index >= breakPoint2){
       return '#FF1C2D';
-    } else if(score >= breakPoint1){
+    } else if(youtho_index >= breakPoint1){
       return '#FF7781';
     } else {
       return '#524445';
     }
   }
 
-  function averageScore(countries){
+  function averageyoutho_index(countries){
     var total = 0;
     for(var i = 0; i < countries.length; i++){
-      total += countries[i].score;
+      total += countries[i].youtho_index;
     }
     return total / countries.length;
   }
@@ -182,12 +182,12 @@
 
     map.scrollWheelZoom.disable();
 
-    var average = averageScore(countriesData);
+    var average = averageyoutho_index(countriesData);
     var featureData = countriesData.map(function(countryData){
       return {
         type: 'Feature',
         properties: _.extend({
-          'marker-color': chooseColor(countryData.score)
+          'marker-color': chooseColor(countryData.youtho_index)
         }, countryData),
         geometry: {
           type: 'Point',

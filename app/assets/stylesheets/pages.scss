@@ -630,7 +630,12 @@ a[href="#youth-now-subindex-data"] {
   height: 45vh;
 }
 
+.leaflet-popup {
+  width:370px;
+}
+
 .map-popup {
+  width:370px;
   padding: .707rem 0 0 0;
   h1 {
     font-size:1.414rem;
@@ -658,7 +663,7 @@ a[href="#youth-now-subindex-data"] {
     text-align:center;
     width: 45px;
     height: 45px;
-    font-size: 1.414rem;
+    font-size: 1.2rem;
     font-weight: bold;
     vertical-align: middle;
     letter-spacing: .7px;

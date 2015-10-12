@@ -34,7 +34,7 @@
           <div class="metric-score">
             <div class="icon icon-gir-ranking low-ranking">
             </div>
-            <h3>{{ cms:page:score }}</h3>
+            <h3>{{ cms:page:rank_yo }}</h3>
             <h5 class="subheading">Global Index Rating</h5>
           </div>
           <div class="metric-description">
@@ -64,7 +64,7 @@
             <div class="icon icon-youth-optimism-ratio">
               {{ cms:file:icon_youth_optimism.png:image }}
             </div>
-            <h3>{{ cms:page:YouthOptimism }}</h3>
+            <h3>{{ cms:page:youth_optimism }}</h3>
             <h5 class="subheading">Youth Optimism Ratio</h5>
           </div>
           <div class="metric-description">
@@ -169,15 +169,15 @@
           <h4>Public Finance Pillar Data</h4>
           <section class="row">
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
+              <h3>{{ cms:page:rank_pf }}</h3>
               <h5 class="subheading">Overall</h5>
             </div><!-- /.pillar-ranking -->
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
+              <h3>{{ cms:page:explicit }}</h3>
               <h5 class="subheading">Explicit Liability</h5>
             </div><!-- /.pillar-ranking -->
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
+              <h3>{{ cms:page:implicit }}</h3>
               <h5 class="subheading">Implicit Liabilities</h5>
             </div><!-- /.pillar-ranking -->
           </section>
@@ -202,16 +202,16 @@
           <h4>Economic Opportunities Pillar Data</h4>
           <section class="row">
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
+              <h3>{{ cms:page:rank_ec }}</h3>
               <h5 class="subheading">Overall</h5>
             </div><!-- /.pillar-ranking -->
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
-              <h5 class="subheading">Explicit Liability</h5>
+              <h3>{{ cms:page:conjuncture }}</h3>
+              <h5 class="subheading">Conjuncture</h5>
             </div><!-- /.pillar-ranking -->
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
-              <h5 class="subheading">Implicit Liabilities</h5>
+              <h3>{{ cms:page:sustainability }}</h3>
+              <h5 class="subheading">Sustainability</h5>
             </div><!-- /.pillar-ranking -->
           </section>
         </div>
@@ -231,17 +231,22 @@
           <h4>Political Weight Pillar Data</h4>
           <section class="row">
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
+              <h3>{{ cms:page:rank_pol }}</h3>
               <h5 class="subheading">Overall</h5>
             </div><!-- /.pillar-ranking -->
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
-              <h5 class="subheading">Explicit Liability</h5>
+              <h3>{{ cms:page:marginal }}</h3>
+              <h5 class="subheading">Marginal</h5>
             </div><!-- /.pillar-ranking -->
             <div class="col-xs-3 col-sm-4 pillar-ranking">
-              <h3>00</h3>
-              <h5 class="subheading">Implicit Liabilities</h5>
-            </div><!-- /.pillar-ranking -->
+              <h3>{{ cms:page:implicitweight }}</h3>
+              <h5 class="subheading">Implicit Weight</h5>
+            </div>
+            <div class="col-xs-3 col-sm-4 pillar-ranking">
+              <h3>{{ cms:page:policymaking }}</h3>
+              <h5 class="subheading">Policy Making</h5>
+            </div>
+            <!-- /.pillar-ranking -->
           </section>
         </div>
       </section><!-- /.subindex-pillar#political-weight -->

@@ -1,6 +1,6 @@
 [  
    {  
-      "score":"26",
+      "youth_optimism":"26",
       "rank":"1",
       "country":"Norway",
       "country_iso":"NOR",
@@ -17,7 +17,7 @@
       ]
    },
    {  
-      "score":"55",
+      "youth_optimism":"55",
       "rank":"2",
       "country":"Switzerland",
       "country_iso":"CHE",
@@ -34,7 +34,7 @@
       ]
    },
    {  
-      "score":"39",
+      "youth_optimism":"39",
       "rank":"3",
       "country":"Denmark",
       "country_iso":"DNK",
@@ -51,7 +51,7 @@
       ]
    },
    {  
-      "score":"25",
+      "youth_optimism":"25",
       "rank":"4",
       "country":"Sweden",
       "country_iso":"SWE",
@@ -68,7 +68,7 @@
       ]
    },
    {  
-      "score":"56",
+      "youth_optimism":"56",
       "rank":"5",
       "country":"Netherlands",
       "country_iso":"NLD",
@@ -85,7 +85,7 @@
       ]
    },
    {  
-      "score":"41",
+      "youth_optimism":"41",
       "rank":"6",
       "country":"Australia",
       "country_iso":"AUS",
@@ -102,7 +102,7 @@
       ]
    },
    {  
-      "score":"54",
+      "youth_optimism":"54",
       "rank":"7",
       "country":"Germany",
       "country_iso":"DEU",
@@ -119,7 +119,7 @@
       ]
    },
    {  
-      "score":"37",
+      "youth_optimism":"37",
       "rank":"8",
       "country":"Finland",
       "country_iso":"FIN",
@@ -136,7 +136,7 @@
       ]
    },
    {  
-      "score":"58",
+      "youth_optimism":"58",
       "rank":"9",
       "country":"Austria",
       "country_iso":"AUT",
@@ -153,7 +153,7 @@
       ]
    },
    {  
-      "score":"52",
+      "youth_optimism":"52",
       "rank":"10",
       "country":"Canada",
       "country_iso":"CAN",
@@ -170,7 +170,7 @@
       ]
    },
    {  
-      "score":"48",
+      "youth_optimism":"48",
       "rank":"11",
       "country":"Luxembourg",
       "country_iso":"LUX",
@@ -187,7 +187,7 @@
       ]
    },
    {  
-      "score":"45",
+      "youth_optimism":"45",
       "rank":"12",
       "country":"New Zealand",
       "country_iso":"NZL",
@@ -201,7 +201,7 @@
       "coords":null
    },
    {  
-      "score":"59",
+      "youth_optimism":"59",
       "rank":"13",
       "country":"United States",
       "country_iso":"USA",
@@ -218,7 +218,7 @@
       ]
    },
    {  
-      "score":"42",
+      "youth_optimism":"42",
       "rank":"14",
       "country":"Ireland",
       "country_iso":"IRL",
@@ -235,7 +235,7 @@
       ]
    },
    {  
-      "score":"34",
+      "youth_optimism":"34",
       "rank":"15",
       "country":"Israel",
       "country_iso":"ISR",
@@ -252,7 +252,7 @@
       ]
    },
    {  
-      "score":"53",
+      "youth_optimism":"53",
       "rank":"16",
       "country":"United Kingdom",
       "country_iso":"GBR",
@@ -269,7 +269,7 @@
       ]
    },
    {  
-      "score":"62",
+      "youth_optimism":"62",
       "rank":"17",
       "country":"Belgium",
       "country_iso":"BEL",
@@ -286,7 +286,7 @@
       ]
    },
    {  
-      "score":"21",
+      "youth_optimism":"21",
       "rank":"18",
       "country":"Estonia",
       "country_iso":"EST",
@@ -303,7 +303,7 @@
       ]
    },
    {  
-      "score":"51",
+      "youth_optimism":"51",
       "rank":"19",
       "country":"France",
       "country_iso":"FRA",
@@ -320,7 +320,7 @@
       ]
    },
    {  
-      "score":"33",
+      "youth_optimism":"33",
       "rank":"20",
       "country":"Czech Republic",
       "country_iso":"CZE",
@@ -337,7 +337,7 @@
       ]
    },
    {  
-      "score":"61",
+      "youth_optimism":"61",
       "rank":"21",
       "country":"Slovenia",
       "country_iso":"SVN",
@@ -354,7 +354,7 @@
       ]
    },
    {  
-      "score":"47",
+      "youth_optimism":"47",
       "rank":"22",
       "country":"South Korea",
       "country_iso":"KOR",
@@ -371,7 +371,7 @@
       ]
    },
    {  
-      "score":"23",
+      "youth_optimism":"23",
       "rank":"23",
       "country":"Malaysia",
       "country_iso":"MYS",
@@ -388,7 +388,7 @@
       ]
    },
    {  
-      "score":"24",
+      "youth_optimism":"24",
       "rank":"24",
       "country":"Chile",
       "country_iso":"CHL",
@@ -405,7 +405,7 @@
       ]
    },
    {  
-      "score":"22",
+      "youth_optimism":"22",
       "rank":"25",
       "country":"Latvia",
       "country_iso":"LVA",
@@ -422,7 +422,7 @@
       ]
    },
    {  
-      "score":"64",
+      "youth_optimism":"64",
       "rank":"26",
       "country":"Japan",
       "country_iso":"JPN",
@@ -439,7 +439,7 @@
       ]
    },
    {  
-      "score":"46",
+      "youth_optimism":"46",
       "rank":"27",
       "country":"Poland",
       "country_iso":"POL",
@@ -456,7 +456,7 @@
       ]
    },
    {  
-      "score":"15",
+      "youth_optimism":"15",
       "rank":"28",
       "country":"Kazakhstan",
       "country_iso":"KAZ",
@@ -473,7 +473,7 @@
       ]
    },
    {  
-      "score":"35",
+      "youth_optimism":"35",
       "rank":"29",
       "country":"Slovakia",
       "country_iso":"SVK",
@@ -490,7 +490,7 @@
       ]
    },
    {  
-      "score":"63",
+      "youth_optimism":"63",
       "rank":"30",
       "country":"Portugal",
       "country_iso":"PRT",
@@ -507,7 +507,7 @@
       ]
    },
    {  
-      "score":"20",
+      "youth_optimism":"20",
       "rank":"31",
       "country":"China",
       "country_iso":"CHN",
@@ -524,7 +524,7 @@
       ]
    },
    {  
-      "score":"57",
+      "youth_optimism":"57",
       "rank":"32",
       "country":"Italy",
       "country_iso":"ITA",
@@ -541,7 +541,7 @@
       ]
    },
    {  
-      "score":"31",
+      "youth_optimism":"31",
       "rank":"33",
       "country":"Lithuania",
       "country_iso":"LTU",
@@ -558,7 +558,7 @@
       ]
    },
    {  
-      "score":"28",
+      "youth_optimism":"28",
       "rank":"34",
       "country":"Turkey",
       "country_iso":"TUR",
@@ -575,7 +575,7 @@
       ]
    },
    {  
-      "score":"29",
+      "youth_optimism":"29",
       "rank":"35",
       "country":"Uruguay",
       "country_iso":"URY",
@@ -592,7 +592,7 @@
       ]
    },
    {  
-      "score":"36",
+      "youth_optimism":"36",
       "rank":"36",
       "country":"Greece",
       "country_iso":"GRC",
@@ -609,7 +609,7 @@
       ]
    },
    {  
-      "score":"50",
+      "youth_optimism":"50",
       "rank":"37",
       "country":"Spain",
       "country_iso":"ESP",
@@ -626,7 +626,7 @@
       ]
    },
    {  
-      "score":"38",
+      "youth_optimism":"38",
       "rank":"38",
       "country":"Hungary",
       "country_iso":"HUN",
@@ -643,7 +643,7 @@
       ]
    },
    {  
-      "score":"10",
+      "youth_optimism":"10",
       "rank":"39",
       "country":"Philippines",
       "country_iso":"PHL",
@@ -660,7 +660,7 @@
       ]
    },
    {  
-      "score":"19",
+      "youth_optimism":"19",
       "rank":"40",
       "country":"Mexico",
       "country_iso":"MEX",
@@ -677,7 +677,7 @@
       ]
    },
    {  
-      "score":"16",
+      "youth_optimism":"16",
       "rank":"41",
       "country":"Peru",
       "country_iso":"PER",
@@ -694,7 +694,7 @@
       ]
    },
    {  
-      "score":"44",
+      "youth_optimism":"44",
       "rank":"42",
       "country":"Thailand",
       "country_iso":"THA",
@@ -711,7 +711,7 @@
       ]
    },
    {  
-      "score":"27",
+      "youth_optimism":"27",
       "rank":"43",
       "country":"Argentina",
       "country_iso":"ARG",
@@ -728,7 +728,7 @@
       ]
    },
    {  
-      "score":"13",
+      "youth_optimism":"13",
       "rank":"44",
       "country":"Indonesia",
       "country_iso":"IDN",
@@ -745,7 +745,7 @@
       ]
    },
    {  
-      "score":"11",
+      "youth_optimism":"11",
       "rank":"45",
       "country":"Nepal",
       "country_iso":"NPL",
@@ -762,7 +762,7 @@
       ]
    },
    {  
-      "score":"43",
+      "youth_optimism":"43",
       "rank":"46",
       "country":"Ukraine",
       "country_iso":"UKR",
@@ -776,7 +776,7 @@
       "coords":null
    },
    {  
-      "score":"12",
+      "youth_optimism":"12",
       "rank":"47",
       "country":"Honduras",
       "country_iso":"HND",
@@ -793,7 +793,7 @@
       ]
    },
    {  
-      "score":"7",
+      "youth_optimism":"7",
       "rank":"48",
       "country":"Ghana",
       "country_iso":"GHA",
@@ -810,7 +810,7 @@
       ]
    },
    {  
-      "score":"9",
+      "youth_optimism":"9",
       "rank":"49",
       "country":"India",
       "country_iso":"IND",
@@ -827,7 +827,7 @@
       ]
    },
    {  
-      "score":"17",
+      "youth_optimism":"17",
       "rank":"50",
       "country":"Colombia",
       "country_iso":"COL",
@@ -844,7 +844,7 @@
       ]
    },
    {  
-      "score":"60",
+      "youth_optimism":"60",
       "rank":"51",
       "country":"Croatia",
       "country_iso":"HRV",
@@ -861,7 +861,7 @@
       ]
    },
    {  
-      "score":"6",
+      "youth_optimism":"6",
       "rank":"52",
       "country":"Rwanda",
       "country_iso":"RWA",
@@ -878,7 +878,7 @@
       ]
    },
    {  
-      "score":"49",
+      "youth_optimism":"49",
       "rank":"53",
       "country":"Vietnam",
       "country_iso":"VNM",
@@ -895,7 +895,7 @@
       ]
    },
    {  
-      "score":"30",
+      "youth_optimism":"30",
       "rank":"54",
       "country":"Sri Lanka",
       "country_iso":"LKA",
@@ -912,7 +912,7 @@
       ]
    },
    {  
-      "score":"8",
+      "youth_optimism":"8",
       "rank":"55",
       "country":"Bangladesh",
       "country_iso":"BGD",
@@ -929,7 +929,7 @@
       ]
    },
    {  
-      "score":"14",
+      "youth_optimism":"14",
       "rank":"56",
       "country":"Pakistan",
       "country_iso":"PAK",
@@ -946,7 +946,7 @@
       ]
    },
    {  
-      "score":"40",
+      "youth_optimism":"40",
       "rank":"57",
       "country":"Russia",
       "country_iso":"RUS",
@@ -963,7 +963,7 @@
       ]
    },
    {  
-      "score":"3",
+      "youth_optimism":"3",
       "rank":"58",
       "country":"Kenya",
       "country_iso":"KEN",
@@ -980,7 +980,7 @@
       ]
    },
    {  
-      "score":"18",
+      "youth_optimism":"18",
       "rank":"59",
       "country":"Egypt",
       "country_iso":"EGY",
@@ -997,7 +997,7 @@
       ]
    },
    {  
-      "score":"32",
+      "youth_optimism":"32",
       "rank":"60",
       "country":"Brazil",
       "country_iso":"BRA",
@@ -1014,7 +1014,7 @@
       ]
    },
    {  
-      "score":"1",
+      "youth_optimism":"1",
       "rank":"61",
       "country":"Uganda",
       "country_iso":"UGA",
@@ -1031,7 +1031,7 @@
       ]
    },
    {  
-      "score":"4",
+      "youth_optimism":"4",
       "rank":"62",
       "country":"Mali",
       "country_iso":"MLI",
@@ -1048,7 +1048,7 @@
       ]
    },
    {  
-      "score":"5",
+      "youth_optimism":"5",
       "rank":"63",
       "country":"South Africa",
       "country_iso":"ZAF",
@@ -1065,7 +1065,7 @@
       ]
    },
    {  
-      "score":"2",
+      "youth_optimism":"2",
       "rank":"64",
       "country":"Cte d'Ivoire",
       "country_iso":"CIV",
