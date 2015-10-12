@@ -1,4 +1,4 @@
-label: Home Fixture Page
+label: Home
 layout: default
 target_page: '/child'
 categories:
