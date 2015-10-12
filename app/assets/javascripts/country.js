@@ -28,7 +28,6 @@ $(document).ready(function(){
     var subindex = $(this).attr('id');
     var pillar = $('[data-subindex="' + subindex + '"]');
     var pillarHeight = $(pillar.height());
-    console.log(pillar);
     pillar.addClass('active');
     $(pillar).parent('.pillar-container');
   });

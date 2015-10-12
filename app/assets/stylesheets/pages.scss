@@ -465,9 +465,11 @@ body.js {
   .subindex-pillar {
     position: absolute;
     display: none;
+    max-height:0;
     top: 0;
+    height:0;
     overflow: hidden;
-    transition: max-height .6s ease-out, opacity .6s;
+    transition: all .6s;
     opacity: 0
   }
   .subindex-pillar.active {
@@ -475,9 +477,10 @@ body.js {
     margin-bottom: 2.827rem;
     display: block;
     height: auto;
+    max-height:800px;
     position: relative;
     opacity: 1;
-    transition: opacity .6s, max-height .6s ease-in;
+    transition: all .6;
   }
 
 }
