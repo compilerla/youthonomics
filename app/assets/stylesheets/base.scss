@@ -649,7 +649,9 @@ a {
 }
 
 .social-media-panel {
-  background-color: $s_twit;
+  background:url(asset-path('twitter.svg')) $s_twit no-repeat;
+  background-size:cover;
+  background-position:-114px 76px;
 }
 
 .team-panel {
