@@ -20,5 +20,20 @@ class AddMoreCols < ActiveRecord::Migration
     add_column :countries, :social, :integer
     add_column :countries, :individual, :integer
     add_column :countries, :freedom, :integer
+    add_column :countries, :rank_e, :integer
+    add_column :countries, :access, :integer
+    add_column :countries, :early_quality, :integer
+    add_column :countries, :transition, :integer
+    add_column :countries, :conditions, :integer
+    add_column :countries, :rank_j, :integer
+    add_column :countries, :unemployment, :integer
+    add_column :countries, :entrepreneurship, :integer
+    add_column :countries, :underemployment, :integer
+    add_column :countries, :exclusion, :integer
+    add_column :countries, :rank_u, :integer
+    add_column :countries, :completion, :integer
+    add_column :countries, :univ_quality, :integer
+    add_column :countries, :cost, :integer
+    add_column :countries, :vocational, :integer
   end
 end

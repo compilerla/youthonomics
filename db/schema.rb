@@ -178,6 +178,21 @@ ActiveRecord::Schema.define(version: 20151012140049) do
     t.integer "social"
     t.integer "individual"
     t.integer "freedom"
+    t.integer "rank_e"
+    t.integer "access"
+    t.integer "early_quality"
+    t.integer "transition"
+    t.integer "conditions"
+    t.integer "rank_j"
+    t.integer "unemployment"
+    t.integer "entrepreneurship"
+    t.integer "underemployment"
+    t.integer "exclusion"
+    t.integer "rank_u"
+    t.integer "completion"
+    t.integer "univ_quality"
+    t.integer "cost"
+    t.integer "vocational"
   end
 
 end
