@@ -8,6 +8,7 @@
 
 .container-fluid#home-hero {
   background-size: cover;
+  section.row header {max-width: 1280px;}
   h1 { color: #fff; }
   p.emphasis-copy {max-width: 580px;}
 }
