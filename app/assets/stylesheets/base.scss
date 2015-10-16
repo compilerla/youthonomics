@@ -630,6 +630,14 @@ a {
   font-color: $m_grey;
 }
 
+#main-footer {
+  section.row header, section.row main {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+}
+
 /**
 * Content-panels
 */
