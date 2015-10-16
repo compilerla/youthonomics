@@ -345,10 +345,12 @@
   }
 
   h2 {
+    font-family: 'Oswald';
     margin-top: 0;
     font-size: 1.414rem;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
   }
 
   #outlook-now-data {
@@ -647,6 +649,10 @@ a[href="#youth-now-subindex-data"] {
     letter-spacing: .7px;
   }
 
+  h3 {
+    margin-bottom: 1.414em;
+  }
+
   .ranking-row {
     overflow: auto;
     .subheading {
@@ -666,7 +672,7 @@ a[href="#youth-now-subindex-data"] {
     text-align:center;
     width: 45px;
     height: 45px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     vertical-align: middle;
     letter-spacing: .7px;
@@ -708,8 +714,23 @@ a[href="#youth-now-subindex-data"] {
       display: block;
       float: left;
       margin-right: .707rem;
+      background-size: 100%;
     }
+
+    .youth-now-icon {
+      background-image: image-url("icon_youth_now.png");
+    }
+
+    .youth-outlook-icon {
+      background-image: image-url("icon_youth_outlook.png");
+    }
+
+    .youth-optimism-icon {
+      background-image: image-url("icon_youth_optimism.png");
+    }
+
     .metric {
+      padding-top: 7px;
       font-size: 1.414rem;
       margin-bottom: 0;
       padding-bottom: 0;
