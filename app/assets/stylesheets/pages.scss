@@ -124,7 +124,8 @@
 */
 
 .container-fluid#about-hero {
-  background: #4D4D4D;
+  background: #FF1C2D;
+  .btn.fill-white {color: #FF1C2D}
 }
 
 
@@ -232,7 +233,6 @@
 */
 
 #blog-hero {
-  background: #3d3d3d;
   padding-bottom: 2.827rem;
   margin-bottom: 0;
   header {
