@@ -74,6 +74,10 @@
  $y_now: #02AFEB;
  $y_out: #FF6137;
 
+ $y_orange: #FE652E;
+ $y_green: #4BA350;
+ $y_blue: #00AFEE;
+
  $s_twit: #B1E5F8;
  // $s_inst: #;
  // $s_face: #;
@@ -281,6 +285,59 @@
    }
  }
 
+ .fill-orange {
+   color: $white;
+   background: $y_orange;
+   border: 1px solid $y_orange;
+   opacity: 1;
+   -webkit-transition: opacity .2s;
+   -moz-transition: opacity .2s;
+   -o-transition: opacity .2s;
+   transition: opacity .2s;
+   &:hover {
+     opacity: .5;
+     -webkit-transition: opacity .2s;
+     -moz-transition: opacity .2s;
+     -o-transition: opacity .2s;
+     transition: opacity .2s;
+   }
+ }
+
+ .fill-green {
+   color: $white;
+   background: $y_green;
+   border: 1px solid $y_green;
+   opacity: 1;
+   -webkit-transition: opacity .2s;
+   -moz-transition: opacity .2s;
+   -o-transition: opacity .2s;
+   transition: opacity .2s;
+   &:hover {
+     opacity: .5;
+     -webkit-transition: opacity .2s;
+     -moz-transition: opacity .2s;
+     -o-transition: opacity .2s;
+     transition: opacity .2s;
+   }
+ }
+
+ .fill-blue {
+   color: $white;
+   background: $y_blue;
+   border: 1px solid $y_blue;
+   opacity: 1;
+   -webkit-transition: opacity .2s;
+   -moz-transition: opacity .2s;
+   -o-transition: opacity .2s;
+   transition: opacity .2s;
+   &:hover {
+     opacity: .5;
+     -webkit-transition: opacity .2s;
+     -moz-transition: opacity .2s;
+     -o-transition: opacity .2s;
+     transition: opacity .2s;
+   }
+ }
 
 
  /*------------------------------------*\
