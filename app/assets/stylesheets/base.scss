@@ -160,7 +160,6 @@
  .fill-red {
    color: $white;
    background: $main_red;
-   border: 1px solid $main_red;
    opacity: 1;
    -webkit-transition: background .2s, color .2s;
    -moz-transition: background .2s, color .2s;
@@ -699,10 +698,6 @@ a {
     }
     img { height: 45px; }
   }
-}
-
-.blog-panel {
-  background: $main_red;
 }
 
 .social-media-panel {
