@@ -8,6 +8,8 @@
 
 .container-fluid#home-hero {
   background-size: cover;
+  h1 { color: #fff; }
+  p.emphasis-copy {max-width: 580px;}
 }
 
 .container-fluid#report-section {

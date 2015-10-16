@@ -891,9 +891,21 @@ section.row header {
   padding: 2.827rem .707rem 1.414rem .707rem;
   text-align: center;
   h1 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
     letter-spacing: .7px;
     font-size: 1.999rem;
     font-weight: bold;
+    position: relative;
+    // &:after, &:before {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   height: 4px;
+    //   width: 1rem;
+    //   top: 50%;
+    //   background-color: #ddd;
+    // }
   }
 }
 
