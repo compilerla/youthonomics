@@ -372,6 +372,12 @@
     h3 {margin-top: 0;}
   }
 
+  .metric-description a {
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    font-size: .707rem;
+  }
+
   #main-data {
     .col-sm-4:first-child {
       overflow: auto;
