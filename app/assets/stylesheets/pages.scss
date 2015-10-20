@@ -76,8 +76,8 @@
   }
 
   .circle#low-ranking:before {
-    border: 1px solid #524445;
-    background-color: #524445;
+    border: 1px solid #8DADB7;
+    background-color: #8DADB7;
   }
 
 }
@@ -344,9 +344,19 @@
     padding-left: 15px;
   }
 
+  h1 {
+    font-family: 'Fira Sans';
+    margin-top: 0;
+    font-size: 2.827em;
+    font-size: 2.827rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
   h2 {
     font-family: 'Oswald';
     margin-top: 0;
+    color: #524445;
     font-size: 1.414rem;
     font-weight: bold;
     text-align: center;
@@ -401,8 +411,8 @@
     }
 
     &.low-ranking {
-      border: 1px solid #524445;
-      background-color: #524445;
+      border: 1px solid #8DADB7;
+      background-color: #8DADB7;
     }
   }
 
@@ -421,7 +431,7 @@
     }
 
     &.low-ranking {
-      border: 3px solid #524445;
+      border: 3px solid #8DADB7;
     }
   }
 
@@ -689,8 +699,8 @@ a[href="#youth-now-subindex-data"] {
     }
 
     &.low-ranking {
-      border: 1px solid #524445;
-      background-color: #524445;
+      border: 1px solid #8DADB7;
+      background-color: #8DADB7;
     }
   }
 
