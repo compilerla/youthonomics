@@ -372,10 +372,18 @@
     h3 {margin-top: 0;}
   }
 
-  .metric-description a {
-    text-transform: uppercase;
-    letter-spacing: .7px;
-    font-size: .707rem;
+  .metric-description {
+    a {
+      text-transform: uppercase;
+      letter-spacing: .7px;
+      font-size: .707rem;
+    }
+    h4 {
+      font-weight: bold;
+      letter-spacing: .7px;
+      font-size: 1.414rem;
+      margin-bottom: .707rem;
+    }
   }
 
   #main-data {
@@ -385,11 +393,13 @@
   }
 
   h4.data-cat-header {
+    font-family: 'Oswald';
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .7px;
     color: #9B9B9B;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .icon {
@@ -494,8 +504,8 @@ body.js {
     opacity: 0
   }
   .subindex-pillar.active {
-    margin-top: 2.827rem;
-    margin-bottom: 2.827rem;
+    padding-top: 2.827rem;
+    padding-bottom: 2.827rem;
     display: block;
     height: auto;
     max-height:800px;
@@ -546,10 +556,12 @@ a[href="#youth-now-subindex-data"] {
   }
 
   h4.data-cat-header {
+    font-family: 'Oswald';
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .7px;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .row#youth-now-subindex-data {
@@ -583,16 +595,26 @@ a[href="#youth-now-subindex-data"] {
 
   .subindex-description h4,
   .pillar-data h4 {
-    font-color: #797979;
     font-weight: bold;
-    letter-spacing: 1.7px;
-    font-size: 1rem;
+    letter-spacing: .7px;
+    font-size: 1.414rem;
+    margin-bottom: .707rem;
   }
 
   .pillar-data section.row {
     padding-left: 0;
     padding-right: 15px;
     .pillar-ranking {padding-left: 0;}
+  }
+
+  .subindex-description-icon {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    opacity: .25;
+    left: -33%;
+    img {
+    }
   }
 
 }
