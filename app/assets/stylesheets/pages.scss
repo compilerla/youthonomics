@@ -14,20 +14,20 @@
 }
 
 .container-fluid#report-section {
-  #country-scroll ul {
-    width: 90%;
-    max-width: 320px;
-    height: 75px;
-    margin: 0 auto 1.999rem;
-    padding: 0;
-    overflow: auto;
-    li {
+  .video-container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: 560px;
+    max-height: 315px;
+    iframe {
       width: 100%;
-      color: #9B9B9B;
-      list-style: none;
-      padding: 0 .75rem;
+      height: 315px;
     }
   }
+
+
 }
 
 .container-fluid#contribute {
