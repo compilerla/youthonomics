@@ -38,6 +38,7 @@ gem 'aws-sdk', '< 2.0'
 
 # Use Comfortable Mexican Sofa
 gem 'comfortable_mexican_sofa', '~> 1.12.0'
+gem 'comfy_blog', '~> 1.12.0'
 
 # Use Rest-Client for Instagram stuff
 gem "rest-client"

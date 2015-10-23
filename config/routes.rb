@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  comfy_route :blog_admin, :path => '/admin'
+  comfy_route :blog, :path => '/blog'
+
   mount RailsAdmin::Engine => '/dataadmin', as: 'rails_admin'
 
   resources :countries, only: [:index, :show]
