@@ -138,7 +138,7 @@
 </div><!-- /.content-wrap -->
 
 <script>
-  var instagramPhotos =  'ig data goes in here';
+  var instagramPhotos = {{ cms:helper:instagram_photos }};
   var countriesData = {{ cms:helper:country_data }};
 
   function listCountries(data) {
@@ -173,9 +173,17 @@
     return total / countries.length;
   }
 
+  function latestGram(apiCall) {
+    console.log(apiCall);
+    var imgUrl = apiCall.data[0].images.standard_resolution.url;
+    var photoLink = apiCall.data[0].link;
+    $('.social-media-panel.instagram .media-wrap a').attr('href', photoLink);
+    $('.social-media-panel.instagram .media-wrap img').attr('src', imgUrl);
+  }
+
   $(document).ready(function(){
 
-    listCountries(countriesData);
+    latestGram(instagramPhotos);
 
     L.mapbox.accessToken = 'pk.eyJ1Ijoibm9ucGhvdG9ibHVlIiwiYSI6ImI0YTA5ZDIwZmRiOWNhNmE0MTI4MjMxMWY2ZThiNTJkIn0.RThxoY1h4-FxgIFASF2bBA';
     var map = L.mapbox.map('map', 'nonphotoblue.245216c2')
@@ -209,8 +217,9 @@
       layer.bindPopup(content);
     });
   });
+
 </script>
-{{ cms:helper:instagram_photos }}
+
 <div class="container-fluid" id="youthonomics-news">
   <section class="row">
     <header>
@@ -226,9 +235,12 @@
         </div>
       </div>
     </div><!-- /.blog-panel -->
-    <div class="col-sm-4 panel social-media-panel">
+    <div class="col-sm-4 panel social-media-panel instagram">
+      @youthonomics on Instagram
       <div class="media-wrap">
-        Featured tweet
+        <a href="https://instagram.com/youthonomics/" target="_blank">
+          <img src="" alt="" />
+        </a>
       </div>
     </div><!-- /.featured-media-panel -->
     <div class="col-sm-4 panel blog-panel fill-red">
