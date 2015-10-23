@@ -10,7 +10,46 @@
     </section>
   </div><!-- /.container-fluid#contact-hero -->
   <div class="main-content">
+    <form class="contact-now" action="" method="post">
+      <div class="centerer">
+        <div class="input-text-container">
+          <input type="text" placeholder="First and Last Name" name="name" value="" validate>
+        </div>
+        <div class="input-text-container">
+          <input type="text" placeholder="Email Address" name="email" value="" validate>
+        </div>
+        <div class="input-dropdown">
+          <label for="country-list">Select Your Country</label>
+          <select class="country-list" name="country-list">
 
+          </select>
+        </div>
+        <div class="input-text-area">
+        <label for=""></label>
+          <textarea name="message" rows="8" cols="40"></textarea>
+        </div>
+      </div>
+      <div class="input-submit-container">
+        <input class="btn outline-red" type="submit" name="contact" value="send">
+      </div>
+    </form>
   </div><!-- /.main-content -->
 </div><!-- /.content-wrap -->
+
+<script>
+  var countriesData = {{ cms:helper:country_data }};
+
+  function listCountries(data) {
+    for (obj in data) {
+      var country = data[obj];
+      $('.country-list').append("<option>" + country.country + "</option>");
+    }
+    $('.country-list').append("<option>Other</option>");
+  }
+
+  $(document).ready(function(){
+    console.log(countriesData);
+    listCountries(countriesData);
+  });
+</script>
 {{ cms:snippet:footer }}
