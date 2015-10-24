@@ -709,9 +709,44 @@ a {
 }
 
 .social-media-panel {
-  background:url(asset-path('twitter.svg')) $s_twit no-repeat;
   background-size:cover;
   background-position:-114px 76px;
+  &:hover { cursor: pointer; }
+}
+
+.social-media-panel.instagram {
+  background:url(asset-path('instagram.svg')) $m_grey no-repeat;
+  background-position: 50% 50%;
+  background-size: 30%;
+  a:hover{
+    .caption {
+      display: block;
+      opacity: 1;
+      -webkit-transition: opacity .2s;
+      -moz-transition: opacity .2s;
+      -o-transition: opacity .2s;
+      transition: opacity .2s;
+    }
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  .caption {
+    display: none;
+    position: absolute;
+    bottom: 1em;
+    bottom: 1rem;
+    left: .707em;
+    left: .707rem;
+    color: $white;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+  }
 }
 
 .team-panel {
