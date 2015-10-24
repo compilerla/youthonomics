@@ -1,0 +1,61 @@
+<%= cms_snippet_render(:header).html_safe %>
+<div class="content-wrap">
+  <div class="container-fluid" id="blog-hero">
+    <section class="row">
+      <header>
+        <h1>Youthonomics Blog</h1>
+        <h4 class="emphasis-copy">Blog Category</h6>
+      </header>
+    </section>
+  </div><!-- /.container-fluid#about-hero -->
+  <div class="main-content container-fluid" id="blog-posts">
+    <section class="row">
+      <% @posts.each do |post| %>
+        <div class="col-xs-6 col-sm-4 panel blog-panel fill-red">
+          <div class="content">
+            <h5><%= post.title %></h5>
+            <h6 class="subheading">Featured Blog Post</h6>
+            <div class="check-it-cta">
+              <a href="#" class="white">Check it Out {{ cms:file:icon_arrow_r_light.png:image }}</a>
+            </div>
+          </div>
+        </div><!-- /.blog-panel -->
+      <% end %>
+    </section>
+  </div><!-- /#blog-posts -->
+  <div class="container-fluid" id="blog-page-navigation">
+    <section class="row">
+      <div class="col-xs-3">
+        <div class="last-post">
+          <a href="#">
+            {{ cms:file:icon_arrow_l_dark.png:image }}
+            <span>older</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <nav class="text-center">
+          <ul class="pagination">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xs-3">
+        <div class="next-post">
+          <a href="#">
+          {{ cms:file:icon_arrow_r_dark.png:image }}
+          <span>newer</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div><!-- /.content-wrap -->
+<%= cms_snippet_render(:footer) %>
+
+
+= comfy_paginate @posts
