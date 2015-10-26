@@ -1,0 +1,51 @@
+  
+<%= cms_snippet_render(:header).html_safe %>
+<div class="content-wrap">
+  <div class="container-fluid" id="post-hero">
+    <section class="row">
+      <header>
+        <h6 class="subheading">Category</h6>
+        <h1 class="white"><%= @post.title %></h1>
+        <div class="byline">
+          <h5>by <%= @post.author %></h5>
+          <h5><%= @post.published_at.to_s(:db) %></h5>
+        </div>
+      </header>
+    </section>
+  </div><!-- /.container-fluid#about-hero -->
+  <div class="main-content">
+    <div class="container">
+      <%= @post.content.html_safe %>
+    </div>
+  </div><!-- /.main-content -->
+  <div class="container" id="blog-navigation">
+    <section class="row">
+      <div class="col-xs-4">
+        <div class="last-post">
+          <% if Comfy::Blog::Post.where("id < ?", @post.id).any? %>
+            <%= link_to comfy_blog_post_path(@cms_site.path, @blog.path, Comfy::Blog::Post.where("id < ?", @post.id).first.slug) do %>
+              <%= image_tag 'icon_arrow_l_dark.png' %>
+              <span>last post</span>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="category">
+          <%= link_to 'back to blog', '/blog' %>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="next-post">
+          <% if Comfy::Blog::Post.where("id > ?", @post.id).any? %>
+            <%= link_to comfy_blog_post_path(@cms_site.path, @blog.path, Comfy::Blog::Post.where("id > ?", @post.id).first.slug) do %>
+              <%= image_tag 'icon_arrow_r_dark.png' %>
+              <span>next post</span>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </section>
+  </div>
+</div><!-- /.content-wrap -->
+<%= cms_snippet_render(:footer) %>
