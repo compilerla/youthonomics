@@ -9,7 +9,7 @@
     </section>
   </div><!-- /.container-fluid#contact-hero -->
   <div class="main-content">
-    <form class="contact-now" id="contact-page" action="" method="post">
+    <form class="contact-now" id="contact-page-form" action="" method="post">
       <div class="centerer">
         <div class="input-text-container">
           <input type="text" placeholder="First and Last Name" name="name" value="" required>
@@ -20,11 +20,11 @@
         <div class="input input-dropdown">
           <label for="country-list">Select Your Country</label>
           <span class="sublabel">If you do not see your country avaliable from the list please select 'Other'</span>
-          <select class="country-list" name="country-list">
+          <select class="country-list" name="country-list" required>
             <option value="">Select Country</option>
           </select>
         </div>
-        <div class="input input-text-container">
+        <div class="hidden input input-text-container">
           <label for="country-name">Please add your country name</label>
           <input type="text" placeholder="Country Name" name="country-name" value="">
         </div>
@@ -66,23 +66,31 @@
       var letterCount = country.length;
       var countryIso = country.substring(letterCount - 3, letterCount);
       var countryName = country.slice(0, letterCount - 6);
-      console.log( country + ' - ' + letterCount);
       $('.country-list').append("<option value=" + countryIso + ">" + countryName + "</option>");
     }
     $('.country-list').append("<option value=\"other\">Other</option>");
   }
 
-  function checkSelect(select) {
-    $(select).change( function() {
-      var selectValue =
-      console.log(select.value)
+  function checkSelect(form, select) {
+    var sel = document.forms[form].elements['country-list'];
+    // value property of select list (from selected option)
+    var val = sel.value;
+    $('.country-list').change( function() {
+      currentSelected = $(this).find(":selected").val();
+      if (currentSelected === 'other') {
+        $('input[name="country-name"]').prop('required',true);
+        $('input[name="country-name"]').parent('.input-text-container').removeClass('hidden');
+      } else {
+        $('input[name="country-name"]').prop('required',false);
+        $('input[name="country-name"]').parent('.input-text-container').addClass('hidden');
+      }
     });
   }
 
   $(document).ready(function(){
     console.log(countriesData);
     listCountries(countriesData);
-    checkSelect();
+    checkSelect('contact-page-form', 'country-name');
   });
 </script>
 {{ cms:snippet:footer }}
