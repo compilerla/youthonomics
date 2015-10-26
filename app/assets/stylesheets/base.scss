@@ -549,6 +549,13 @@ a {
     text-transform: uppercase;
     display: block;
   }
+  .sublabel {
+    font-size: .707rem;
+    line-height: 1rem;
+    display: block;
+    color: #888;
+    margin-bottom: .707rem;
+  }
 }
 
 .input-text-container {
@@ -575,6 +582,7 @@ a {
   max-width: 320px;
   select {
     width: 100%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -582,7 +590,8 @@ a {
   margin: 1.999em auto;
   max-width: 320px;
   textarea {
-    width: 100%
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 

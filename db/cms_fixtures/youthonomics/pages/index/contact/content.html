@@ -19,9 +19,13 @@
         </div>
         <div class="input input-dropdown">
           <label for="country-list">Select Your Country</label>
+          <span class="sublabel">If you do not see your country avaliable from the list please select 'Other'</span>
           <select class="country-list" name="country-list">
-
           </select>
+        </div>
+        <div class="input input-text-container">
+          <label for="country-name">Please add your country name</label>
+          <input type="text" placeholder="Country Name" name="country-name" value="" validate>
         </div>
         <div class="input input-text-area">
           <label for="message">Message</label>
@@ -37,11 +41,25 @@
 
 <script>
   var countriesData = {{ cms:helper:country_data }};
+  var sanitizedCountryList = [];
 
-  function listCountries(data) {
+  function sanitizeCountries(data) {
     for (obj in data) {
       var country = data[obj];
-      $('.country-list').append("<option>" + country.country + "</option>");
+      var countryName = country.country;
+      // alphebetize country list here
+      sanitizedCountryList.push(countryName)
+    }
+    sanitizedCountryList.sort();
+  }
+
+  function listCountries(data) {
+    // alphebetize country list here
+    sanitizeCountries(data);
+    // add sanitized list to select dropdown
+    for (var i = 0; i < sanitizedCountryList.length; i++) {
+      var country = sanitizedCountryList[i];
+      $('.country-list').append("<option>" + country + "</option>");
     }
     $('.country-list').append("<option>Other</option>");
   }
