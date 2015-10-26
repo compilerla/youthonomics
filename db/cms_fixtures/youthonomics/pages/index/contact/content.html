@@ -12,24 +12,25 @@
     <form class="contact-now" id="contact-page" action="" method="post">
       <div class="centerer">
         <div class="input-text-container">
-          <input type="text" placeholder="First and Last Name" name="name" value="" validate>
+          <input type="text" placeholder="First and Last Name" name="name" value="" required>
         </div>
         <div class="input input-text-container">
-          <input type="text" placeholder="Email Address" name="email" value="" validate>
+          <input type="text" placeholder="Email Address" name="email" value="" required>
         </div>
         <div class="input input-dropdown">
           <label for="country-list">Select Your Country</label>
           <span class="sublabel">If you do not see your country avaliable from the list please select 'Other'</span>
           <select class="country-list" name="country-list">
+            <option value="">Select Country</option>
           </select>
         </div>
         <div class="input input-text-container">
           <label for="country-name">Please add your country name</label>
-          <input type="text" placeholder="Country Name" name="country-name" value="" validate>
+          <input type="text" placeholder="Country Name" name="country-name" value="">
         </div>
         <div class="input input-text-area">
           <label for="message">Message</label>
-          <textarea name="message" rows="8" cols="40"></textarea>
+          <textarea name="message" rows="8" cols="40" required></textarea>
         </div>
       </div>
       <div class="input-submit-container">
@@ -42,13 +43,16 @@
 <script>
   var countriesData = {{ cms:helper:country_data }};
   var sanitizedCountryList = [];
+  var sanitizedCountryIso = [];
+  var comma = ',';
 
   function sanitizeCountries(data) {
     for (obj in data) {
       var country = data[obj];
       var countryName = country.country;
+      var countryIso = country.country_iso;
       // alphebetize country list here
-      sanitizedCountryList.push(countryName)
+      sanitizedCountryList.push(countryName + ' - ' + countryIso);
     }
     sanitizedCountryList.sort();
   }
@@ -59,15 +63,26 @@
     // add sanitized list to select dropdown
     for (var i = 0; i < sanitizedCountryList.length; i++) {
       var country = sanitizedCountryList[i];
-      $('.country-list').append("<option>" + country + "</option>");
+      var letterCount = country.length;
+      var countryIso = country.substring(letterCount - 3, letterCount);
+      var countryName = country.slice(0, letterCount - 6);
+      console.log( country + ' - ' + letterCount);
+      $('.country-list').append("<option value=" + countryIso + ">" + countryName + "</option>");
     }
-    $('.country-list').append("<option>Other</option>");
+    $('.country-list').append("<option value=\"other\">Other</option>");
+  }
+
+  function checkSelect(select) {
+    $(select).change( function() {
+      var selectValue =
+      console.log(select.value)
+    });
   }
 
   $(document).ready(function(){
     console.log(countriesData);
     listCountries(countriesData);
-
+    checkSelect();
   });
 </script>
 {{ cms:snippet:footer }}
