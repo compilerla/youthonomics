@@ -23,12 +23,18 @@
       <% end %>
     </section>
   </div><!-- /#blog-posts -->
+  <div class="container-fluid">
+    <div class="row">
+      <%= comfy_paginate @posts %>
+    </div>
+  </div>
+  
   <div class="container-fluid" id="blog-page-navigation">
     <section class="row">
       <div class="col-xs-3">
         <div class="last-post">
           <a href="#">
-            {{ cms:file:icon_arrow_l_dark.png:image }}
+            <%= image_tag 'icon_arrow_l_dark.png' %>
             <span>older</span>
           </a>
         </div>
@@ -47,7 +53,7 @@
       <div class="col-xs-3">
         <div class="next-post">
           <a href="#">
-          {{ cms:file:icon_arrow_r_dark.png:image }}
+          <%= image_tag 'icon_arrow_r_dark.png' %>
           <span>newer</span>
           </a>
         </div>
@@ -57,5 +63,3 @@
 </div><!-- /.content-wrap -->
 <%= cms_snippet_render(:footer) %>
 
-
-<%= comfy_paginate @posts %>
