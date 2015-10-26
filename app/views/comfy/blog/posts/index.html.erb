@@ -16,7 +16,7 @@
             <h5><%= post.title %></h5>
             <h6 class="subheading">Featured Blog Post</h6>
             <div class="check-it-cta">
-              <a href="#" class="white">Check it Out {{ cms:file:icon_arrow_r_light.png:image }}</a>
+              <%= link_to("Check it Out #{image_tag('icon_arrow_r_light.png')}".html_safe, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug), class: 'white') %>
             </div>
           </div>
         </div><!-- /.blog-panel -->
