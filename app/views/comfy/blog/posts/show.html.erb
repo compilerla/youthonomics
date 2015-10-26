@@ -8,7 +8,7 @@
         <h1 class="white"><%= @post.title %></h1>
         <div class="byline">
           <h5>by <%= @post.author %></h5>
-          <h5><%= @post.published_at.to_s(:db) %></h5>
+          <h5><%= @post.published_at.strftime("%m/%d/%y") %></h5>
         </div>
       </header>
     </section>
