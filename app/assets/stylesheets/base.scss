@@ -540,6 +540,17 @@ a {
 * inputs
 */
 
+.input {
+  label {
+    color: $m_grey;
+    font-size: .707rem;
+    margin-bottom: 10px;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    display: block;
+  }
+}
+
 .input-text-container {
   margin: 0 .707rem .707rem .707rem;
   border-bottom: 1px solid white;
@@ -557,6 +568,22 @@ a {
 
 .input-submit-container {
   margin: 1.414rem 0 1.999rem 0;
+}
+
+.input-dropdown {
+  margin: 1.999em auto;
+  max-width: 320px;
+  select {
+    width: 100%;
+  }
+}
+
+.input-text-area {
+  margin: 1.999em auto;
+  max-width: 320px;
+  textarea {
+    width: 100%
+  }
 }
 
 

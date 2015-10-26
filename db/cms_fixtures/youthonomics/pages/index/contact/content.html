@@ -6,26 +6,25 @@
         <h1>Contact Us</h1>
         <h4 class="emphasis-copy">Get In touch with Youthonomics</h4>
       </header>
-      <a href="#" class="btn fill-white"></a>
     </section>
   </div><!-- /.container-fluid#contact-hero -->
   <div class="main-content">
-    <form class="contact-now" action="" method="post">
+    <form class="contact-now" id="contact-page" action="" method="post">
       <div class="centerer">
         <div class="input-text-container">
           <input type="text" placeholder="First and Last Name" name="name" value="" validate>
         </div>
-        <div class="input-text-container">
+        <div class="input input-text-container">
           <input type="text" placeholder="Email Address" name="email" value="" validate>
         </div>
-        <div class="input-dropdown">
+        <div class="input input-dropdown">
           <label for="country-list">Select Your Country</label>
           <select class="country-list" name="country-list">
 
           </select>
         </div>
-        <div class="input-text-area">
-        <label for=""></label>
+        <div class="input input-text-area">
+          <label for="message">Message</label>
           <textarea name="message" rows="8" cols="40"></textarea>
         </div>
       </div>
@@ -50,6 +49,7 @@
   $(document).ready(function(){
     console.log(countriesData);
     listCountries(countriesData);
+
   });
 </script>
 {{ cms:snippet:footer }}
