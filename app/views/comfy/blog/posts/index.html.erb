@@ -23,39 +23,36 @@
       <% end %>
     </section>
   </div><!-- /#blog-posts -->
-  <div class="container-fluid">
-    <div class="row">
-      <%= comfy_paginate @posts %>
-    </div>
-  </div>
-  
+
   <div class="container-fluid" id="blog-page-navigation">
     <section class="row">
       <div class="col-xs-3">
         <div class="last-post">
-          <a href="#">
-            <%= image_tag 'icon_arrow_l_dark.png' %>
-            <span>older</span>
-          </a>
+          <% if Comfy::Blog::Post.count - (ComfyBlog.config.posts_per_page * (params[:page].to_i || 1)) > 0 %>
+            <a href="?page=<%= (params[:page].to_i || 1) + 1 %>">
+              <%= image_tag 'icon_arrow_l_dark.png' %>
+              <span>older</span>
+            </a>
+          <% end %>
         </div>
       </div>
       <div class="col-xs-6">
         <nav class="text-center">
           <ul class="pagination">
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
+            <% (Comfy::Blog::Post.count / ComfyBlog.config.posts_per_page.to_f).ceil.times do |index| %>
+              <li class="<%= params[:page].try(:to_i) == index + 1 ? 'active' : '' %>"><a href="?page=<%= index + 1 %>"><%= index + 1 %></a></li>
+            <% end %>
           </ul>
         </nav>
       </div>
       <div class="col-xs-3">
         <div class="next-post">
-          <a href="#">
-          <%= image_tag 'icon_arrow_r_dark.png' %>
-          <span>newer</span>
-          </a>
+          <% if params[:page].present? && params[:page].to_i != 1 %>
+            <a href="?page=<%= (params[:page].to_i || 1) - 1 %>">
+            <%= image_tag 'icon_arrow_r_dark.png' %>
+            <span>newer</span>
+            </a>
+          <% end %>
         </div>
       </div>
     </section>
