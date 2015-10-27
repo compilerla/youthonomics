@@ -822,7 +822,18 @@ form#contact-page-form {
 * Donate Page Main Styling
 */
 
+#donate-hero {
+  background-color: #FF1C2D;
+}
+
 .donate-now {
   max-width: 320px;
   margin: 0 auto;
+  h5 {
+    text-align: center;
+  }
+  .input-radio-container {
+    display: block;
+    padding: 5px 1rem;
+  }
 }
