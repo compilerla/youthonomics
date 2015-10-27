@@ -796,7 +796,8 @@ a[href="#youth-now-subindex-data"] {
 form#contact-page-form {
   margin: 0 auto;
   max-width: 960px;
-  .input-text-container {
+  .input-text-container,
+  .input-email-container {
     border-bottom: 1px solid #3D3D3D;
     input {color: #3D3D3D;}
   }

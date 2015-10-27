@@ -558,10 +558,10 @@ a {
   }
 }
 
-.input-text-container {
+.input-text-container, .input-email-container {
   margin: 0 .707rem .707rem .707rem;
   border-bottom: 1px solid white;
-  input[type="text"] {
+  input[type="text"], input[type="email"] {
     color: $white;
     width: 100%;
     background-color: transparent;
@@ -578,7 +578,7 @@ a {
 }
 
 .input-dropdown {
-  margin: 1.999em auto;
+  margin: 0 .707rem .707rem .707rem;
   max-width: 320px;
   select {
     width: 100%;
@@ -587,7 +587,7 @@ a {
 }
 
 .input-text-area {
-  margin: 1.999em auto;
+  margin: 0 .707rem .707rem .707rem;
   max-width: 320px;
   textarea {
     width: 100%;
@@ -866,7 +866,12 @@ a {
 
 @media (screen and min-width: 480px) {
   .input-text-container,
-  .input-submit-container {
+  .input-submit-container,
+  .input-email-container,
+  .input-submit-container,
+  .input-dropdown,
+  .input-text-area,
+  .input-radio-container, {
     margin-right: auto;
     margin-left: auto;
     max-width: 320px;
@@ -901,7 +906,7 @@ a {
     }
   }
 
-}
+} // end 480
 
 @media (screen and min-width: 768px) {
   .navbar-brand { padding-top: 15px; margin-left: 0; padding-left: 15px;}
@@ -985,6 +990,17 @@ a {
     margin-right: 2.5%;
   }
 
+  .input-text-container,
+  .input-submit-container,
+  .input-email-container,
+  .input-submit-container,
+  .input-dropdown,
+  .input-text-area,
+  .input-radio-container, {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 580px;
+  }
 
 
 } // end 768
