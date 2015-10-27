@@ -151,6 +151,10 @@
 * Single-Blog Sections
 */
 
+.container#blog-post {
+  max-width: 780px;
+}
+
 #post-hero {
   background: #3d3d3d;
   header {
@@ -169,6 +173,7 @@
 
 #blog-navigation {
   margin-top: 2.827rem;
+  margin-bottom: 3.988rem;
   .last-post,
   .next-post,
   .category {

@@ -4,7 +4,7 @@
     <section class="row">
       <header>
         <h1>Youthonomics Blog</h1>
-        <h4 class="emphasis-copy">Blog Category</h6>
+        <h4 class="emphasis-copy">Main Youthonomics Blog</h6>
       </header>
     </section>
   </div><!-- /.container-fluid#about-hero -->
@@ -12,6 +12,7 @@
     <section class="row">
       <% @posts.each do |post| %>
         <div class="col-xs-6 col-sm-4 panel blog-panel fill-red">
+          <%= link_to(" ".html_safe, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug), class: 'spanlink') %>
           <div class="content">
             <h5><%= post.title %></h5>
             <h6 class="subheading">Featured Blog Post</h6>
@@ -59,4 +60,3 @@
   </div>
 </div><!-- /.content-wrap -->
 <%= cms_snippet_render(:footer) %>
-

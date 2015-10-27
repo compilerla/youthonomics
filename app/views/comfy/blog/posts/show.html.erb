@@ -1,10 +1,9 @@
-  
+
 <%= cms_snippet_render(:header).html_safe %>
 <div class="content-wrap">
   <div class="container-fluid" id="post-hero">
     <section class="row">
       <header>
-        <h6 class="subheading">Category</h6>
         <h1 class="white"><%= @post.title %></h1>
         <div class="byline">
           <h5>by <%= @post.author %></h5>
@@ -14,7 +13,7 @@
     </section>
   </div><!-- /.container-fluid#about-hero -->
   <div class="main-content">
-    <div class="container">
+    <div class="container" id="blog-post">
       <%= @post.content.html_safe %>
     </div>
   </div><!-- /.main-content -->
