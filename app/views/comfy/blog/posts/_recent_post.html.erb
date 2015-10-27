@@ -1,0 +1,11 @@
+<% recent_post = Comfy::Blog::Post.order('created_at DESC').first %>
+<% if recent_post.present? %>
+  <%= link_to '', comfy_blog_post_path(@cms_site.path, nil, recent_post.slug), class: 'spanlink' %>
+  <div class="content">
+    <h5><%= recent_post.title %></h5>
+    <h6 class="subheading">Featured Blog Post</h6>
+    <div class="check-it-cta">
+      <div class="white"><a href="#">Check it Out <%= image_tag 'icon_arrow_r_light.png' %></a></div>
+    </div>
+  </div>
+<% end %>
