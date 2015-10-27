@@ -26,7 +26,7 @@
         </div>
         <div class="hidden input input-text-container">
           <label for="country-name">Please add your country name</label>
-          <input type="text" placeholder="Country Name" name="country-name" value="">
+          <input type="text" placeholder="Country Name" name="country-other" value="">
         </div>
         <div class="input input-text-area">
           <label for="message">Message</label>
@@ -78,11 +78,11 @@
     $('.country-list').change( function() {
       currentSelected = $(this).find(":selected").val();
       if (currentSelected === 'other') {
-        $('input[name="country-name"]').prop('required',true);
-        $('input[name="country-name"]').parent('.input-text-container').removeClass('hidden');
+        $('input[name="country-other"]').prop('required',true);
+        $('input[name="country-other"]').parent('.input-text-container').removeClass('hidden');
       } else {
-        $('input[name="country-name"]').prop('required',false);
-        $('input[name="country-name"]').parent('.input-text-container').addClass('hidden');
+        $('input[name="country-other"]').prop('required',false);
+        $('input[name="country-other"]').parent('.input-text-container').addClass('hidden');
       }
     });
   }
