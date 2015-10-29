@@ -6,14 +6,6 @@ $(document).ready(function(){
     console.log(location.pathname.split("/")[1]);
     $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').parent('li').addClass('active');
   });
-  // $.ajax({
-  //   type: "GET",
-  //   url: "/country",
-  //   dataType: "json",
-  //   success: function(data){
-  //       console.log(data) // log it
-  //   }
-  // });
   $('body').addClass('js');
   $('.blog-panel, .social-media-panel, .action-panel').mouseover(function(){
     var cta = $(this).find('.check-it-cta');
