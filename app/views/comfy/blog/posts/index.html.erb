@@ -29,7 +29,7 @@
     <section class="row">
       <div class="col-xs-3">
         <div class="last-post">
-          <% if Comfy::Blog::Post.count - (ComfyBlog.config.posts_per_page * (params[:page].to_i || 1)) > 0 %>
+          <% if Comfy::Blog::Post.count - (ComfyBlog.config.posts_per_page * (params[:page].present? ? params[:page].to_i : 1)) > 0 %>
             <a href="?page=<%= (params[:page].to_i || 1) + 1 %>">
               <%= image_tag 'icon_arrow_l_dark.png' %>
               <span>older</span>
