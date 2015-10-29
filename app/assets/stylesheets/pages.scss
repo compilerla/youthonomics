@@ -862,5 +862,10 @@ form#contact-page-form {
   .input-radio-container {
     display: block;
     padding: 5px 1rem;
+    label {padding-left: 15px;}
+  }
+  .input-text-container {
+    border-bottom: 1px solid #3D3D3D;
+    input {color: #3D3D3D;}
   }
 }

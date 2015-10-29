@@ -40,11 +40,31 @@
           <input type="radio" name="donate" value="other">
           <label for="other">Other</label>
         </div>
+        <div class="hidden input-text-container">
+          <label for="other">Please specify the amount.</label>
+          <input type="text" name="other-amount" value="" placeholder="$100,000.00">
+        </div>
       </div><!-- .centerer -->
       <div class="input-submit-container">
         <input class="btn outline-red" type="submit" name="contact" value="donate">
       </div>
     </form>
   </div><!-- /.main-content -->
+  <script type="text/javascript">
+    function checkSelect(form) {
+      $('input[type="radio"]').change(function(){
+        // value property of select list (from selected option)
+        currentSelected = $(this).val();
+        if (currentSelected === 'other') {
+          $('input[name="other-amount"]').parent('.input-text-container').removeClass('hidden');
+        } else {
+          $('input[name="other-amount"]').parent('.input-text-container').addClass('hidden');
+        }
+      });
+    }
+    $(document).ready(function(){
+      checkSelect('.donate-now')
+    });
+  </script>
 </div><!-- /.content-wrap -->
 {{ cms:snippet:footer }}

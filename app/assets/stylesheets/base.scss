@@ -635,6 +635,10 @@ a {
       border-bottom: 1px solid $white;
     }
   }
+  .twitter img,
+  .yt img,
+  .insta img { width: 25px;}
+  .fb img { height: 25px; }
 }
 
 .newsletter-form {
