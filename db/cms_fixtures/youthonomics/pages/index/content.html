@@ -177,8 +177,8 @@
     console.log(apiCall);
     var imgUrl = apiCall.data[0].images.standard_resolution.url;
     var photoLink = apiCall.data[0].link;
-    $('.social-media-panel.instagram .media-wrap a').attr('href', photoLink);
-    $('.social-media-panel.instagram .media-wrap img').attr('src', imgUrl);
+    $('.social-media-panel.instagram .media-wrap a.spanlink').attr('href', photoLink);
+    $('.social-media-panel.instagram .media-wrap img.stagram-photo').attr('src', imgUrl);
   }
 
   $(document).ready(function(){
@@ -243,9 +243,9 @@
     <div class="col-sm-4 panel social-media-panel instagram">
       <div class="media-wrap">
         <a class="spanlink" href="https://instagram.com/youthonomics/" target="_blank">
-          <img src="" alt="" />
+          <img src="" alt="" class="stagram-photo"/>
           <div class="check-it-cta">
-            <div class="white"><a href="#">@Youthonomics on Instagram {{ cms:file:icon_arrow_r_light.png:image }}</a></div>
+            <div class="white">@Youthonomics on Instagram {{ cms:file:icon_arrow_r_light.png:image }}</div>
           </div>
         </a>
       </div>

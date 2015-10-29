@@ -850,6 +850,13 @@ a {
     -o-transition: opacity .2s;
     transition: opacity .2s;
   }
+  .check-it-cta {
+    padding-left: 1.414rem;
+    img {
+      width: auto;
+      display: initial;
+    }
+  }
 }
 
 .team-panel {
