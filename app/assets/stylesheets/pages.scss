@@ -82,6 +82,27 @@
 
 }
 
+.panel.social-media-panel.facebook {
+  padding: 0;
+  overflow: hidden;
+  img {
+    width: 200%;
+    display: block;
+    margin-left: -33%;
+    margin-top: -10%;
+  }
+  .check-it-cta a {
+    margin-left: 1.414rem;
+    img {
+      display: initial;
+      width: auto;
+      margin-left: 10px;
+      margin-top: auto;
+    }
+  }
+
+}
+
 
 /**
 * Homepage Section Breakpoints

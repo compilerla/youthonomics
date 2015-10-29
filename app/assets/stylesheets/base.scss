@@ -755,6 +755,53 @@ a {
   &:hover { cursor: pointer; }
 }
 
+.social-media-panel.facebook {
+  background: $d_grey;
+  .content  {
+    h5 {
+      position: relative;
+      z-index: 10;
+      padding: 1.414rem;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      z-index: 5;
+    }
+  }
+  .check-it-cta {z-index: 10;}
+  a.spanlink {
+    z-index: 15;
+    &:after {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      content: ' ';
+      top: 0;
+      z-index: 0;
+      background: transparent;
+      opacity: 0;
+      -webkit-transition: opacity .2s;
+      -moz-transition: opacity .2s;
+      -o-transition: opacity .2s;
+      transition: opacity .2s;
+    }
+    &:hover {
+      &:after {
+        opacity: .7;
+        background-color: $d_grey;
+        -webkit-transition: opacity .2s;
+        -moz-transition: opacity .2s;
+        -o-transition: opacity .2s;
+        transition: opacity .2s;
+      }
+    }
+  }
+
+}
+
+
 .social-media-panel.instagram {
   background:url(asset-path('instagram.svg')) $white no-repeat;
   background-position: 50% 50%;
@@ -853,7 +900,8 @@ a {
 .js {
   .team-panel {}
 
-  .blog-panel {
+  .blog-panel,
+  .social-media-panel {
     .check-it-cta {
       opacity: 0;
     }
