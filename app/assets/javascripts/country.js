@@ -11,12 +11,12 @@ $(document).ready(function(){
   //   }
   // });
   $('body').addClass('js');
-  $('.blog-panel, .social-media-panel').mouseover(function(){
+  $('.blog-panel, .social-media-panel, .action-panel').mouseover(function(){
     var cta = $(this).find('.check-it-cta');
     cta.removeClass('fadeOutLeft');
     cta.addClass('fadeInLeft');
   });
-  $('.blog-panel, .social-media-panel').mouseleave(function(){
+  $('.blog-panel, .social-media-panel, .action-panel').mouseleave(function(){
     var cta = $(this).find('.check-it-cta');
     cta.removeClass('fadeInLeft');
     cta.addClass('fadeOutLeft');

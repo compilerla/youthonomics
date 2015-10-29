@@ -294,7 +294,7 @@
    -o-transition: opacity .2s;
    transition: opacity .2s;
    &:hover {
-     opacity: .5;
+     opacity: .75;
      -webkit-transition: opacity .2s;
      -moz-transition: opacity .2s;
      -o-transition: opacity .2s;
@@ -312,7 +312,7 @@
    -o-transition: opacity .2s;
    transition: opacity .2s;
    &:hover {
-     opacity: .5;
+     opacity: .75;
      -webkit-transition: opacity .2s;
      -moz-transition: opacity .2s;
      -o-transition: opacity .2s;
@@ -330,7 +330,7 @@
    -o-transition: opacity .2s;
    transition: opacity .2s;
    &:hover {
-     opacity: .5;
+     opacity: .75;
      -webkit-transition: opacity .2s;
      -moz-transition: opacity .2s;
      -o-transition: opacity .2s;
@@ -710,9 +710,52 @@ a {
     right: 15px;
     top: 1.75rem;
   }
+  .content {
+    padding-bottom: 1.414rem;
+  }
   .content h5 {
     display: none;
   }
+  .social {
+    padding-left: 10%;
+    .twitter img,
+    .yt img,
+    .insta img { width: 25px;}
+    .fb img { height: 25px; }
+    li {
+      list-style-type: none;
+      width: 23%;
+      display: inline-block;
+    }
+  }
+
+  .check-it-cta {
+    position: absolute;
+    bottom: .707rem;
+    a {
+      letter-spacing: normal;
+      text-transform: capitalize;
+      color:$white;
+      font-size: 14px;
+      font-weight: normal;
+      opacity: .9;
+      -webkit-transition: opacity .2s;
+      -moz-transition: opacity .2s;
+      -o-transition: opacity .2s;
+      transition: opacity .2s;
+      &:hover {
+        opacity:1;
+        color: $white;
+        text-decoration: none;
+      }
+
+      img {
+        margin-left:10px;
+      }
+    }
+    img { height: 45px; }
+  }
+
 }
 
 .blog-panel, .social-media-panel {
@@ -908,7 +951,8 @@ a {
   .team-panel {}
 
   .blog-panel,
-  .social-media-panel {
+  .social-media-panel,
+  .action-panel {
     .check-it-cta {
       opacity: 0;
     }
