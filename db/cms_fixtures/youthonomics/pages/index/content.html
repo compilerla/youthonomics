@@ -163,8 +163,9 @@
     </section>
   </div><!-- /.container-fluid#contribute -->
 </div><!-- /.content-wrap -->
-
+<div class="hidden" id="janky-report-pdf" data-url="{{ cms:file:Youth_report_151012.pdf }}"></div>
 <script>
+  var reportPdf = $('#janky-report-pdf').data('url');
   var instagramPhotos = {{ cms:helper:instagram_photos }};
   var countriesData = {{ cms:helper:country_data }};
 
@@ -209,6 +210,8 @@
   }
 
   $(document).ready(function(){
+
+    console.log(reportPdf.toString());
 
     latestGram(instagramPhotos);
 
