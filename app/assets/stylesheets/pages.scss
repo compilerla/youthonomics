@@ -111,12 +111,37 @@
   #report-modal {
     width: 95%;
     max-width: 680px;
-    margin-top: 20vh;
     position: relative;
     margin: 0 auto;
     .modal-container {
       width: 100%;
       background: #fff;
+      margin-top: 2vh;
+      padding: 1.414rem;
+      h4 {
+        padding: 0 1.414rem;
+        text-align: center;
+      }
+      .close:after {
+        width: 15px;
+        height: 15px;
+        content: 'x';
+        display: block;
+        position: absolute;
+        top: .707rem;
+        right: .707rem;
+        color: #3d3d3d;
+      }
+      #link-out {
+        font-size: .707rem;
+        text-decoration: underline;
+        color: #4A4A4A;
+        border: none;
+        background: #fff;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
 }
@@ -144,6 +169,10 @@
 
   .action-panel {
     height: 300px;
+  }
+
+  .page-overlay #report-modal .modal-container {
+    margin-top: 25vh;
   }
 }
 
