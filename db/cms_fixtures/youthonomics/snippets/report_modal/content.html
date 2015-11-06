@@ -1,0 +1,33 @@
+
+<div class="modal-wrapper">
+
+  <form class="contact-now" id="contact-page-form" action="mailto:info@youthonomics.com" enctype="text/plain" method="post">
+    <div class="centerer">
+      <div class="input-text-container">
+        <input type="text" placeholder="First and Last Name" name="name" value="" required>
+      </div>
+      <div class="input input-email-container">
+        <input type="email" placeholder="Email Address" name="email" value="" required>
+      </div>
+      <div class="input input-dropdown">
+        <label for="country-list">Select Your Country</label>
+        <span class="sublabel">If you do not see your country avaliable from the list please select 'Other'</span>
+        <select class="country-list" name="country-list" required>
+        <option value="">Select Country</option>
+        </select>
+      </div>
+      <div class="hidden input input-text-container">
+        <label for="country-name">Please add your country name</label>
+        <input type="text" placeholder="Country Name" name="country-other" value="">
+      </div>
+        <div class="input input-text-area">
+        <label for="message">Message</label>
+        <textarea name="message" rows="8" cols="40" required></textarea>
+      </div>
+    </div>
+    <div class="input-submit-container">
+      <input class="btn outline-red" type="submit" name="contact" value="send">       <input class="btn outline-red" type="submit" value="Get in Touch">
+    </div>
+  </form>
+  
+</div><!-- /.modal-wrapper -->
