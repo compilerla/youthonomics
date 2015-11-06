@@ -107,6 +107,20 @@
 
 }
 
+.page-overlay {
+  #report-modal {
+    width: 95%;
+    max-width: 680px;
+    margin-top: 20vh;
+    position: relative;
+    margin: 0 auto;
+    .modal-container {
+      width: 100%;
+      background: #fff;
+    }
+  }
+}
+
 
 /**
 * Homepage Section Breakpoints
