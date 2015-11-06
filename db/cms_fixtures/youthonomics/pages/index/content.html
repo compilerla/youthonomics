@@ -38,7 +38,7 @@
         </div>
       </header>
       <div class="col-md-4 col-md-offset-4" id="country-scroll">
-        <a href="{{ cms:file:Youth_report_151012.pdf }}" target="_blank" class="btn fill-red">view pdf online</a>
+        <a href="{{ cms:file:Youth_report_151012.pdf }}" target="_blank" class="btn fill-red" data-name="online">view pdf online</a>
         <a href="{{ cms:file:Youth_report_151012.pdf }}" class="btn outline-red" download>download report</a>
       </div>
     </section>
@@ -166,8 +166,25 @@
 <div class="hidden" id="janky-report-pdf" data-url="{{ cms:file:Youth_report_151012.pdf }}"></div>
 <script>
   var reportPdf = $('#janky-report-pdf').data('url');
+  reportPdf.toString();
   var instagramPhotos = {{ cms:helper:instagram_photos }};
   var countriesData = {{ cms:helper:country_data }};
+
+  function downloadReport() {
+    $('#country-scroll .btn').on('click', function(){
+      var buttonName = $(this).data('name');
+      //pop the modal regardless
+
+      if(buttonName === 'online') {
+        // change modal href to open in a new tab to read online
+        console.log('read online and open in new tab');
+      } else {
+        // pop the modal href to download now
+        console.log('read offline and download.');
+      }
+    });
+  }
+
 
   function listCountries(data) {
     for (obj in data) {
@@ -211,7 +228,7 @@
 
   $(document).ready(function(){
 
-    console.log(reportPdf.toString());
+    downloadReport();
 
     latestGram(instagramPhotos);
 
