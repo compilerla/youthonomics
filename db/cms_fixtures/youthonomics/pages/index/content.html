@@ -38,8 +38,8 @@
         </div>
       </header>
       <div class="col-md-4 col-md-offset-4" id="country-scroll">
-        <a href="{{ cms:file:Youth_report_151012.pdf }}" target="_blank" class="btn fill-red" data-name="online">view pdf online</a>
-        <a href="{{ cms:file:Youth_report_151012.pdf }}" class="btn outline-red" download>download report</a>
+        <div class="btn fill-red" data-name="online">view pdf online</div>
+        <div class="btn outline-red">download report</div>
       </div>
     </section>
   </div><!-- /.container-fluid#report-section -->
@@ -170,18 +170,67 @@
   var instagramPhotos = {{ cms:helper:instagram_photos }};
   var countriesData = {{ cms:helper:country_data }};
 
+  function submitForm() {
+    console.log('mailChimp API hookup here');
+    var $form = $('#contact-page-form');
+    // check if form has some stuff put into it.
+    if ( $form.length > 0 ) {
+        $('#contact-page-form input[type="submit"]').bind('click', function ( event ) {
+            // if there's a click event, prevent default stuff.
+            if ( event ) { event.preventDefault(); }
+            // if form validation returns true, submit the form
+            if ( validateForm($form) ) { registerForm($form); }
+        });
+    }
+  }
+
+  function registerForm($form) {
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+        success     : function(data) {
+            if (data.result != "success") {
+                // Something went wrong. Give some feedback!
+                console.log(data);
+            } else {
+                // Hey, it submitted! let them know to check their email
+                console.log(data);
+            }
+        }
+    });
+  }
+
+  function validateInput(form) {
+    // validate emails and text inputs via regex in here;
+    return true;
+  }
+
   function downloadReport() {
+
     $('#country-scroll .btn').on('click', function(){
       var buttonName = $(this).data('name');
       //pop the modal regardless
-
+      $('.page-overlay').removeClass('hidden');
       if(buttonName === 'online') {
         // change modal href to open in a new tab to read online
         console.log('read online and open in new tab');
+        $('#link-out').attr('target', '_blank');
+        submitForm();
       } else {
         // pop the modal href to download now
         console.log('read offline and download.');
+        $('#link-out').attr('download', true);
       }
+    });
+    $('.page-overlay .close').on('click', function() {
+      $('.page-overlay').addClass('hidden');
+      $('#link-out').removeAttr('download');
+      $('#link-out').removeAttr('target');
     });
   }
 
@@ -227,7 +276,7 @@
   }
 
   $(document).ready(function(){
-    
+
     console.log(countriesData);
 
     listCountries(countriesData);
@@ -309,6 +358,6 @@
 {{ cms:snippet:footer }}
 
 
-<div class="page-overlay">
+<div class="page-overlay hidden">
   {{ cms:snippet:report_modal }}
 </div>

@@ -5,13 +5,13 @@
     <header>
       <h4 class="subheading">Hey, before you download the report it would really help us out if added some info! We promise it will be put to good use.</h4>
     </header>
-    <form class="contact-now" id="contact-page-form" action="mailto:info@youthonomics.com" enctype="text/plain" method="post">
+    <form class="contact-now" id="contact-page-form" action="http://youthonomics.us11.list-manage.com/subscribe/post-json?u=f0401d408ea7e50e4d9179acc&amp;id=d1f9659d07&c=?" enctype="text/plain" method="get">
       <div class="centerer">
         <div class="input-text-container">
-          <input type="text" placeholder="First and Last Name" name="name" value="" required>
+          <input type="text" placeholder="First and Last Name" name="NAME" value="" required>
         </div>
         <div class="input input-email-container">
-          <input type="email" placeholder="Email Address" name="email" value="" required>
+          <input type="email" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" value="" required>
         </div>
         <div class="input input-dropdown">
           <label for="country-list">Select Your Country</label>
@@ -26,8 +26,8 @@
         </div>
       </div>
       <div class="input-submit-container">
-        <input class="btn outline-red" type="submit" name="contact" value="Get the Report">
-        <a id="link-out" href="">No Thanks, I just want the report</a>
+        <input id="report-link" class="btn outline-red" type="submit" name="contact" value="Get the Report">
+        <a id="link-out" href="{{ cms:file:Youth_report_151012.pdf }}">No Thanks, I just want the report</a>
       </div>
     </form>
   </div><!-- /.container -->
