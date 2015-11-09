@@ -179,7 +179,7 @@
             // if there's a click event, prevent default stuff.
             if ( event ) { event.preventDefault(); }
             // if form validation returns true, submit the form
-            if ( validateForm($form) ) { registerForm($form); }
+            if ( validateInputs($form) ) { registerForm($form); }
         });
     }
   }
@@ -192,11 +192,18 @@
         cache       : false,
         dataType    : 'json',
         contentType: "application/json; charset=utf-8",
-        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+        error       : function(err) {
+          alert("Could not connect to the registration server. Please try again later.");
+          $('.page-overlay').addClass('hidden');
+          $('#link-out').removeAttr('download');
+          $('#link-out').removeAttr('target');
+        },
         success     : function(data) {
             if (data.result != "success") {
                 // Something went wrong. Give some feedback!
-                console.log(data);
+                var message = data.msg;
+                message = message.slice(4, message.length);
+                $('#error-message').html(message);
             } else {
                 // Hey, it submitted! let them know to check their email
                 console.log(data);
@@ -205,8 +212,10 @@
     });
   }
 
-  function validateInput(form) {
+  function validateInputs(form) {
     // validate emails and text inputs via regex in here;
+    var requiredFields = $(form).find('[required]');
+    console.log(requiredFields);
     return true;
   }
 

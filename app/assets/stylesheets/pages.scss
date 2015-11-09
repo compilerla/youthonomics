@@ -118,10 +118,33 @@
       background: #fff;
       margin-top: 2vh;
       padding: 1.414rem;
+      header {
+        position: relative;
+        margin-bottom: 1.414rem;
+      }
       h4 {
         padding: 0 1.414rem;
         text-align: center;
+        margin-bottom: .707rem;
       }
+      h6#error-message {
+        display: block;
+        position: absolute;
+        bottom: -1.999rem;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+        color: red;
+        opacity: 1;
+        transition: opacity, .3s;
+      }
+      h6#error-message.hidden {
+        display: none;
+        opacity: 0;
+        transition: opacity, .3s;
+      }
+
+
       .close:after {
         width: 15px;
         height: 15px;
