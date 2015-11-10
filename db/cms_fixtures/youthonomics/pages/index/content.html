@@ -170,24 +170,21 @@
   var instagramPhotos = {{ cms:helper:instagram_photos }};
   var countriesData = {{ cms:helper:country_data }};
   var submitReport;
+  var errorAmmount;
 
   function submitForm() {
-    console.log('mailChimp API hookup here');
     var $form = $('#contact-page-form');
-    var errorAmmount = $('#error-message').data("errors");
     // check if form has some stuff put into it.
-    $($form).on('click', function(event){
-      validateInputs($form);
-      // if ( event ) { event.preventDefault(); }
-      console.log(errors);
+    validateInputs($form);
+    $($form).on('submit', function(event){
       if (errorAmmount === 0) {
-        // ajaxingForm($form);
         console.log('ajax that shit');
+        ajaxMailChimp($form);
       }
     });
   }
 
-  function ajaxingForm($form) {
+  function ajaxMailChimp($form) {
     $.ajax({
         type: $form.attr('method'),
         url: $form.attr('action'),
@@ -204,9 +201,10 @@
         success     : function(data) {
             if (data.result != "success") {
                 // Something went wrong. Give some feedback!
-                var message = data.msg;
-                message = message.slice(4, message.length);
+                // var message = data.msg;
+                // message = message.slice(4, message.length);
                 // $('#error-message').html(message);
+                console.log('in the ajax failure callback function!');
             } else {
                 // Hey, it submitted! let them know to check their email
                 console.log(data);
@@ -218,19 +216,19 @@
   function validateInputs(form) {
     // validate emails and text inputs via regex in here;
     var requiredFields = $(form).find('[required]');
-
-    $(form).validate({
+    var validator = $(form).validate({
       errorLabelContainer: "h6#error-message",
       wrapper: "div",
+      submitHandler: function() {
+        errorAmmount = validator.numberOfInvalids();
+      },
       invalidHandler: function(event, validator) {
         // 'this' refers to the form
-        // var errors = validator.numberOfInvalids();
-        // $('#error-message').attr("data-errors", errors);
+        var errors = validator.numberOfInvalids();
+        $('#error-message').attr("data-errors", errors);
       }
     });
-    $(form).valid();
-    var errors = $(form).numberOfInvalids();
-    return errors;
+    validator.form(form);
   }
 
   function downloadReport() {
