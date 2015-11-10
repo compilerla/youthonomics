@@ -9,21 +9,21 @@
     <form class="contact-now" id="contact-page-form" action="http://youthonomics.us11.list-manage.com/subscribe/post-json?u=f0401d408ea7e50e4d9179acc&amp;id=d1f9659d07&c=?" enctype="text/plain" method="get">
       <div class="centerer">
         <div class="input-text-container">
-          <input type="text" placeholder="First and Last Name" name="NAME" id="report-name" value="" required>
+          <input type="text" placeholder="First and Last Name" name="NAME" id="report-name" value="" data-msg="Please give a valid name" required>
         </div>
         <div class="input input-email-container">
-          <input type="email" placeholder="Email Address" name="EMAIL" id="report-email" value="" required>
+          <input type="email" placeholder="Email Address" name="EMAIL" id="report-email" value="" data-msg="Please give a valid email address" required>
         </div>
         <div class="input input-dropdown">
           <label for="country-list">Select Your Country</label>
           <span class="sublabel">If you do not see your country avaliable from the list please select 'Other'</span>
-          <select class="country-list" name="country-list" required>
+          <select class="country-list" name="country-list" data-msg="Please select your country" required>
           <option value="">Select Country</option>
           </select>
         </div>
         <div class="hidden input input-text-container">
           <label for="country-name">Please add your country name</label>
-          <input type="text" placeholder="Country Name" name="country-other" value="">
+          <input type="text" placeholder="Country Name" name="country-other" value="" data-msg="Please add a your country">
         </div>
       </div>
       <div class="input-submit-container">

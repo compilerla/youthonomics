@@ -120,7 +120,7 @@
       padding: 1.414rem;
       header {
         position: relative;
-        margin-bottom: 1.414rem;
+        margin-bottom: .707rem;
       }
       h4 {
         padding: 0 1.414rem;
@@ -129,11 +129,9 @@
       }
       h6#error-message {
         display: block;
-        position: absolute;
         bottom: -1.999rem;
         text-align: center;
         width: 100%;
-        font-size: 1rem;
         color: red;
         opacity: 1;
         transition: opacity, .3s;
