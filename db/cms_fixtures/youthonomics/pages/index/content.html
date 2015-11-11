@@ -201,13 +201,26 @@
         success     : function(data) {
             if (data.result != "success") {
                 // Something went wrong. Give some feedback!
-                // var message = data.msg;
+                var message = data.msg;
                 // message = message.slice(4, message.length);
-                // $('#error-message').html(message);
+                $('#error-message').html(message);
                 console.log('in the ajax failure callback function!');
+                $('#report-modal .alert-layover h6').html(message);
+                $('#report-modal .alert-layover').removeClass('hidden');
+                $('.page-overlay .alert-layover .close').on('click', function() {
+                  $('.alert-layover').addClass('hidden');
+                });
+
             } else {
                 // Hey, it submitted! let them know to check their email
                 console.log(data);
+                var message = data.msg;
+                message = message.slice(4, message.length);
+                $('#report-modal .alert-layover h6').html(message);
+                $('#report-modal .alert-layover').removeClass('hidden');
+                $('.page-overlay .alert-layover .close').on('click', function() {
+                  $('.page-overlay').addClass('hidden');
+                });
             }
         }
     });
@@ -232,7 +245,7 @@
   }
 
   function downloadReport() {
-
+    submitForm();
     $('#country-scroll .btn').on('click', function(){
       var buttonName = $(this).data('name');
       //pop the modal regardless
@@ -241,14 +254,13 @@
         // change modal href to open in a new tab to read online
         console.log('read online and open in new tab');
         $('#link-out').attr('target', '_blank');
-        submitForm();
       } else {
         // pop the modal href to download now
         console.log('read offline and download.');
         $('#link-out').attr('download', true);
       }
     });
-    $('.page-overlay .close').on('click', function() {
+    $('.page-overlay .close.main').on('click', function() {
       $('.page-overlay').addClass('hidden');
       $('#link-out').removeAttr('download');
       $('#link-out').removeAttr('target');
