@@ -817,6 +817,19 @@ a {
       top: 0;
       z-index: 5;
     }
+    .check-it-cta {
+      span {
+        max-width: 90px;
+        margin-right: 10px;
+        display: inline-block;
+      }
+      img {
+        width: 45px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: -20px;
+      }    
+    }
   }
   .check-it-cta {z-index: 10;}
   a.spanlink {
@@ -901,9 +914,16 @@ a {
   }
   .check-it-cta {
     padding-left: 1.414rem;
+    span {
+      max-width: 90px;
+      margin-right: 10px;
+      display: inline-block;
+    }
     img {
-      width: auto;
-      display: initial;
+      width: 45px;
+      display: inline-block;
+      margin-left: 10px;
+      margin-top: -20px;
     }
   }
 }
