@@ -3,6 +3,7 @@
 $(document).ready(function(){
   console.log('running in the application javascript folder');
   $(function() {
+    $('ul.navbar-nav.nav li').removeClass('active');
     console.log(location.pathname.split("/")[1]);
     $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').parent('li').addClass('active');
   });
