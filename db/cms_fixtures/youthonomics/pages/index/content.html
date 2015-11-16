@@ -178,7 +178,7 @@
     validateInputs($form);
     $($form).on('submit', function(event){
       if (errorAmmount === 0) {
-        console.log('ajax that shit');
+        console.log('ajax the form!');
         ajaxMailChimp($form);
       }
     });
@@ -213,11 +213,25 @@
 
             } else {
                 // Hey, it submitted! let them know to check their email
+                submitReport = true;
+                var openStatus = $('#country-scroll .btn').data('name');
                 console.log(data);
                 var message = data.msg;
-                message = message.slice(4, message.length);
+                // message = message.slice(4, message.length);
+                message += '\n';
+                message += 'To get the report, click the button below. Thanks!';
+                $('#confirm-download').attr('href', reportPdf);
                 $('#report-modal .alert-layover h6').html(message);
                 $('#report-modal .alert-layover').removeClass('hidden');
+                if(openStatus === 'online') {
+                  // change modal href to open in a new tab to read online
+                  console.log('read online and open in new tab');
+                  $('#confirm-download').attr('target', '_blank');
+                } else {
+                  // pop the modal href to download now
+                  console.log('read offline and download.');
+                  $('#confirm-download').attr('download', true);
+                }
                 $('.page-overlay .alert-layover .close').on('click', function() {
                   $('.page-overlay').addClass('hidden');
                 });
@@ -247,6 +261,7 @@
   function downloadReport() {
     submitForm();
     $('#country-scroll .btn').on('click', function(){
+      $('#confirm-download').removeAttr('href', 'download', 'target');
       var buttonName = $(this).data('name');
       //pop the modal regardless
       $('.page-overlay').removeClass('hidden');
