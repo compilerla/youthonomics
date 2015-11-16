@@ -70,18 +70,18 @@
   }
 
   .circle#high-ranking:before {
-    border: 1px solid #FF1C2D;
-    background-color: #FF1C2D;
+    border: 1px solid #FE2A21;
+    background-color: #FE2A21;
   }
 
   .circle#avg-ranking:before {
-    border: 1px solid #FF7781;
-    background-color: #FF7781;
+    border: 1px solid #BD1E1A;
+    background-color: #BD1E1A;
   }
 
   .circle#low-ranking:before {
-    border: 1px solid #8DADB7;
-    background-color: #8DADB7;
+    border: 1px solid #80140F;
+    background-color: #80140F;
   }
 
 }
@@ -542,18 +542,18 @@
       width: 100%;
     }
     &.high-ranking {
-      border: 1px solid #FF1C2D;
-      background-color: #FF1C2D;
+      border: 1px solid #FE2A21;
+      background-color: #FE2A21;
     }
 
     &.avg-ranking {
-      border: 1px solid #FF7781;
-      background-color: #FF7781;
+      border: 1px solid #BD1E1A;
+      background-color: #BD1E1A;
     }
 
     &.low-ranking {
-      border: 1px solid #8DADB7;
-      background-color: #8DADB7;
+      border: 1px solid #80140F;
+      background-color: #80140F;
     }
   }
 
@@ -564,15 +564,15 @@
       width: 100%;
     }
     &.high-ranking {
-      border: 3px solid #FF1C2D;
+      border: 3px solid #FE2A21;
     }
 
     &.avg-ranking {
-      border: 3px solid #FF7781;
+      border: 3px solid #BD1E1A;
     }
 
     &.low-ranking {
-      border: 3px solid #8DADB7;
+      border: 3px solid #80140F;
     }
   }
 
@@ -844,18 +844,18 @@ a[href="#youth-now-subindex-data"] {
     float: left;
 
     &.high-ranking {
-      border: 1px solid #FF1C2D;
-      background-color: #FF1C2D;
+      border: 1px solid #FE2A21;
+      background-color: #FE2A21;
     }
 
     &.avg-ranking {
-      border: 1px solid #FF7781;
-      background-color: #FF7781;
+      border: 1px solid #BD1E1A;
+      background-color: #BD1E1A;
     }
 
     &.low-ranking {
-      border: 1px solid #8DADB7;
-      background-color: #8DADB7;
+      border: 1px solid #80140F;
+      background-color: #80140F;
     }
   }
 
