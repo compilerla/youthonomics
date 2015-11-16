@@ -803,8 +803,10 @@ a[href="#youth-now-subindex-data"] {
 }
 
 .map-popup {
-  width:370px;
+  width:320px;
+  max-width: 320px;
   padding: .707rem 0 0 0;
+  margin: 0 auto;
   h1 {
     font-size:1.414rem;
     font-weight: bold;
@@ -859,6 +861,7 @@ a[href="#youth-now-subindex-data"] {
 
   a.btn {
     color: #3D3D3D;
+    clear: both;
   }
 
   .circle-desc {
@@ -869,8 +872,10 @@ a[href="#youth-now-subindex-data"] {
   }
 
   dl {
+    width: 33%;
     margin: 5px 0 0 0;
     overflow: auto;
+    float: left;
     .icon {
       width: 45px;
       height: 45px;
@@ -897,12 +902,13 @@ a[href="#youth-now-subindex-data"] {
       font-size: 1.414rem;
       margin-bottom: 0;
       padding-bottom: 0;
-      line-height: 20px;
+      line-height: 35px;
     }
     .subheading {
       font-size: .707rem;
       letter-spacing: .7px;
       color: #797979;
+      float: left;
     }
   }
 }
@@ -910,6 +916,30 @@ a[href="#youth-now-subindex-data"] {
 #homepage-map {
   margin-bottom:0;
 }
+
+
+/**
+* Responsive Map Styling Test
+*/
+
+@media (screen and min-width: 768px) {
+  .map-popup {
+
+    dl {
+      width: 100%;
+      float: none;
+      .metric {
+        line-height: 20px;
+      }
+      .subheading {
+        float: none;
+      }
+    }
+
+    a.btn { clear: none; }
+
+  }
+} // end 768px
 
 /*------------------------------------*\
     #CONTACT-PAGE
